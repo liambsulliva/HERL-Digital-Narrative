@@ -14,8 +14,15 @@
      */
     "allowJs": true,
     "checkJs": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "strict": true
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "../HERL 3D Test/src/lib/components/ModeSwitcher.svelte"],
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte",
+    "../HERL 3D Test/src/lib/components/ModeSwitcher.svelte"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
