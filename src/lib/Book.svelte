@@ -9,6 +9,7 @@
   let tiltX = 0;
   let tiltY = 0;
   let translateX = 0;
+  let translateY = 0;
 
   function handleMouseMove(event: MouseEvent) {
     if (!isHovering || isOpen) return;
@@ -38,10 +39,20 @@
     if (isOpen) {
       tiltX = 0;
       tiltY = 0;
-      translateX = 50; // 50% translation
+      translateX = 50;
     } else {
       translateX = 0;
     }
+    // Wait for initial animation to finish before setting book down
+    setTimeout(() => {
+      if (isOpen) {
+        translateY = 100;
+        tiltX = 50;
+      } else {
+        translateY = 0;
+        tiltY = 0;
+      }
+    }, 500);
   }
 
   onMount(() => {
@@ -61,7 +72,7 @@
 <div
   bind:this={book}
   class="book {class_} {isOpen ? 'open' : ''}"
-  style="transform: rotateX({tiltX}deg) rotateY({tiltY}deg) translateX({translateX}%)"
+  style="transform: rotateX({tiltX}deg) rotateY({tiltY}deg) translateX({translateX}%) translateY({translateY}%)"
 >
   <div class="front">
     <img
@@ -88,8 +99,8 @@
     margin: 5vmin;
     cursor: pointer;
     transition: transform 0.5s ease-out;
-    height: 35vmin;
-    width: 50vmin;
+    height: 52.5vmin;
+    width: 75vmin;
   }
 
   .front,
@@ -116,7 +127,8 @@
   .page4,
   .page5,
   .page6,
-  .front {
+  .front,
+  .back {
     transform-origin: left center;
   }
 
@@ -135,7 +147,7 @@
     height: 100%;
     left: -5%;
     background: #624a2e;
-    transform: rotateY(-90deg) translateX(-40%) translateZ(8px);
+    transform: rotateY(-90deg) translateX(-40%);
     transform-style: preserve-3d;
   }
 
@@ -166,7 +178,7 @@
   .back {
     z-index: 1;
     background: #624a2e;
-    transform: translateZ(-55px) rotateY(180deg);
+    transform: translateZ(-55px);
   }
 
   .paper-block {
@@ -237,37 +249,46 @@
   }
 
   .book.open .front {
-    transform: rotateY(-160deg);
+    transform: rotateY(-170deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page1 {
-    transform: rotateY(-150deg);
+    transform: rotateY(-160deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page2 {
-    transform: rotateY(-30deg);
+    transform: rotateY(-30deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page3 {
-    transform: rotateY(-140deg);
+    transform: rotateY(-150deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page4 {
-    transform: rotateY(-40deg);
+    transform: rotateY(-40deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page5 {
-    transform: rotateY(-130deg);
+    transform: rotateY(-140deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page6 {
-    transform: rotateY(-50deg);
+    transform: rotateY(-20deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+  }
+  .book.open .back {
+    transform: rotateY(-10deg) scale(0.75);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .book.open .paper-block,
+  .book.open .spine {
+    display: none;
   }
 
   @media screen and (max-width: 600px) {
     .spine {
-      transform: rotateY(-90deg) translateX(-40%) translateZ(15px);
+      transform: rotateY(-90deg) translateX(-40%) translateZ(10px);
     }
   }
 </style>
