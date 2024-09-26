@@ -6,8 +6,8 @@
   let book: HTMLElement;
   let isHovering = false;
   let isOpen = false;
-  let tiltX = 0;
-  let tiltY = 0;
+  let tiltX = 9;
+  let tiltY = -9;
   let translateX = 0;
   let translateY = 0;
   let spineDisplay = "block";
@@ -22,6 +22,7 @@
     const centerY = rect.height / 2;
     tiltX = ((y - centerY) / centerY) * 10;
     tiltY = ((centerX - x) / centerX) * 10;
+    console.log(tiltX, tiltY);
   }
 
   function handleMouseEnter() {
@@ -31,8 +32,8 @@
   function handleMouseLeave() {
     isHovering = false;
     if (!isOpen) {
-      tiltX = 0;
-      tiltY = 0;
+      tiltX = 9;
+      tiltY = -9;
     }
   }
 
@@ -55,6 +56,7 @@
       } else {
         translateY = 0;
         tiltX = 0;
+        tiltY = 0;
       }
     }, 500);
 
@@ -62,6 +64,8 @@
       if (!isOpen) {
         spineDisplay = "block";
         paperBlockDisplay = "block";
+        tiltX = 9;
+        tiltY = -9;
       }
     }, 1000);
   }
@@ -141,6 +145,10 @@
   }
 
   .book:hover {
+    box-shadow: none;
+  }
+
+  .book:hover .back {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
