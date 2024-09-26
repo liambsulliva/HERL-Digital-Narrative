@@ -106,6 +106,16 @@
       box-shadow 0.35s ease-in-out;
   }
 
+  .page1,
+  .page2,
+  .page3,
+  .page4,
+  .page5,
+  .page6,
+  .front {
+    transform-origin: left center;
+  }
+
   .book:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
@@ -245,9 +255,6 @@
   .book.open .page6 {
     transform: rotateY(-50deg) scale(1.1);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book.open .back {
-    transform: rotateY(-20deg) scale(1.1);
   }
 
   @media screen and (max-width: 600px) {
