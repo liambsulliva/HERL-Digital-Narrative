@@ -117,11 +117,11 @@
   }
 
   .spine {
-    width: 17%;
+    width: 55px;
     height: 100%;
     left: -5%;
     background: #624a2e;
-    transform: rotateY(-90deg) translateX(-40%) translateZ(12px);
+    transform: rotateY(-90deg) translateX(-40%) translateZ(8px);
     transform-style: preserve-3d;
   }
 
@@ -248,5 +248,11 @@
   }
   .book.open .back {
     transform: rotateY(-20deg) scale(1.1);
+  }
+
+  @media screen and (max-width: 600px) {
+    .spine {
+      transform: rotateY(-90deg) translateX(-40%) translateZ(15px);
+    }
   }
 </style>
