@@ -1,24 +1,31 @@
-
 <script lang="ts">
-    import ModeSwitcher from './lib/ModeSwitcher.svelte';
-    import PittBanner from './lib/PittBanner.svelte';
-	import Book from './lib/Book.svelte';
+  import ModeSwitcher from "./lib/ModeSwitcher.svelte";
+  import FlipBtn from "./lib/FlipBtn.svelte";
+  import PittBanner from "./lib/PittBanner.svelte";
+  import Book from "./lib/Book.svelte";
 </script>
 
 <header class="flex p-2 w-screen items-center justify-between">
-	<PittBanner />
-	<ModeSwitcher />
+  <PittBanner />
+  <div class="flex items-center gap-2">
+    <FlipBtn />
+    <ModeSwitcher />
+  </div>
 </header>
-<main class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center max-w-xl">
-	<h1 class="uppercase text-5xl leading-normal font-semibold">HERL Scrapbook</h1>
-	<p class="mt-1 text-sm">
-		A journey through 30 years of innovation.
-	</p>
-	<Book />
+<main
+  class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center max-w-xl"
+>
+  <h1 class="uppercase text-4xl leading-normal font-semibold">
+    HERL Through the Years
+  </h1>
+  <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+    A journey through 30 years of innovation.
+  </p>
+  <Book />
 </main>
 
 <style lang="postcss">
-	.font-rubik {
-		font-family: 'Rubik', Helvetica, sans-serif, system-ui;
-	}
+  .font-rubik {
+    font-family: "Rubik", Helvetica, sans-serif, system-ui;
+  }
 </style>
