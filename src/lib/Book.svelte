@@ -51,7 +51,7 @@
     // Wait for initial animation to finish before setting down/picking up
     setTimeout(() => {
       if (isOpen) {
-        translateY = 90;
+        translateY = 80;
         tiltX = 50;
       } else {
         translateY = 0;

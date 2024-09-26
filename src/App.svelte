@@ -18,7 +18,7 @@
   <h1 class="uppercase text-4xl leading-normal font-semibold">
     Human Engineering Research Labs
   </h1>
-  <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+  <p class="mt-1 mb-4 text-sm text-gray-600 dark:text-gray-300">
     A journey through 30 years of innovation.
   </p>
   <Book />
