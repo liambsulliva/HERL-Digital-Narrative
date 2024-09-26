@@ -10,6 +10,8 @@
   let tiltY = 0;
   let translateX = 0;
   let translateY = 0;
+  let spineDisplay = "block";
+  let paperBlockDisplay = "block";
 
   function handleMouseMove(event: MouseEvent) {
     if (!isHovering || isOpen) return;
@@ -40,17 +42,21 @@
       tiltX = 0;
       tiltY = 0;
       translateX = 50;
+      spineDisplay = "none";
+      paperBlockDisplay = "none";
     } else {
       translateX = 0;
     }
-    // Wait for initial animation to finish before setting book down
+    // Wait for initial animation to finish before setting down/picking up
     setTimeout(() => {
       if (isOpen) {
-        translateY = 100;
+        translateY = 90;
         tiltX = 50;
       } else {
         translateY = 0;
         tiltX = 0;
+        spineDisplay = "block";
+        paperBlockDisplay = "block";
       }
     }, 500);
   }
@@ -82,14 +88,11 @@
     />
   </div>
   <div class="back"></div>
-  <div class="spine"></div>
-  <div class="paper-block"></div>
-  <div class="page1"></div>
-  <div class="page2"></div>
-  <div class="page3"></div>
-  <div class="page4"></div>
-  <div class="page5"></div>
-  <div class="page6"></div>
+  <div class="spine" style="display: {spineDisplay};"></div>
+  <div class="paper-block" style="display: {paperBlockDisplay};"></div>
+  {#each Array(6) as _, i}
+    <div class="page{i + 1}"></div>
+  {/each}
 </div>
 
 <style>
@@ -279,11 +282,6 @@
   .book.open .back {
     transform: rotateY(-10deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .book.open .paper-block,
-  .book.open .spine {
-    display: none;
   }
 
   @media screen and (max-width: 600px) {
