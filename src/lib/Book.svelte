@@ -50,7 +50,7 @@
         tiltX = 50;
       } else {
         translateY = 0;
-        tiltY = 0;
+        tiltX = 0;
       }
     }, 500);
   }
