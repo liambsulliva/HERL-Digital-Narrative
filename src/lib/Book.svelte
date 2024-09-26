@@ -57,9 +57,11 @@
   .book {
     transform-style: preserve-3d;
     position: relative;
-    margin: 5rem;
-    height: 25rem;
-    width: 35rem;
+    margin: 5vmin;
+    height: 50vmin;
+    width: 70vmin;
+    min-height: 300px;
+    min-width: 200px;
     cursor: pointer;
     transition: transform 0.1s ease-out;
   }
@@ -77,10 +79,12 @@
     height: 100%;
     top: 0;
     left: 0;
-    transform-origin: left center;
-    transition:
-      transform 0.5s ease-in-out,
-      box-shadow 0.35s ease-in-out;
+    transition: box-shadow 0.35s ease-in-out;
+  }
+
+  /* Add a hover effect to scale the book */
+  .book:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .front {
@@ -138,39 +142,4 @@
     transform: rotateY(0deg);
     z-index: 2;
   }
-
-  /* Hover effects remain commented out as requested */
-  /*
-  .book:hover .front {
-    transform: rotateY(-160deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .page1 {
-    transform: rotateY(-150deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .page2 {
-    transform: rotateY(-30deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .page3 {
-    transform: rotateY(-140deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .page4 {
-    transform: rotateY(-40deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .page5 {
-    transform: rotateY(-130deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .page6 {
-    transform: rotateY(-50deg) scale(1.1);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book:hover .back {
-    transform: rotateY(-20deg) scale(1.1);
-  }
-  */
 </style>

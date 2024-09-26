@@ -13,10 +13,10 @@
   </div>
 </header>
 <main
-  class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center max-w-xl"
+  class=" flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center"
 >
   <h1 class="uppercase text-4xl leading-normal font-semibold">
-    HERL Through the Years
+    Human Engineering Research Labs
   </h1>
   <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
     A journey through 30 years of innovation.
