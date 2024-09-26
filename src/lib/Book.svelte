@@ -55,10 +55,15 @@
       } else {
         translateY = 0;
         tiltX = 0;
+      }
+    }, 500);
+
+    setTimeout(() => {
+      if (!isOpen) {
         spineDisplay = "block";
         paperBlockDisplay = "block";
       }
-    }, 500);
+    }, 1000);
   }
 
   onMount(() => {
@@ -87,7 +92,7 @@
       class="rounded-r w-full h-full object-cover"
     />
   </div>
-  <div class="back"></div>
+  <div class="back rounded-r"></div>
   <div class="spine" style="display: {spineDisplay};"></div>
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
   {#each Array(6) as _, i}
@@ -256,27 +261,27 @@
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page1 {
-    transform: rotateY(-160deg) scale(0.75);
+    transform: rotateY(-165deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page2 {
-    transform: rotateY(-30deg) scale(0.75);
+    transform: rotateY(-20deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page3 {
-    transform: rotateY(-150deg) scale(0.75);
+    transform: rotateY(-160deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page4 {
-    transform: rotateY(-40deg) scale(0.75);
+    transform: rotateY(-25deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page5 {
-    transform: rotateY(-140deg) scale(0.75);
+    transform: rotateY(-155deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page6 {
-    transform: rotateY(-20deg) scale(0.75);
+    transform: rotateY(-15deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .back {
