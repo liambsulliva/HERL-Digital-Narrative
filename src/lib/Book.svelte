@@ -86,8 +86,6 @@
     transition: transform 0.1s ease-out;
     height: 35vmin;
     width: 50vmin;
-    min-height: 300px;
-    min-width: 200px;
   }
 
   .front,
@@ -119,11 +117,31 @@
   }
 
   .spine {
-    width: 10%;
+    width: 17%;
     height: 100%;
     left: -5%;
     background: #624a2e;
-    transform: rotateY(-90deg) translateX(-50%);
+    transform: rotateY(-90deg) translateX(-40%) translateZ(12px);
+    transform-style: preserve-3d;
+  }
+
+  .spine::before,
+  .spine::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4a3923;
+  }
+
+  .spine::before {
+    left: -5px;
+    transform: rotateY(-180deg);
+  }
+
+  .spine::after {
+    right: -5px;
+    transform: rotateY(180deg);
   }
 
   .front {
