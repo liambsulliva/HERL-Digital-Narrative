@@ -8,6 +8,7 @@
   let isOpen = false;
   let tiltX = 0;
   let tiltY = 0;
+  let translateX = 0;
 
   function handleMouseMove(event: MouseEvent) {
     if (!isHovering || isOpen) return;
@@ -37,6 +38,9 @@
     if (isOpen) {
       tiltX = 0;
       tiltY = 0;
+      translateX = 50; // 50% translation
+    } else {
+      translateX = 0;
     }
   }
 
@@ -57,7 +61,7 @@
 <div
   bind:this={book}
   class="book {class_} {isOpen ? 'open' : ''}"
-  style="transform: rotateX({tiltX}deg) rotateY({tiltY}deg)"
+  style="transform: rotateX({tiltX}deg) rotateY({tiltY}deg) translateX({translateX}%)"
 >
   <div class="front">
     <img
@@ -83,7 +87,7 @@
     position: relative;
     margin: 5vmin;
     cursor: pointer;
-    transition: transform 0.1s ease-out;
+    transition: transform 0.5s ease-out;
     height: 35vmin;
     width: 50vmin;
   }
@@ -228,32 +232,36 @@
     border-radius: 5px 0 0 5px;
   }
 
+  .book.open:hover {
+    box-shadow: none;
+  }
+
   .book.open .front {
-    transform: rotateY(-160deg) scale(1.1);
+    transform: rotateY(-160deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page1 {
-    transform: rotateY(-150deg) scale(1.1);
+    transform: rotateY(-150deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page2 {
-    transform: rotateY(-30deg) scale(1.1);
+    transform: rotateY(-30deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page3 {
-    transform: rotateY(-140deg) scale(1.1);
+    transform: rotateY(-140deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page4 {
-    transform: rotateY(-40deg) scale(1.1);
+    transform: rotateY(-40deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page5 {
-    transform: rotateY(-130deg) scale(1.1);
+    transform: rotateY(-130deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page6 {
-    transform: rotateY(-50deg) scale(1.1);
+    transform: rotateY(-50deg);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 
