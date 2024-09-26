@@ -148,10 +148,6 @@
     box-shadow: none;
   }
 
-  .book:hover .back {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
   .front,
   .back {
     width: 100%;
@@ -195,6 +191,7 @@
     z-index: 1;
     background: #624a2e;
     transform: translateZ(-55px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .paper-block {
