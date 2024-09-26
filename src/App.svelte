@@ -8,12 +8,12 @@
 <header class="flex p-2 w-screen items-center justify-between">
   <PittBanner />
   <div class="flex items-center gap-2">
-    <FlipBtn />
+    <!-- <FlipBtn /> -->
     <ModeSwitcher />
   </div>
 </header>
 <main
-  class=" flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center"
+  class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center"
 >
   <h1 class="uppercase text-4xl leading-normal font-semibold">
     Human Engineering Research Labs
