@@ -2,12 +2,16 @@
   import ModeSwitcher from "./lib/ModeSwitcher.svelte";
   import FlipBtn from "./lib/FlipBtn.svelte";
   import PittBanner from "./lib/PittBanner.svelte";
+  import VABanner from "./lib/VABanner.svelte";
   import Book from "./lib/Book.svelte";
 </script>
 
-<header class="flex p-2 w-screen items-center justify-between">
-  <PittBanner />
-  <div class="flex items-center gap-2">
+<header class="flex p-3 w-screen items-center justify-between">
+  <div class="flex items-center gap-1">
+    <PittBanner />
+    <VABanner />
+  </div>
+  <div class="flex items-center gap-1 p-2">
     <!-- <FlipBtn /> -->
     <ModeSwitcher />
   </div>
@@ -27,5 +31,7 @@
 <style lang="postcss">
   .font-rubik {
     font-family: "Rubik", Helvetica, sans-serif, system-ui;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 </style>
