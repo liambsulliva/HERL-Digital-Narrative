@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import FrontCover from "../images/Cover-Front.avif";
+  import FrontCover from "../images/Cover-Front.webp";
 
   export let class_ = "";
   let book: HTMLElement;
