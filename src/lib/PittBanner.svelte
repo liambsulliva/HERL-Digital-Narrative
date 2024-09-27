@@ -7,6 +7,8 @@
   href="https://pitt.edu"
   class="w-32 p-2"
   aria-label="University of Pittsburgh"
+  rel="noopener noreferrer"
+  target="_blank"
 >
   <img
     src={lightbanner}
