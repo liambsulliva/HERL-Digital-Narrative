@@ -14,16 +14,16 @@
       subheading.style.opacity = "0";
 
       setTimeout(() => {
-        header.classList.add("hidden");
-        subheading.classList.add("hidden");
+        header.classList.add("cursor-default");
+        subheading.classList.add("cursor-default");
       }, 500);
     }
   } else {
     const header = document.querySelector("h1");
     const subheading = document.querySelector("p");
     if (header && subheading) {
-      header.classList.remove("hidden");
-      subheading.classList.remove("hidden");
+      header.classList.remove("cursor-default");
+      subheading.classList.remove("cursor-default");
       setTimeout(() => {
         header.style.opacity = "1";
         subheading.style.opacity = "1";

@@ -107,8 +107,7 @@
 <style>
   .book {
     transform-style: preserve-3d;
-    position: absolute;
-    top: 25%;
+    position: relative;
     margin: 5vmin;
     cursor: pointer;
     transition: transform 0.5s ease-out;
