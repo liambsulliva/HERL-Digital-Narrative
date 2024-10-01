@@ -176,13 +176,13 @@
       ) {
         page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
         page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page2Element.style.transform = `rotateY(-20deg) scale(0.75)`;
+        page2Element.style.transform = `rotateY(-35deg) scale(0.75)`;
         page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page3Element.style.transform = `rotateY(-160deg) scale(0.75)`;
+        page3Element.style.transform = `rotateY(-30deg) scale(0.75)`;
         page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
         page4Element.style.transform = `rotateY(-25deg) scale(0.75)`;
         page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page5Element.style.transform = `rotateY(-155deg) scale(0.75)`;
+        page5Element.style.transform = `rotateY(-20deg) scale(0.75)`;
         page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
         page6Element.style.transform = `rotateY(-15deg) scale(0.75)`;
         page6Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
