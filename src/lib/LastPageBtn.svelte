@@ -4,8 +4,10 @@
   export let backPage = 0;
 
   function handlePageTurn() {
-    frontPage = backPage;
-    backPage += 1;
+    if (backPage > 1) {
+      frontPage = backPage;
+      backPage -= 1;
+    }
     console.log(backPage, frontPage);
   }
 

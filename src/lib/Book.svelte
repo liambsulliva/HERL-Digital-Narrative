@@ -154,7 +154,7 @@
     isOpen = !isOpen;
     if (isOpen) {
       backPage = 1;
-      frontPage = 3;
+      frontPage = 2;
       tiltX = 0;
       tiltY = 0;
       translateX = 50;
