@@ -12,51 +12,55 @@
   let frontPage = 0;
   let backPage = 0;
 
-  type PageConfig = {
-    [key: string]: {
-      [key: number]: number;
-    };
-  };
-
-  // Define page rotation configurations
-  const pageConfigurations: PageConfig = {
-    "1,3": {
-      1: -165,
-      3: -35,
-    },
-    "3,5": {
-      3: -160,
-      5: -30,
-    },
-    "5,4": {
-      4: -155,
-      5: -25,
-    },
-    "4,2": {
-      4: -150,
-      2: -20,
-    },
-    "2,6": {
-      2: -160,
-      6: -170,
-    },
-  };
-
-  function updatePageRotations() {
-    const pages = 6; // total number of pages
-    const rotations = pageConfigurations[`${backPage},${frontPage}`] || [];
-
-    for (let i = 1; i <= pages; i++) {
-      const pageElement: HTMLElement | null = document.querySelector(
-        `.page${i}`,
-      );
-      if (pageElement) {
-        const rotation = rotations[i - 1];
-        if (rotation) {
-          pageElement.style.transform = `rotateY(${rotation}deg) scale(0.75)`;
+  $: switch (backPage) {
+    case 1:
+      const page1Element: HTMLElement | null = document.querySelector(`.page1`);
+      if (page1Element) {
+        page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+        page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 3:
+      const page3Element: HTMLElement | null = document.querySelector(`.page3`);
+      if (page3Element) {
+        page3Element.style.transform = `rotateY(-160deg) scale(0.75)`;
+        page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 5:
+      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
+      if (page5Element) {
+        page5Element.style.transform = `rotateY(-155deg) scale(0.75)`;
+        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 4:
+      const page4Element: HTMLElement | null = document.querySelector(`.page4`);
+      if (page4Element) {
+        page4Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+        page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 2:
+      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
+      if (page2Element) {
+        page2Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    default:
+      if (!isOpen) {
+        for (let i = 1; i <= 6; i++) {
+          const pageElement: HTMLElement | null = document.querySelector(
+            `.page${i}`,
+          );
+          if (pageElement) {
+            pageElement.style.transform = `rotateY(0) scale(1)`;
+            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          }
         }
       }
-    }
+      break;
   }
 
   // Applicable when let isOpen = false;
