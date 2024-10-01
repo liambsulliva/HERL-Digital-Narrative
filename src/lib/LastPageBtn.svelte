@@ -30,7 +30,7 @@
   });
 </script>
 
-{#if frontPage > 1}
+{#if backPage > 1}
   <button
     on:click={handleClick}
     aria-label="Last Page Button"
