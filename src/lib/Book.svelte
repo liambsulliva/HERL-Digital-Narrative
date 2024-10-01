@@ -20,18 +20,18 @@
         page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
+    case 2:
+      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
+      if (page2Element) {
+        page2Element.style.transform = `rotateY(-160deg) scale(0.75)`;
+        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
     case 3:
       const page3Element: HTMLElement | null = document.querySelector(`.page3`);
       if (page3Element) {
-        page3Element.style.transform = `rotateY(-160deg) scale(0.75)`;
+        page3Element.style.transform = `rotateY(-155deg) scale(0.75)`;
         page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 5:
-      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
-      if (page5Element) {
-        page5Element.style.transform = `rotateY(-155deg) scale(0.75)`;
-        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
     case 4:
@@ -41,11 +41,11 @@
         page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
-    case 2:
-      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
-      if (page2Element) {
-        page2Element.style.transform = `rotateY(-145deg) scale(0.75)`;
-        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+    case 5:
+      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
+      if (page5Element) {
+        page5Element.style.transform = `rotateY(-145deg) scale(0.75)`;
+        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
     default:
@@ -66,39 +66,32 @@
   }
 
   $: switch (frontPage) {
-    case 3:
-      const page1Element: HTMLElement | null = document.querySelector(`.page3`);
-      if (page1Element) {
-        page1Element.style.transform = `rotateY(-30deg) scale(0.75)`;
-        page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+    case 2:
+      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
+      if (page2Element) {
+        page2Element.style.transform = `rotateY(-30deg) scale(0.75)`;
+        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
-    case 5:
-      const page3Element: HTMLElement | null = document.querySelector(`.page5`);
+    case 3:
+      const page3Element: HTMLElement | null = document.querySelector(`.page3`);
       if (page3Element) {
         page3Element.style.transform = `rotateY(-25deg) scale(0.75)`;
         page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
     case 4:
-      const page5Element: HTMLElement | null = document.querySelector(`.page4`);
-      if (page5Element) {
-        page5Element.style.transform = `rotateY(-20deg) scale(0.75)`;
-        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 2:
-      const page4Element: HTMLElement | null = document.querySelector(`.page2`);
+      const page4Element: HTMLElement | null = document.querySelector(`.page4`);
       if (page4Element) {
-        page4Element.style.transform = `rotateY(-15deg) scale(0.75)`;
+        page4Element.style.transform = `rotateY(-20deg) scale(0.75)`;
         page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
-    case 6:
-      const page2Element: HTMLElement | null = document.querySelector(`.page6`);
-      if (page2Element) {
-        page2Element.style.transform = `rotateY(-10deg) scale(0.75)`;
-        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+    case 5:
+      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
+      if (page5Element) {
+        page5Element.style.transform = `rotateY(-15deg) scale(0.75)`;
+        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
     default:

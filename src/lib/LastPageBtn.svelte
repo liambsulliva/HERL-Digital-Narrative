@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, onDestroy } from "svelte";
+  import { onMount } from "svelte";
   export let frontPage = 0;
   export let backPage = 0;
 
@@ -17,6 +17,11 @@
     }
   }
 
+  function handleClick(event: MouseEvent) {
+    event?.stopPropagation();
+    handlePageTurn();
+  }
+
   onMount(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => {
@@ -27,7 +32,7 @@
 
 {#if frontPage > 1}
   <button
-    on:click={handlePageTurn}
+    on:click={handleClick}
     aria-label="Last Page Button"
     class="absolute right-0 z-100"
   >
