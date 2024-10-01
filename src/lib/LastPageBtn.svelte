@@ -1,4 +1,16 @@
-<div class="flex justify-end mt-4 z-1">
+<script lang="ts">
+  export let pageNum = 0;
+  function handleClick(event: MouseEvent) {
+    event?.stopPropagation();
+    pageNum -= 1;
+  }
+</script>
+
+<button
+  on:click={handleClick}
+  aria-label="Last Page Button"
+  class="flex justify-end mt-4 z-100"
+>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="5em"
@@ -9,4 +21,4 @@
       d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887t.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75t-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1t-.375-.888t.375-.887z"
     /></svg
   >
-</div>
+</button>

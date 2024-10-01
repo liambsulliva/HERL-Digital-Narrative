@@ -47,8 +47,8 @@
   function handleClick() {
     isOpen = !isOpen;
     if (isOpen) {
-      backPage = 5;
-      frontPage = 4;
+      backPage = 3;
+      frontPage = 1;
       tiltX = 0;
       tiltY = 0;
       translateX = 50;
@@ -113,9 +113,9 @@
   {#each Array(6) as _, i}
     <div class="page{i + 1}">
       {#if i + 1 === frontPage}
-        <NextPageBtn />
+        <NextPageBtn bind:pageNum={frontPage} />
       {:else if i + 1 === backPage}
-        <LastPageBtn />
+        <LastPageBtn bind:pageNum={backPage} />
       {/if}
     </div>
   {/each}
@@ -291,7 +291,7 @@
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page3 {
-    transform: rotateY(-160deg) scale(0.75);
+    transform: rotateY(-35deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page4 {
@@ -299,7 +299,7 @@
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page5 {
-    transform: rotateY(-155deg) scale(0.75);
+    transform: rotateY(-30deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
   .book.open .page6 {
