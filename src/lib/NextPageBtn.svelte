@@ -8,7 +8,7 @@
       backPage = frontPage;
       frontPage += 1;
     }
-    console.log(backPage, frontPage);
+    //console.log(backPage, frontPage);
   }
 
   function handleKeyDown(event: KeyboardEvent) {
