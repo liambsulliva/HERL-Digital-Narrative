@@ -37,14 +37,14 @@
     case 4:
       const page4Element: HTMLElement | null = document.querySelector(`.page4`);
       if (page4Element) {
-        page4Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+        page4Element.style.transform = `rotateY(-150deg) scale(0.75)`;
         page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
     case 2:
       const page2Element: HTMLElement | null = document.querySelector(`.page2`);
       if (page2Element) {
-        page2Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+        page2Element.style.transform = `rotateY(-145deg) scale(0.75)`;
         page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
       break;
