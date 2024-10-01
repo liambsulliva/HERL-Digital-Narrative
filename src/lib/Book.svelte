@@ -47,7 +47,7 @@
   function handleClick() {
     isOpen = !isOpen;
     if (isOpen) {
-      backPage = 3;
+      backPage = 5;
       frontPage = 4;
       tiltX = 0;
       tiltY = 0;
@@ -112,9 +112,9 @@
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
   {#each Array(6) as _, i}
     <div class="page{i + 1}">
-      {#if i === frontPage}
+      {#if i + 1 === frontPage}
         <NextPageBtn />
-      {:else if i === backPage}
+      {:else if i + 1 === backPage}
         <LastPageBtn />
       {/if}
     </div>
