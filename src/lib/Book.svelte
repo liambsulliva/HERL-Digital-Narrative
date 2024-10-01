@@ -1,11 +1,18 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import FrontCover from "../images/Cover-Front.webp";
+  import NextPageBtn from "./NextPageBtn.svelte";
+  import LastPageBtn from "./LastPageBtn.svelte";
 
   export let class_ = "";
   let book: HTMLElement;
+
   let isHovering = false;
   export let isOpen = false;
+  let frontPage = 0;
+  let backPage = 0;
+
+  // Applicable when let isOpen = false;
   let tiltX = 9;
   let tiltY = -9;
   let translateX = 0;
@@ -40,12 +47,16 @@
   function handleClick() {
     isOpen = !isOpen;
     if (isOpen) {
+      backPage = 3;
+      frontPage = 4;
       tiltX = 0;
       tiltY = 0;
       translateX = 50;
       spineDisplay = "none";
       paperBlockDisplay = "none";
     } else {
+      backPage = 0;
+      frontPage = 0;
       translateX = 0;
     }
     // Wait for initial animation to finish before setting down/picking up
@@ -100,7 +111,13 @@
   <div class="spine" style="display: {spineDisplay};"></div>
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
   {#each Array(6) as _, i}
-    <div class="page{i + 1}"></div>
+    <div class="page{i + 1}">
+      {#if i === frontPage}
+        <NextPageBtn />
+      {:else if i === backPage}
+        <LastPageBtn />
+      {/if}
+    </div>
   {/each}
 </div>
 
