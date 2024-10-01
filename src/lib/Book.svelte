@@ -49,17 +49,72 @@
       }
       break;
     default:
-      if (!isOpen) {
-        for (let i = 1; i <= 6; i++) {
-          const pageElement: HTMLElement | null = document.querySelector(
-            `.page${i}`,
-          );
-          if (pageElement) {
-            pageElement.style.transform = `rotateY(0) scale(1)`;
-            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      setTimeout(() => {
+        if (!isOpen) {
+          for (let i = 1; i <= 6; i++) {
+            const pageElement: HTMLElement | null = document.querySelector(
+              `.page${i}`,
+            );
+            if (pageElement) {
+              pageElement.style.transform = `rotateY(0) scale(1)`;
+              pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+            }
           }
         }
+      }, 500);
+      break;
+  }
+
+  $: switch (frontPage) {
+    case 3:
+      const page1Element: HTMLElement | null = document.querySelector(`.page3`);
+      if (page1Element) {
+        page1Element.style.transform = `rotateY(-30deg) scale(0.75)`;
+        page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
+      break;
+    case 5:
+      const page3Element: HTMLElement | null = document.querySelector(`.page5`);
+      if (page3Element) {
+        page3Element.style.transform = `rotateY(-25deg) scale(0.75)`;
+        page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 4:
+      const page5Element: HTMLElement | null = document.querySelector(`.page4`);
+      if (page5Element) {
+        page5Element.style.transform = `rotateY(-20deg) scale(0.75)`;
+        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 2:
+      const page4Element: HTMLElement | null = document.querySelector(`.page2`);
+      if (page4Element) {
+        page4Element.style.transform = `rotateY(-15deg) scale(0.75)`;
+        page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    case 6:
+      const page2Element: HTMLElement | null = document.querySelector(`.page6`);
+      if (page2Element) {
+        page2Element.style.transform = `rotateY(-10deg) scale(0.75)`;
+        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+      }
+      break;
+    default:
+      setTimeout(() => {
+        if (!isOpen) {
+          for (let i = 1; i <= 6; i++) {
+            const pageElement: HTMLElement | null = document.querySelector(
+              `.page${i}`,
+            );
+            if (pageElement) {
+              pageElement.style.transform = `rotateY(0) scale(1)`;
+              pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+            }
+          }
+        }
+      }, 500);
       break;
   }
 
@@ -105,10 +160,56 @@
       translateX = 50;
       spineDisplay = "none";
       paperBlockDisplay = "none";
+      for (let i = 1; i <= 6; i++) {
+        const page1Element: HTMLElement | null =
+          document.querySelector(`.page1`);
+        const page2Element: HTMLElement | null =
+          document.querySelector(`.page2`);
+        const page3Element: HTMLElement | null =
+          document.querySelector(`.page3`);
+        const page4Element: HTMLElement | null =
+          document.querySelector(`.page4`);
+        const page5Element: HTMLElement | null =
+          document.querySelector(`.page5`);
+        const page6Element: HTMLElement | null =
+          document.querySelector(`.page6`);
+        if (
+          page1Element &&
+          page2Element &&
+          page3Element &&
+          page4Element &&
+          page5Element &&
+          page6Element
+        ) {
+          page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+          page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          page2Element.style.transform = `rotateY(-20deg) scale(0.75)`;
+          page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          page3Element.style.transform = `rotateY(-160deg) scale(0.75)`;
+          page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          page4Element.style.transform = `rotateY(-25deg) scale(0.75)`;
+          page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          page5Element.style.transform = `rotateY(-155deg) scale(0.75)`;
+          page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          page6Element.style.transform = `rotateY(-15deg) scale(0.75)`;
+          page6Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        }
+      }
     } else {
       backPage = 0;
       frontPage = 0;
       translateX = 0;
+      if (!isOpen) {
+        for (let i = 1; i <= 6; i++) {
+          const pageElement: HTMLElement | null = document.querySelector(
+            `.page${i}`,
+          );
+          if (pageElement) {
+            pageElement.style.transform = `rotateY(0) scale(1)`;
+            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          }
+        }
+      }
     }
     // Wait for initial animation to finish before setting down/picking up
     setTimeout(() => {
@@ -333,30 +434,7 @@
     transform: rotateY(-170deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
-  .book.open .page1 {
-    transform: rotateY(-165deg) scale(0.75);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book.open .page2 {
-    transform: rotateY(-20deg) scale(0.75);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book.open .page3 {
-    transform: rotateY(-35deg) scale(0.75);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book.open .page4 {
-    transform: rotateY(-25deg) scale(0.75);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book.open .page5 {
-    transform: rotateY(-30deg) scale(0.75);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
-  .book.open .page6 {
-    transform: rotateY(-15deg) scale(0.75);
-    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
-  }
+
   .book.open .back {
     transform: rotateY(-10deg) scale(0.75);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
