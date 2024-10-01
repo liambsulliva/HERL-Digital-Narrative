@@ -160,40 +160,32 @@
       translateX = 50;
       spineDisplay = "none";
       paperBlockDisplay = "none";
-      for (let i = 1; i <= 6; i++) {
-        const page1Element: HTMLElement | null =
-          document.querySelector(`.page1`);
-        const page2Element: HTMLElement | null =
-          document.querySelector(`.page2`);
-        const page3Element: HTMLElement | null =
-          document.querySelector(`.page3`);
-        const page4Element: HTMLElement | null =
-          document.querySelector(`.page4`);
-        const page5Element: HTMLElement | null =
-          document.querySelector(`.page5`);
-        const page6Element: HTMLElement | null =
-          document.querySelector(`.page6`);
-        if (
-          page1Element &&
-          page2Element &&
-          page3Element &&
-          page4Element &&
-          page5Element &&
-          page6Element
-        ) {
-          page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
-          page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          page2Element.style.transform = `rotateY(-20deg) scale(0.75)`;
-          page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          page3Element.style.transform = `rotateY(-160deg) scale(0.75)`;
-          page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          page4Element.style.transform = `rotateY(-25deg) scale(0.75)`;
-          page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          page5Element.style.transform = `rotateY(-155deg) scale(0.75)`;
-          page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          page6Element.style.transform = `rotateY(-15deg) scale(0.75)`;
-          page6Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        }
+      const page1Element: HTMLElement | null = document.querySelector(`.page1`);
+      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
+      const page3Element: HTMLElement | null = document.querySelector(`.page3`);
+      const page4Element: HTMLElement | null = document.querySelector(`.page4`);
+      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
+      const page6Element: HTMLElement | null = document.querySelector(`.page6`);
+      if (
+        page1Element &&
+        page2Element &&
+        page3Element &&
+        page4Element &&
+        page5Element &&
+        page6Element
+      ) {
+        page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
+        page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        page2Element.style.transform = `rotateY(-20deg) scale(0.75)`;
+        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        page3Element.style.transform = `rotateY(-160deg) scale(0.75)`;
+        page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        page4Element.style.transform = `rotateY(-25deg) scale(0.75)`;
+        page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        page5Element.style.transform = `rotateY(-155deg) scale(0.75)`;
+        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        page6Element.style.transform = `rotateY(-15deg) scale(0.75)`;
+        page6Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       }
     } else {
       backPage = 0;
@@ -230,7 +222,7 @@
         tiltX = 9;
         tiltY = -9;
       }
-    }, 1000);
+    }, 550);
   }
 
   onMount(() => {
