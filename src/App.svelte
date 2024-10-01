@@ -4,6 +4,32 @@
   import PittBanner from "./lib/PittBanner.svelte";
   import VABanner from "./lib/VABanner.svelte";
   import Book from "./lib/Book.svelte";
+
+  let bookOpen = false;
+  $: if (bookOpen) {
+    const header = document.querySelector("h1");
+    const subheading = document.querySelector("p");
+    if (header && subheading) {
+      header.style.opacity = "0";
+      subheading.style.opacity = "0";
+
+      setTimeout(() => {
+        header.classList.add("hidden");
+        subheading.classList.add("hidden");
+      }, 500);
+    }
+  } else {
+    const header = document.querySelector("h1");
+    const subheading = document.querySelector("p");
+    if (header && subheading) {
+      header.classList.remove("hidden");
+      subheading.classList.remove("hidden");
+      setTimeout(() => {
+        header.style.opacity = "1";
+        subheading.style.opacity = "1";
+      }, 10); // Delay for interpreter to remove class
+    }
+  }
 </script>
 
 <header class="flex p-3 w-screen items-center justify-between">
@@ -25,7 +51,7 @@
   <p class="mt-1 mb-4 text-sm text-gray-600 dark:text-gray-300">
     A journey through 30 years of innovation.
   </p>
-  <Book />
+  <Book bind:isOpen={bookOpen} />
 </main>
 
 <style lang="postcss">
@@ -33,5 +59,9 @@
     font-family: "Rubik", Helvetica, sans-serif, system-ui;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  h1,
+  p {
+    transition: opacity 0.5s ease-in-out;
   }
 </style>

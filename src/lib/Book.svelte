@@ -5,7 +5,7 @@
   export let class_ = "";
   let book: HTMLElement;
   let isHovering = false;
-  let isOpen = false;
+  export let isOpen = false;
   let tiltX = 9;
   let tiltY = -9;
   let translateX = 0;
@@ -107,7 +107,8 @@
 <style>
   .book {
     transform-style: preserve-3d;
-    position: relative;
+    position: absolute;
+    top: 25%;
     margin: 5vmin;
     cursor: pointer;
     transition: transform 0.5s ease-out;
