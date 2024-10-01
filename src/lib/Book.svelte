@@ -12,6 +12,60 @@
   let frontPage = 0;
   let backPage = 0;
 
+  // Define page rotation configurations
+  const pageConfigurations = {
+    "1,3": {
+      1: -165,
+      2: -150,
+      3: -170,
+      4: -25,
+      5: -30,
+      6: -15,
+      front: -170,
+      back: -10,
+    },
+    "3,5": {
+      1: -150,
+      2: -140,
+      3: -160,
+      4: -25,
+      5: -170,
+      6: -15,
+      front: -155,
+      back: -10,
+    },
+    "5,4": {
+      1: -145,
+      2: -135,
+      3: -155,
+      4: -170,
+      5: -160,
+      6: -15,
+      front: -150,
+      back: -10,
+    },
+    "4,2": {
+      1: -140,
+      2: -170,
+      3: -150,
+      4: -160,
+      5: -145,
+      6: -15,
+      front: -145,
+      back: -10,
+    },
+    "2,6": {
+      1: -135,
+      2: -160,
+      3: -145,
+      4: -150,
+      5: -140,
+      6: -170,
+      front: -140,
+      back: -10,
+    },
+  };
+
   // Applicable when let isOpen = false;
   let tiltX = 9;
   let tiltY = -9;
@@ -29,7 +83,7 @@
     const centerY = rect.height / 2;
     tiltX = ((y - centerY) / centerY) * 10;
     tiltY = ((centerX - x) / centerX) * 10;
-    console.log(tiltX, tiltY);
+    //console.log(tiltX, tiltY);
   }
 
   function handleMouseEnter() {
@@ -47,8 +101,8 @@
   function handleClick() {
     isOpen = !isOpen;
     if (isOpen) {
-      backPage = 3;
-      frontPage = 1;
+      backPage = 1;
+      frontPage = 3;
       tiltX = 0;
       tiltY = 0;
       translateX = 50;
@@ -113,9 +167,9 @@
   {#each Array(6) as _, i}
     <div class="page{i + 1}">
       {#if i + 1 === frontPage}
-        <NextPageBtn bind:pageNum={frontPage} />
+        <NextPageBtn bind:frontPage bind:backPage />
       {:else if i + 1 === backPage}
-        <LastPageBtn bind:pageNum={backPage} />
+        <LastPageBtn bind:frontPage bind:backPage />
       {/if}
     </div>
   {/each}

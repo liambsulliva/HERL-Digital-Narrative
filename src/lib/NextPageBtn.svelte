@@ -1,15 +1,18 @@
 <script lang="ts">
-  export let pageNum = 0;
+  export let frontPage = 0;
+  export let backPage = 0;
   function handleClick(event: MouseEvent) {
     event?.stopPropagation();
-    pageNum += 1;
+    backPage = frontPage;
+    frontPage += 2;
+    console.log(backPage, frontPage);
   }
 </script>
 
 <button
   on:click={handleClick}
-  aria-label="Last Page Button"
-  class="flex justify-end mt-4 z-100"
+  aria-label="Next Page Button"
+  class="absolute right-0 z-100"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
