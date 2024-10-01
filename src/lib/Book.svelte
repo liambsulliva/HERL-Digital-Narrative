@@ -12,8 +12,16 @@
   let frontPage = 0;
   let backPage = 0;
 
+  type PageConfig = {
+    [key: string]: {
+      [key: number]: number;
+      front: number;
+      back: number;
+    };
+  };
+
   // Define page rotation configurations
-  const pageConfigurations = {
+  const pageConfigurations: PageConfig = {
     "1,3": {
       1: -165,
       2: -20,
@@ -65,6 +73,23 @@
       back: -10,
     },
   };
+
+  function updatePageRotations() {
+    const pages = 6; // total number of pages
+    const rotations = pageConfigurations[`${backPage},${frontPage}`] || [];
+
+    for (let i = 1; i <= pages; i++) {
+      const pageElement: HTMLElement | null = document.querySelector(
+        `.page${i}`,
+      );
+      if (pageElement) {
+        const rotation = rotations[i - 1];
+        if (rotation) {
+          pageElement.style.transform = `rotateY(${rotation}deg) scale(0.75)`;
+        }
+      }
+    }
+  }
 
   // Applicable when let isOpen = false;
   let tiltX = 9;
