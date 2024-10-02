@@ -9,9 +9,21 @@
 
   let isHovering = false;
   export let isOpen = false;
+  export let isFlipped = false;
   export let page = 0;
 
+  let tiltX = 9;
+  let tiltY = -9;
+  let rotateY = 0;
+  let translateX = 0;
+  let translateY = 0;
+  let spineDisplay = "block";
+  let paperBlockDisplay = "block";
+
   $: {
+    // Update y rotation based on whether the book is flipped
+    rotateY = isFlipped ? 180 : 0;
+
     if (isOpen) {
       const pages = [1, 2, 3, 4, 5, 6];
       pages.forEach((pageNum) => {
@@ -20,17 +32,14 @@
         );
         if (pageElement) {
           if (pageNum <= page) {
-            // Back pages
             const angle = -165 + (pageNum - 1) * 5;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           } else if (pageNum === page + 1) {
-            // Next page to be turned
             const angle = -35 + (pageNum - 2) * 5;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           } else {
-            // Front pages
             const angle = -30 + (pageNum - 3) * 5;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
@@ -50,14 +59,6 @@
     }
   }
 
-  // Applicable when let isOpen = false;
-  let tiltX = 9;
-  let tiltY = -9;
-  let translateX = 0;
-  let translateY = 0;
-  let spineDisplay = "block";
-  let paperBlockDisplay = "block";
-
   function handleMouseMove(event: MouseEvent) {
     if (!isHovering || isOpen) return;
     const rect = book.getBoundingClientRect();
@@ -69,16 +70,18 @@
     tiltY = ((centerX - x) / centerX) * 10;
   }
 
-  function handleMouseEnter() {
-    if (!isOpen) isHovering = true;
-  }
-
   function handleMouseLeave() {
     isHovering = false;
     if (!isOpen) {
       tiltX = 9;
       tiltY = -9;
     }
+  }
+
+  // Rest of the functions remain the same
+
+  function handleMouseEnter() {
+    if (!isOpen) isHovering = true;
   }
 
   function handleArrowKey(event: KeyboardEvent) {
@@ -104,7 +107,6 @@
       translateX = 0;
     }
 
-    // Wait for initial animation to finish before setting down/picking up
     setTimeout(() => {
       if (isOpen) {
         translateY = 80;
@@ -121,7 +123,7 @@
         spineDisplay = "block";
         paperBlockDisplay = "block";
         tiltX = 9;
-        tiltY = -9;
+        tiltY = isFlipped ? 9 : -9;
       }
     }, 550);
   }
@@ -144,8 +146,9 @@
 
 <div
   bind:this={book}
-  class="book {class_} {isOpen ? 'open' : ''}"
-  style="transform: rotateX({tiltX}deg) rotateY({tiltY}deg) translateX({translateX}%) translateY({translateY}%)"
+  class="book {class_} {isOpen ? 'open' : ''} {isFlipped ? 'flipped' : ''}"
+  style="transform: rotateX({tiltX}deg) rotateY({tiltY +
+    rotateY}deg) translateX({translateX}%) translateY({translateY}%)"
 >
   <div class="front">
     <img

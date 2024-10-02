@@ -7,6 +7,7 @@
   import Content from "./lib/Content.svelte";
 
   let bookOpen = false;
+  let isFlipped = false;
   let page = 0;
 
   $: if (bookOpen) {
@@ -40,8 +41,8 @@
     <PittBanner />
     <VABanner />
   </div>
-  <div class="flex items-center gap-1 p-2">
-    <!-- <FlipBtn /> -->
+  <div class="flex items-center gap-3 px-3">
+    <FlipBtn bind:isFlipped />
     <ModeSwitcher />
   </div>
 </header>
@@ -54,7 +55,7 @@
   <p class="mt-1 mb-4 text-sm text-gray-600 dark:text-gray-300">
     A journey through 30 years of innovation.
   </p>
-  <Book bind:isOpen={bookOpen} bind:page />
+  <Book bind:isOpen={bookOpen} bind:page bind:isFlipped on:flip />
   {#if bookOpen}
     <Content bind:page />
   {/if}
