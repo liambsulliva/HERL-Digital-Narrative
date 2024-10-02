@@ -103,7 +103,7 @@
             );
             if (pageElement) {
               pageElement.style.transform = `rotateY(0) scale(1)`;
-              pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+              pageElement.style.boxShadow = `none`;
             }
           }
         }
