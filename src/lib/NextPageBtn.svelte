@@ -6,7 +6,6 @@
     if (page < 5) {
       page++;
     }
-
     //console.log(backPage, frontPage);
   }
 

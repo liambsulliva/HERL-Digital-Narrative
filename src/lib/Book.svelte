@@ -38,17 +38,15 @@
         }
       });
     } else {
-      setTimeout(() => {
-        for (let i = 1; i <= 6; i++) {
-          const pageElement: HTMLElement | null = document.querySelector(
-            `.page${i}`,
-          );
-          if (pageElement) {
-            pageElement.style.transform = `rotateY(0) scale(1)`;
-            pageElement.style.boxShadow = `none`;
-          }
+      for (let i = 1; i <= 6; i++) {
+        const pageElement: HTMLElement | null = document.querySelector(
+          `.page${i}`,
+        );
+        if (pageElement) {
+          pageElement.style.transform = `rotateY(0) scale(1)`;
+          pageElement.style.boxShadow = `none`;
         }
-      }, 500);
+      }
     }
   }
 
