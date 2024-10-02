@@ -81,7 +81,16 @@
     }
   }
 
-  function handleClick() {
+  function handleArrowKey(event: KeyboardEvent) {
+    if (
+      (event.key === "ArrowRight" && !isOpen) ||
+      (event.key === "ArrowLeft" && page <= 1 && isOpen)
+    ) {
+      handleOpen();
+    }
+  }
+
+  function handleOpen() {
     isOpen = !isOpen;
     if (isOpen) {
       page = 1;
@@ -121,12 +130,14 @@
     book.addEventListener("mousemove", handleMouseMove);
     book.addEventListener("mouseenter", handleMouseEnter);
     book.addEventListener("mouseleave", handleMouseLeave);
-    book.addEventListener("click", handleClick);
+    book.addEventListener("click", handleOpen);
+    window.addEventListener("keydown", handleArrowKey);
     return () => {
       book.removeEventListener("mousemove", handleMouseMove);
       book.removeEventListener("mouseenter", handleMouseEnter);
       book.removeEventListener("mouseleave", handleMouseLeave);
-      book.removeEventListener("click", handleClick);
+      book.removeEventListener("click", handleOpen);
+      window.removeEventListener("keydown", handleArrowKey);
     };
   });
 </script>
