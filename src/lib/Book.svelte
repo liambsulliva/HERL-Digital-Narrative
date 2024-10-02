@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import FrontCover from "../images/Cover-Front.webp";
+  import BackCover from "../images/Cover-Back.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
   import LastPageBtn from "./LastPageBtn.svelte";
 
@@ -169,7 +170,13 @@
       class="rounded-r w-full h-full object-cover"
     />
   </div>
-  <div class="back rounded-r"></div>
+  <div class="back">
+    <img
+      src={BackCover}
+      alt="Back Cover"
+      class="rounded-r w-full h-full object-cover"
+    />
+  </div>
   <div class="spine" style="display: {spineDisplay};"></div>
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
   {#each Array(6) as _, i}
@@ -237,7 +244,7 @@
     width: 55px;
     height: 100%;
     left: -5%;
-    background: #624a2e;
+    background: #252525;
     transform: rotateY(-90deg) translateX(-40%);
     transform-style: preserve-3d;
   }
@@ -248,7 +255,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #4a3923;
+    background: #252525;
   }
 
   .spine::before {
