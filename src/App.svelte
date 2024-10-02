@@ -42,7 +42,9 @@
     <VABanner />
   </div>
   <div class="flex items-center gap-3 px-3">
-    <FlipBtn bind:isFlipped />
+    {#if !bookOpen}
+      <FlipBtn bind:isFlipped />
+    {/if}
     <ModeSwitcher />
   </div>
 </header>
