@@ -9,106 +9,47 @@
 
   let isHovering = false;
   export let isOpen = false;
-  export let frontPage = 0;
-  export let backPage = 0;
+  export let page = 0;
 
-  $: switch (backPage) {
-    case 1:
-      const page1Element: HTMLElement | null = document.querySelector(`.page1`);
-      if (page1Element) {
-        page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
-        page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 2:
-      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
-      if (page2Element) {
-        page2Element.style.transform = `rotateY(-160deg) scale(0.75)`;
-        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 3:
-      const page3Element: HTMLElement | null = document.querySelector(`.page3`);
-      if (page3Element) {
-        page3Element.style.transform = `rotateY(-155deg) scale(0.75)`;
-        page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 4:
-      const page4Element: HTMLElement | null = document.querySelector(`.page4`);
-      if (page4Element) {
-        page4Element.style.transform = `rotateY(-150deg) scale(0.75)`;
-        page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 5:
-      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
-      if (page5Element) {
-        page5Element.style.transform = `rotateY(-145deg) scale(0.75)`;
-        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    default:
+  $: {
+    if (isOpen) {
+      const pages = [1, 2, 3, 4, 5, 6];
+      pages.forEach((pageNum) => {
+        const pageElement: HTMLElement | null = document.querySelector(
+          `.page${pageNum}`,
+        );
+        if (pageElement) {
+          if (pageNum <= page) {
+            // Back pages
+            const angle = -165 + (pageNum - 1) * 5;
+            pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          } else if (pageNum === page + 1) {
+            // Next page to be turned
+            const angle = -35 + (pageNum - 2) * 5;
+            pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          } else {
+            // Front pages
+            const angle = -30 + (pageNum - 3) * 5;
+            pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          }
+        }
+      });
+    } else {
       setTimeout(() => {
-        if (!isOpen) {
-          for (let i = 1; i <= 6; i++) {
-            const pageElement: HTMLElement | null = document.querySelector(
-              `.page${i}`,
-            );
-            if (pageElement) {
-              pageElement.style.transform = `rotateY(0) scale(1)`;
-              pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-            }
+        for (let i = 1; i <= 6; i++) {
+          const pageElement: HTMLElement | null = document.querySelector(
+            `.page${i}`,
+          );
+          if (pageElement) {
+            pageElement.style.transform = `rotateY(0) scale(1)`;
+            pageElement.style.boxShadow = `none`;
           }
         }
       }, 500);
-      break;
-  }
-
-  $: switch (frontPage) {
-    case 2:
-      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
-      if (page2Element) {
-        page2Element.style.transform = `rotateY(-35deg) scale(0.75)`;
-        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 3:
-      const page3Element: HTMLElement | null = document.querySelector(`.page3`);
-      if (page3Element) {
-        page3Element.style.transform = `rotateY(-30deg) scale(0.75)`;
-        page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 4:
-      const page4Element: HTMLElement | null = document.querySelector(`.page4`);
-      if (page4Element) {
-        page4Element.style.transform = `rotateY(-25deg) scale(0.75)`;
-        page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    case 5:
-      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
-      if (page5Element) {
-        page5Element.style.transform = `rotateY(-20deg) scale(0.75)`;
-        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
-      break;
-    default:
-      setTimeout(() => {
-        if (!isOpen) {
-          for (let i = 1; i <= 6; i++) {
-            const pageElement: HTMLElement | null = document.querySelector(
-              `.page${i}`,
-            );
-            if (pageElement) {
-              pageElement.style.transform = `rotateY(0) scale(1)`;
-              pageElement.style.boxShadow = `none`;
-            }
-          }
-        }
-      }, 500);
-      break;
+    }
   }
 
   // Applicable when let isOpen = false;
@@ -128,7 +69,6 @@
     const centerY = rect.height / 2;
     tiltX = ((y - centerY) / centerY) * 10;
     tiltY = ((centerX - x) / centerX) * 10;
-    //console.log(tiltX, tiltY);
   }
 
   function handleMouseEnter() {
@@ -146,56 +86,17 @@
   function handleClick() {
     isOpen = !isOpen;
     if (isOpen) {
-      backPage = 1;
-      frontPage = 2;
+      page = 1;
       tiltX = 0;
       tiltY = 0;
       translateX = 50;
       spineDisplay = "none";
       paperBlockDisplay = "none";
-      const page1Element: HTMLElement | null = document.querySelector(`.page1`);
-      const page2Element: HTMLElement | null = document.querySelector(`.page2`);
-      const page3Element: HTMLElement | null = document.querySelector(`.page3`);
-      const page4Element: HTMLElement | null = document.querySelector(`.page4`);
-      const page5Element: HTMLElement | null = document.querySelector(`.page5`);
-      const page6Element: HTMLElement | null = document.querySelector(`.page6`);
-      if (
-        page1Element &&
-        page2Element &&
-        page3Element &&
-        page4Element &&
-        page5Element &&
-        page6Element
-      ) {
-        page1Element.style.transform = `rotateY(-165deg) scale(0.75)`;
-        page1Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page2Element.style.transform = `rotateY(-35deg) scale(0.75)`;
-        page2Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page3Element.style.transform = `rotateY(-30deg) scale(0.75)`;
-        page3Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page4Element.style.transform = `rotateY(-25deg) scale(0.75)`;
-        page4Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page5Element.style.transform = `rotateY(-20deg) scale(0.75)`;
-        page5Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-        page6Element.style.transform = `rotateY(-15deg) scale(0.75)`;
-        page6Element.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-      }
     } else {
-      backPage = 0;
-      frontPage = 0;
+      page = 0;
       translateX = 0;
-      if (!isOpen) {
-        for (let i = 1; i <= 6; i++) {
-          const pageElement: HTMLElement | null = document.querySelector(
-            `.page${i}`,
-          );
-          if (pageElement) {
-            pageElement.style.transform = `rotateY(0) scale(1)`;
-            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          }
-        }
-      }
     }
+
     // Wait for initial animation to finish before setting down/picking up
     setTimeout(() => {
       if (isOpen) {
@@ -249,10 +150,10 @@
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
   {#each Array(6) as _, i}
     <div class="page{i + 1}">
-      {#if i + 1 === frontPage}
-        <NextPageBtn bind:frontPage bind:backPage />
-      {:else if i + 1 === backPage}
-        <LastPageBtn bind:frontPage bind:backPage />
+      {#if i + 1 === page}
+        <LastPageBtn bind:page />
+      {:else if i + 1 === page + 1}
+        <NextPageBtn bind:page />
       {/if}
     </div>
   {/each}

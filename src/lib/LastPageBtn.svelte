@@ -1,12 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  export let frontPage = 0;
-  export let backPage = 0;
+  export let page = 0;
 
   function handlePageTurn() {
-    if (backPage > 1) {
-      frontPage = backPage;
-      backPage -= 1;
+    if (page > 1) {
+      page--;
     }
     //console.log(backPage, frontPage);
   }
@@ -30,7 +28,7 @@
   });
 </script>
 
-{#if backPage > 1}
+{#if page > 1}
   <button
     on:click={handleClick}
     aria-label="Last Page Button"

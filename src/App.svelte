@@ -7,8 +7,7 @@
   import Content from "./lib/Content.svelte";
 
   let bookOpen = false;
-  let frontPage = 0;
-  let backPage = 0;
+  let page = 0;
 
   $: if (bookOpen) {
     const header = document.querySelector("h1");
@@ -55,9 +54,9 @@
   <p class="mt-1 mb-4 text-sm text-gray-600 dark:text-gray-300">
     A journey through 30 years of innovation.
   </p>
-  <Book bind:isOpen={bookOpen} bind:frontPage bind:backPage />
+  <Book bind:isOpen={bookOpen} bind:page />
   {#if bookOpen}
-    <Content bind:frontPage bind:backPage />
+    <Content bind:page />
   {/if}
 </main>
 

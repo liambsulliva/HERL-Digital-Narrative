@@ -1,13 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  export let frontPage = 0;
-  export let backPage = 0;
+  export let page = 0;
 
   function handlePageTurn() {
-    if (frontPage < 6) {
-      backPage = frontPage;
-      frontPage += 1;
+    if (page < 5) {
+      page++;
     }
+
     //console.log(backPage, frontPage);
   }
 
@@ -30,7 +29,7 @@
   });
 </script>
 
-{#if frontPage < 6}
+{#if page < 5}
   <button
     on:click={handleClick}
     aria-label="Next Page Button"
