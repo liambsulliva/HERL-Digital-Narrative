@@ -3,6 +3,7 @@
   import FrontCover from "../images/Cover-Front.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
   import LastPageBtn from "./LastPageBtn.svelte";
+  import Content from "./Content.svelte";
 
   export let class_ = "";
   let book: HTMLElement;

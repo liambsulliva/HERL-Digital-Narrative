@@ -4,6 +4,7 @@
   import PittBanner from "./lib/PittBanner.svelte";
   import VABanner from "./lib/VABanner.svelte";
   import Book from "./lib/Book.svelte";
+  import Content from "./lib/Content.svelte";
 
   let bookOpen = false;
   $: if (bookOpen) {
@@ -52,6 +53,9 @@
     A journey through 30 years of innovation.
   </p>
   <Book bind:isOpen={bookOpen} />
+  {#if bookOpen}
+    <Content />
+  {/if}
 </main>
 
 <style lang="postcss">
