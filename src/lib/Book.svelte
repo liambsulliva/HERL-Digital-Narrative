@@ -22,7 +22,19 @@
 
   $: {
     // Update y rotation based on whether the book is flipped
-    rotateY = isFlipped ? 180 : 0;
+    // Update y rotation based on whether the book is flipped
+    if (!isOpen) {
+      if (isFlipped) {
+        rotateY = 180;
+      } else {
+        rotateY = 0;
+      }
+    } else {
+      if (isFlipped) {
+        isFlipped = false;
+        rotateY = 0;
+      }
+    }
 
     if (isOpen) {
       const pages = [1, 2, 3, 4, 5, 6];
