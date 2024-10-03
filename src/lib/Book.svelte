@@ -23,7 +23,6 @@
 
   $: {
     // Update y rotation based on whether the book is flipped
-    // Update y rotation based on whether the book is flipped
     if (!isOpen) {
       if (isFlipped) {
         rotateY = 180;
@@ -90,8 +89,6 @@
       tiltY = -9;
     }
   }
-
-  // Rest of the functions remain the same
 
   function handleMouseEnter() {
     if (!isOpen) isHovering = true;

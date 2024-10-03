@@ -1,5 +1,7 @@
 # Week 1
 
+Current Deployment: https://herl-digital-narrative-5g74wlvf4-liambsullivas-projects.vercel.app
+
 This week involved a lot of planning and storyboarding! I knew going in that I wanted to create a skeumorphic layout. Since the assets given to me were in booklet format, I wanted to utilize said book as a visual metaphor in my layout, instead of retrofitting the assets into a different form of visual presentation.
 
 Agustin told me that he plans to put the final product in an iframe, so that gave me a couple of restrictions.
