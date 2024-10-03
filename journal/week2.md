@@ -1,6 +1,6 @@
 # Week 2
 
-Current Deployment: https://herl-digital-narrative-jdho57dmb-liambsullivas-projects.vercel.app
+Current Deployment: https://herl-digital-narrative-dlcv5ersg-liambsullivas-projects.vercel.app
 
 ### New Features!
 
