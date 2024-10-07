@@ -1,6 +1,6 @@
 # HERL Throughout the Years Digital Narrative
 
-This is a digital narrative project that I am working on as part of the HERL Throughout the Years program. The goal of this project is to create an interactive digital narrative that explores HERL's 30+ years of history developing cutting-edge technology for disabled veterans.
+This is a digital narrative project that I am working on as part of the HERL Throughout the Years program. The goal of this project is to create an interactive digital narrative that explores HERL's 30+ years of history developing cutting-edge technology for disabled veterans. This project is currently in active development and will be completed by the end of 2024.
 
 ## Technologies Used
 
@@ -29,4 +29,4 @@ This will start the development server and open your browser to the project.
 
 # Deployment
 
-This project is deployed on a webserver sponsored by the University of Pittsburgh. See the final product on the [HERL Website](https://herl.pitt.edu).
+This project is currently ongoing. When it is completed, you will be able to find the final product on the [HERL Website](https://herl.pitt.edu).
