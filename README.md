@@ -9,9 +9,9 @@ This is a digital narrative project that I am working on as part of the HERL Thr
 - TypeScript
 - Vite
 
-## Getting Started
+## Running Locally
 
-To get started, you will need to have Node.js installed on your computer. You can download it from the official Node.js website.
+If you want to run this project locally in its current state, you will need to have Node.js installed on your computer.
 
 Once you have Node.js installed, you can install the dependencies for this project by running the following command in your terminal:
 
