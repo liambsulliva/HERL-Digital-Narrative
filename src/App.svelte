@@ -31,7 +31,7 @@
       setTimeout(() => {
         header.style.opacity = "1";
         subheading.style.opacity = "1";
-      }, 10); // Delay for interpreter to remove class
+      }, 10);
     }
   }
 </script>
@@ -49,7 +49,7 @@
   </div>
 </header>
 <main
-  class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center"
+  class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center relative"
 >
   <h1 class="uppercase text-4xl leading-normal font-semibold">
     Human Engineering Research Labs
@@ -58,6 +58,7 @@
     A journey through 30 years of innovation.
   </p>
   <Book bind:isOpen={bookOpen} bind:page bind:isFlipped on:flip />
+
   {#if bookOpen}
     <Content bind:page />
   {/if}
@@ -72,5 +73,10 @@
   h1,
   p {
     transition: opacity 0.5s ease-in-out;
+  }
+
+  main {
+    position: relative;
+    z-index: 20;
   }
 </style>

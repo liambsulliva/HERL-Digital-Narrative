@@ -196,6 +196,7 @@
     transition: transform 0.5s ease-out;
     height: 52.5vmin;
     width: 75vmin;
+    z-index: 40;
   }
 
   .front,
@@ -359,4 +360,5 @@
       transform: rotateY(-90deg) translateX(-40%) translateZ(10px);
     }
   }
+
 </style>
