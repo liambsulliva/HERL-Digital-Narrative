@@ -32,22 +32,22 @@
     }
 
     if (isOpen) {
-      const totalPages = 13;
+      const totalPages = 14;
       for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
         const pageElement: HTMLElement | null = document.querySelector(
           `.page${pageNum}`,
         );
         if (pageElement) {
           if (pageNum <= page) {
-            const angle = -165 + (pageNum - 1) * 5;
+            const angle = -165 + (pageNum - 1) * 1.75;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           } else if (pageNum === page + 1) {
-            const angle = -35 + (pageNum - 2) * 5;
+            const angle = -35 + (pageNum - 2) * 1.75;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           } else {
-            const angle = -30 + (pageNum - 3) * 5;
+            const angle = -30 + (pageNum - 3) * 1.75;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           }
@@ -329,7 +329,7 @@
 
   .page1 {
     background: #efefef;
-    transform: translateZ(8px);
+    transform: translateZ(7px);
   }
   .page2 {
     background: #efefef;
@@ -337,19 +337,47 @@
   }
   .page3 {
     background: #f5f5f5;
-    transform: translateZ(4px);
+    transform: translateZ(5px);
   }
   .page4 {
     background: #f5f5f5;
-    transform: translateZ(2px);
+    transform: translateZ(4px);
   }
   .page5 {
     background: #fafafa;
-    transform: translateZ(0px);
+    transform: translateZ(3px);
   }
   .page6 {
     background: #fdfdfd;
+    transform: translateZ(2px);
+  }
+  .page7 {
+    background: #fdfdfd;
+    transform: translateZ(1px);
+  }
+  .page8 {
+    background: #fdfdfd;
+    transform: translateZ(0px);
+  }
+  .page9 {
+    background: #fdfdfd;
+    transform: translateZ(-1px);
+  }
+  .page10 {
+    background: #fdfdfd;
     transform: translateZ(-2px);
+  }
+  .page11 {
+    background: #fdfdfd;
+    transform: translateZ(-3px);
+  }
+  .page12 {
+    background: #fdfdfd;
+    transform: translateZ(-4px);
+  }
+  .page13 {
+    background: #fdfdfd;
+    transform: translateZ(-5px);
   }
 
   .front,

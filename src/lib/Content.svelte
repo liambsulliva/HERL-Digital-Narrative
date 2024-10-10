@@ -240,8 +240,7 @@
     <div class="additional-content">
       <h1 class="title">Content for Page {page}</h1>
       <p class="description">
-        Placeholder content for page {page}. You can replace this with your
-        actual content.
+        Placeholder content for page {page}.
       </p>
     </div>
   {/if}
