@@ -53,9 +53,12 @@
 <style>
   .content-container {
     position: absolute;
-    top: 35%;
+    top: 50vh; /* Increased from 35% to push down */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(
+      -50%,
+      -75%
+    ); /* Adjusted to center vertically based on new top */
     width: 80%;
     max-width: 800px;
     z-index: 30;
@@ -106,6 +109,8 @@
     .content-container {
       width: 90%;
       padding: 1rem;
+      top: 55%; /* Adjusted to maintain spacing on smaller screens */
+      transform: translate(-50%, -55%);
     }
 
     .title {
@@ -120,18 +125,14 @@
       width: 18rem;
       height: 2.5rem;
     }
-
-    .content-container {
-      top: 35%;
-      transform: translate(-50%, -60%);
-    }
   }
 
- 
   @media (max-width: 768px), (max-height: 800px) {
     .content-container {
       width: 85%;
       padding: 1.5rem;
+      top: 50%; /* Adjusted to maintain spacing on medium screens */
+      transform: translate(-50%, -50%);
     }
 
     .title {
@@ -146,17 +147,14 @@
       width: 20rem;
       height: 2.75rem;
     }
-
-    .content-container {
-      top: 35%;
-      transform: translate(-50%, -55%);
-    }
   }
 
   @media (max-width: 1024px), (max-height: 900px) {
     .content-container {
       width: 80%;
       padding: 2rem;
+      top: 45%; /* Slight adjustment for larger screens */
+      transform: translate(-50%, -20%);
     }
 
     .title {
@@ -171,21 +169,29 @@
       width: 22rem;
       height: 2.8rem;
     }
+  }
 
-
+  @media (max-height: 600px) {
     .content-container {
-      top: 25%;
-      transform: translate(-50%, -52%);
+      top: 55%; /* Increased to prevent clipping on very short heights */
+      transform: translate(-50%, -40%);
+    }
+
+    .title {
+      font-size: 1.25rem;
+    }
+
+    .description {
+      font-size: 0.8rem;
+    }
+
+    .parallel-paths .path {
+      width: 16rem;
+      height: 2.3rem;
     }
   }
 
- 
-  @media (max-height: 500px) {
-    .content-container {
-      top: 35%;
-      transform: translate(-50%, -65%);
-    }
-
+  @media (max-width: 480px) {
     .title {
       font-size: 1.25rem;
     }

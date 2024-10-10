@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import FrontCover from "../images/Cover-Front.webp";
   import BackCover from "../images/Cover-Back.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
@@ -22,7 +22,6 @@
   let paperBlockDisplay = "block";
 
   $: {
-    // Update y rotation based on whether the book is flipped
     if (!isOpen) {
       if (isFlipped) {
         rotateY = 180;
@@ -193,10 +192,20 @@
     position: relative;
     margin: 5vmin;
     cursor: pointer;
-    transition: transform 0.5s ease-out;
+    transition:
+      transform 0.5s ease-out,
+      width 0.5s ease-out,
+      height 0.5s ease-out;
+    max-width: 75vw;
     height: 52.5vmin;
     width: 75vmin;
     z-index: 40;
+  }
+
+  .book.open {
+    max-width: 65vw;
+    position: fixed;
+    bottom: 5rem;
   }
 
   .front,
@@ -360,5 +369,4 @@
       transform: rotateY(-90deg) translateX(-40%) translateZ(10px);
     }
   }
-
 </style>
