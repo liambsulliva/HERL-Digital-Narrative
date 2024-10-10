@@ -138,7 +138,7 @@
             establish this first-of- its-king clinic in the region.
           </p>
         </div>
-        <div class="milestone-12">
+        <div class="milestone-13">
           <p>
             TELE-REHABILITATION RESEARCH PROGRAM: HERL was the home of the first
             major iterations of this program, primarily funded by the VA.
@@ -162,17 +162,17 @@
         <h2 class="sub-title">2002</h2>
         <p>
           DATA LOGGER: The new, low-power, self-contained Data Logger developed
-          by researchers at HERL, provides a reliable method for
-          long-termmonitoring of manual wheelchair users’ activities in
-          real-worldenvironments.
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
         </p>
       </div>
       <div class="milestone-10">
         <p>
           PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
           of traditional shock absorption systems by offering a comprehensive
-          design that adeptly handles both vertical andhorizontal impact forces.
-          By incorporating a sturdy caster fork, it ensures long-lasting
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
           durability for wheelchairs and similar devices.
         </p>
       </div>
@@ -214,14 +214,14 @@
           GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
           (HERL Medical Director 1998-20) spearheaded a team of experts in
           organizing one of the most widely used and referenced documents in the
-          fi eld today: a Clinical Practice Guideline (CPG) on Preservation of
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
           Upper Limb Function Following Spinal Cord Injury (SCI).
         </p>
       </div>
       <div class="milestone-15">
         <p>
           OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
-          this innovative wheelchair design, focusing on eff ective shock
+          this innovative wheelchair design, focusing on effective shock
           absorption for both horizontal and vertical impacts during travel over
           uneven terrain.
         </p>
@@ -235,6 +235,14 @@
         <div class="path"></div>
         <div class="path"></div>
       </div>
+    </div>
+  {:else if page >= 6 && page <= 13}
+    <div class="additional-content">
+      <h1 class="title">Content for Page {page}</h1>
+      <p class="description">
+        Placeholder content for page {page}. You can replace this with your
+        actual content.
+      </p>
     </div>
   {/if}
 </div>
@@ -304,6 +312,10 @@
     height: 3rem;
     background: #4299e1;
     border-radius: 9999px;
+  }
+
+  .additional-content {
+    text-align: center;
   }
 
   @media (max-width: 480px), (max-height: 600px) {

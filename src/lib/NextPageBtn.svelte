@@ -3,7 +3,8 @@
   export let page = 0;
 
   function handlePageTurn() {
-    if (page < 5) {
+    if (page < 13) {
+      // Updated from 5 to 13
       page++;
     }
     //console.log(backPage, frontPage);
@@ -28,7 +29,8 @@
   });
 </script>
 
-{#if page < 5}
+{#if page < 13}
+  <!-- Updated from 5 to 13 -->
   <button
     on:click={handleClick}
     aria-label="Next Page Button"

@@ -23,11 +23,7 @@
 
   $: {
     if (!isOpen) {
-      if (isFlipped) {
-        rotateY = 180;
-      } else {
-        rotateY = 0;
-      }
+      rotateY = isFlipped ? 180 : 0;
     } else {
       if (isFlipped) {
         isFlipped = false;
@@ -36,8 +32,8 @@
     }
 
     if (isOpen) {
-      const pages = [1, 2, 3, 4, 5, 6];
-      pages.forEach((pageNum) => {
+      const totalPages = 13;
+      for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
         const pageElement: HTMLElement | null = document.querySelector(
           `.page${pageNum}`,
         );
@@ -56,9 +52,10 @@
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           }
         }
-      });
+      }
     } else {
-      for (let i = 1; i <= 6; i++) {
+      const totalPages = 13;
+      for (let i = 1; i <= totalPages; i++) {
         const pageElement: HTMLElement | null = document.querySelector(
           `.page${i}`,
         );
@@ -175,7 +172,7 @@
   </div>
   <div class="spine" style="display: {spineDisplay};"></div>
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
-  {#each Array(6) as _, i}
+  {#each Array(13) as _, i}
     <div class="page{i + 1}">
       {#if i + 1 === page}
         <LastPageBtn bind:page />
@@ -217,7 +214,14 @@
   .page3,
   .page4,
   .page5,
-  .page6 {
+  .page6,
+  .page7,
+  .page8,
+  .page9,
+  .page10,
+  .page11,
+  .page12,
+  .page13 {
     position: absolute;
     top: 0;
     left: 0;
@@ -232,6 +236,13 @@
   .page4,
   .page5,
   .page6,
+  .page7,
+  .page8,
+  .page9,
+  .page10,
+  .page11,
+  .page12,
+  .page13,
   .front,
   .back {
     transform-origin: left center;
@@ -302,7 +313,14 @@
   .page3,
   .page4,
   .page5,
-  .page6 {
+  .page6,
+  .page7,
+  .page8,
+  .page9,
+  .page10,
+  .page11,
+  .page12,
+  .page13 {
     width: 98%;
     height: 98%;
     top: 1%;
@@ -342,7 +360,14 @@
   .page3,
   .page4,
   .page5,
-  .page6 {
+  .page6,
+  .page7,
+  .page8,
+  .page9,
+  .page10,
+  .page11,
+  .page12,
+  .page13 {
     border-radius: 0 5px 5px 0;
   }
 
