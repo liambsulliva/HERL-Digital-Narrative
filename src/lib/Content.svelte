@@ -228,6 +228,654 @@
       </div>
     </div>
   {:else if page === 5}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 6}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 7}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 8}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 9}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 10}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 11}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 12}
+    <div class="grid-container">
+      <div class="milestone-8">
+        <h2 class="sub-title">2001</h2>
+        <p>
+          ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
+          developed by HERL’s team, marked a significant leap from traditional
+          wheelchair handrims. Ergonomic hand rims have successfully tackled
+          traditional push rim issues by offering a better hand fit, enhancing
+          mechanical efficiency during wheelchair propulsion.
+        </p>
+      </div>
+      <div class="milestone-9">
+        <h2 class="sub-title">2002</h2>
+        <p>
+          DATA LOGGER: The new, low-power, self-contained Data Logger developed
+          by researchers at HERL, provides a reliable method for long-term
+          monitoring of manual wheelchair users’ activities in real-world
+          environments.
+        </p>
+      </div>
+      <div class="milestone-10">
+        <p>
+          PNEUMATIC SUSPENSION CASTER WHEELCHAIR FORK: Addressed the limitations
+          of traditional shock absorption systems by offering a comprehensive
+          design that adeptly handles both vertical and horizontal impact
+          forces. By incorporating a sturdy caster fork, it ensures long-lasting
+          durability for wheelchairs and similar devices.
+        </p>
+      </div>
+      <div class="milestone-11">
+        <h2 class="sub-title">2003</h2>
+        <p>
+          VIRTUAL SEATING COACH: An innovative technology providing personalized
+          wheelchair seating recommendations for enhanced comfort and support,
+          brought to commercial market by PERMOBIL.
+        </p>
+      </div>
+      <div class="milestone-12">
+        <p>
+          GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
+          vibration dampening in both horizontal and vertical directions, and
+          minimizes vibration transfer to the body of the rider, was brought to
+          the Market by TiLite, LLC.
+        </p>
+      </div>
+      <div class="milestone-13">
+        <h2 class="sub-title">2004</h2>
+        <p>
+          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
+          (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+          a discussion about the needs of rehabilitation healthcare providers,
+          physical medicine and rehabilitation medicine residents to learn and
+          integrate the most current knowledge and practiceto provide the
+          highest level of care to wounded, injured, and ill service members in
+          light of the patients coming to Walter Reed Army Medical Center and
+          later Walter Reed National Military Medical Center (WRNMC). The SoS
+          brings experts to WRNMC so that there can be greater participation by
+          WRNMC providers and residents, and exposes experts to WRNMC and
+          Uniformed Services University of Health Sciences.
+        </p>
+      </div>
+      <div class="milestone-14">
+        <h2 class="sub-title">2005</h2>
+        <p>
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
+          (HERL Medical Director 1998-20) spearheaded a team of experts in
+          organizing one of the most widely used and referenced documents in the
+          field today: a Clinical Practice Guideline (CPG) on Preservation of
+          Upper Limb Function Following Spinal Cord Injury (SCI).
+        </p>
+      </div>
+      <div class="milestone-15">
+        <p>
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT A patent was awarded for
+          this innovative wheelchair design, focusing on effective shock
+          absorption for both horizontal and vertical impacts during travel over
+          uneven terrain.
+        </p>
+      </div>
+    </div>
+  {:else if page === 13}
     <div class="content-wrapper">
       <h1 class="title">Parallel Paths</h1>
       <div class="parallel-paths">
@@ -235,13 +883,6 @@
         <div class="path"></div>
         <div class="path"></div>
       </div>
-    </div>
-  {:else if page >= 6 && page <= 13}
-    <div class="additional-content">
-      <h1 class="title">Content for Page {page}</h1>
-      <p class="description">
-        Placeholder content for page {page}.
-      </p>
     </div>
   {/if}
 </div>
