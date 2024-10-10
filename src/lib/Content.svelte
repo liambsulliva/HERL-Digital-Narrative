@@ -191,7 +191,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     .title {
       font-size: 1.25rem;
     }
