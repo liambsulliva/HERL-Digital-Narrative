@@ -96,6 +96,10 @@
             a 25+ year legacy..`,
           ],
         },
+      ],
+    },
+    4: {
+      sections: [
         {
           year: "2000",
           milestones: [
@@ -110,10 +114,6 @@
             major iterations of this program, primarily funded by the VA.`,
           ],
         },
-      ],
-    },
-    4: {
-      sections: [
         {
           year: "2001",
           milestones: [
@@ -133,6 +133,10 @@
             environments.`,
           ],
         },
+      ],
+    },
+    5: {
+      sections: [
         {
           year: "2003",
           milestones: [
@@ -177,7 +181,7 @@
         },
       ],
     },
-    5: {
+    6: {
       sections: [
         {
           year: "2006",
@@ -211,6 +215,10 @@
             each individual.`,
           ],
         },
+      ],
+    },
+    7: {
+      sections: [
         {
           year: "2010",
           milestones: [
@@ -227,10 +235,6 @@
             maneuverability on diverse terrains.`,
           ],
         },
-      ],
-    },
-    6: {
-      sections: [
         {
           year: "2011",
           milestones: [
@@ -246,6 +250,10 @@
             from the VA and Pitt communities.`,
           ],
         },
+      ],
+    },
+    8: {
+      sections: [
         {
           year: "2012",
           milestones: [
@@ -261,15 +269,6 @@
             `MOBILE CASTER PATENT: Designed to prevent drift and flutter, ensuring
             enhanced tracking when a mobile device moves across a side-sloped
             surface.`,
-            `USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT: A
-            technology to streamline backrest adjustments for users, improving
-            simplicity, aesthetics, and incorporating essential features for
-            commercial viability.`,
-            `GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
-            (HERL Medical Director 1998-20) spearheaded a team of experts in
-            organizing one of the most widely used and referenced documents in the
-            field today: a Clinical Practice Guideline (CPG) on Preservation of
-            Upper Limb Function Following Spinal Cord Injury (SCI).`,
           ],
         },
         {
@@ -281,6 +280,10 @@
             commercial viability.`,
           ],
         },
+      ],
+    },
+    9: {
+      sections: [
         {
           year: "2015",
           milestones: [
@@ -302,10 +305,6 @@
             processes.`,
           ],
         },
-      ],
-    },
-    7: {
-      sections: [
         {
           year: "2017",
           milestones: [
@@ -314,6 +313,10 @@
             devices that run solely on compressed air technology.`,
           ],
         },
+      ],
+    },
+    10: {
+      sections: [
         {
           year: "2018",
           milestones: [
@@ -344,6 +347,10 @@
             (“ON THE MOVE PAD”) PATENT.`,
           ],
         },
+      ],
+    },
+    11: {
+      sections: [
         {
           year: "2021",
           milestones: [
@@ -368,6 +375,10 @@
             intersection of engineering and medicine.`,
           ],
         },
+      ],
+    },
+    12: {
+      sections: [
         {
           year: "2023",
           milestones: [
