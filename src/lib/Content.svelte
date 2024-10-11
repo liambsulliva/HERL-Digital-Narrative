@@ -397,11 +397,7 @@
         {
           title: "Parallel Paths",
           description: `
-            <div class="parallel-paths">
-              <div class="path"></div>
-              <div class="path"></div>
-              <div class="path"></div>
-            </div>
+            No content available for this page.
           `,
         },
       ],
@@ -409,6 +405,8 @@
   };
 </script>
 
+<!-- svelte-ignore css_unused_selector -->
+<!-- svelte-ignore css_unused_selector -->
 <div class="content-container">
   <!-- If the page exists -->
   {#if contentData[page as keyof Record<number, ContentSection>]}
@@ -507,25 +505,6 @@
     line-height: 1.5;
   }
 
-  .parallel-paths {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    margin-top: 2rem;
-  }
-
-  .path {
-    width: 24rem;
-    height: 3rem;
-    background: #4299e1;
-    border-radius: 9999px;
-  }
-
-  .custom-content {
-    text-align: center;
-  }
-
   @media (max-width: 1024px) {
     .milestones-grid {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -559,11 +538,6 @@
     .description {
       font-size: 0.875rem;
     }
-
-    .parallel-paths .path {
-      width: 18rem;
-      height: 2.5rem;
-    }
   }
 
   @media (max-width: 768px), (max-height: 800px) {
@@ -580,11 +554,6 @@
 
     .description {
       font-size: 0.95rem;
-    }
-
-    .parallel-paths .path {
-      width: 20rem;
-      height: 2.75rem;
     }
   }
 
@@ -603,11 +572,6 @@
     .description {
       font-size: 0.975rem;
     }
-
-    .parallel-paths .path {
-      width: 22rem;
-      height: 2.8rem;
-    }
   }
 
   @media (max-height: 600px) {
@@ -623,11 +587,6 @@
     .description {
       font-size: 0.8rem;
     }
-
-    .parallel-paths .path {
-      width: 16rem;
-      height: 2.3rem;
-    }
   }
 
   @media (max-width: 500px) {
@@ -637,11 +596,6 @@
 
     .description {
       font-size: 0.8rem;
-    }
-
-    .parallel-paths .path {
-      width: 16rem;
-      height: 2.3rem;
     }
   }
 </style>
