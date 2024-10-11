@@ -78,7 +78,7 @@
                 to optimize the reduction of repetitive stress.
               `,
               picture: {
-                src: "../images/content/2024_Cal_Copy_Page_06_Image_0001.jpg",
+                src: "./src/images/content/2024_Cal_Copy_Page_06_Image_0001.jpg",
                 alt: "Dr. Alicia Koontz with a SMARTWheel.",
               },
             },
@@ -674,43 +674,70 @@
 <div class="content-container">
   {#if currentPageData.length}
     <div class="content-wrapper">
-      {#each currentPageData as section}
-        {#if section.year}
-          <div class="year-section">
-            <h2 class="sub-title">{section.year}</h2>
-            {#if section.milestones}
-              <div
-                class="milestones-grid"
-                style="grid-template-columns: repeat({section.milestones
-                  .length}, 1fr);"
-              >
-                {#each section.milestones as milestone}
-                  <div class="milestone-item">
-                    {#if milestone.picture}
-                      <Picture
-                        src={milestone.picture.src}
-                        alt={milestone.picture.alt}
-                      />
-                    {/if}
-                    {#if milestone.title}
-                      <p><strong>{milestone.title}</strong></p>
-                    {/if}
-                    <p>{milestone.description}</p>
-                  </div>
-                {/each}
+      {#if page === 1}
+        <div class="mission-vision-layout">
+          <div class="image-column">
+            <Picture
+              src="./src/images/content/2024_Cal_Copy_Page_04_Image_0001.jpg"
+              alt="Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt) , John
+Bollinger (PVA), Dr. Thomas P. Detre, (Pitt) ,Dr. Rory A. Cooper (VA/Pitt) ,
+Laura Miller (VA), Dr. Charles Robinson (Pitt)."
+            />
+          </div>
+          <div class="text-column">
+            {#each currentPageData as section}
+              <div class="info-section">
+                <div class="info-content">
+                  <h1 class="title">{section.title}</h1>
+                  <p class="description">{section.description}</p>
+                </div>
               </div>
-            {/if}
+            {/each}
           </div>
-        {:else if section.title && section.description}
-          <div class="info-section">
-            {#if section.picture}
-              <Picture src={section.picture.src} alt={section.picture.alt} />
-            {/if}
-            <h1 class="title">{section.title}</h1>
-            <p class="description">{section.description}</p>
-          </div>
-        {/if}
-      {/each}
+        </div>
+      {:else}
+        {#each currentPageData as section}
+          {#if section.year}
+            <div class="year-section">
+              <h2 class="sub-title">{section.year}</h2>
+              {#if section.milestones}
+                <div
+                  class="milestones-grid"
+                  style="grid-template-columns: repeat({section.milestones
+                    .length}, 1fr);"
+                >
+                  {#each section.milestones as milestone}
+                    <div class="milestone-item">
+                      {#if milestone.picture}
+                        <Picture
+                          src={milestone.picture.src}
+                          alt={milestone.picture.alt}
+                        />
+                      {/if}
+                      <div class="milestone-content">
+                        {#if milestone.title}
+                          <p><strong>{milestone.title}</strong></p>
+                        {/if}
+                        <p>{milestone.description}</p>
+                      </div>
+                    </div>
+                  {/each}
+                </div>
+              {/if}
+            </div>
+          {:else if section.title && section.description}
+            <div class="info-section">
+              {#if section.picture}
+                <Picture src={section.picture.src} alt={section.picture.alt} />
+              {/if}
+              <div class="info-content">
+                <h1 class="title">{section.title}</h1>
+                <p class="description">{section.description}</p>
+              </div>
+            </div>
+          {/if}
+        {/each}
+      {/if}
     </div>
   {:else}
     <p>No content available for this page.</p>
@@ -749,6 +776,9 @@
   }
 
   .milestone-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background: #fefefe;
     padding: 1rem;
     border-radius: 8px;
@@ -762,10 +792,6 @@
 
   .year-section {
     margin-bottom: 2rem;
-  }
-
-  .info-section {
-    text-align: center;
   }
 
   .title {
@@ -870,6 +896,30 @@
 
     .description {
       font-size: 0.8rem;
+    }
+  }
+
+  .mission-vision-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .mission-vision-layout {
+      grid-template-columns: 1fr;
     }
   }
 </style>
