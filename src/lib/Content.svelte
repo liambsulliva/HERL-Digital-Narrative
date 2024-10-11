@@ -441,18 +441,19 @@
 <style>
   .content-container {
     position: absolute;
-    top: 50vh;
     left: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, 0);
     width: 80%;
     max-width: 1200px;
     z-index: 30;
-    max-height: 80vh;
+    max-height: 100vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
   }
 
   .sub-title {
