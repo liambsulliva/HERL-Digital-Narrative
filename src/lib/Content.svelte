@@ -4,7 +4,7 @@
   interface ContentSection {
     // For Milestones
     year?: string;
-    milestones?: string[];
+    milestones?: { title?: string; description: string }[];
     // For Mission + Vision + Parallel Paths
     title?: string;
     description?: string;
@@ -39,30 +39,54 @@
         {
           year: "1994",
           milestones: [
-            `A monumental achievement for veterans and people with disabilities.
-            The Human Engineering Research Laboratories (HERL) teamed up with the
-            University of Pittsburgh, the Paralyzed Veterans of America (PVA), and
-            the Department of Veterans Affairs (VA) to establish a pioneering lab.
-            This new space was to be located within a VA facility in Highland
-            Drive. The partnership brought together the expertise of researchers,
-            engineers, and medical professionals which leveraged their collective
-            knowledge and resources. This collaboration set the stage for
-            innovative advancements in assistive technology that make a profound
-            impact for individuals with disabilities.`,
+            {
+              description: `
+                A monumental achievement for veterans and people with disabilities.
+                The Human Engineering Research Laboratories (HERL) teamed up with the
+                University of Pittsburgh, the Paralyzed Veterans of America (PVA), and
+                the Department of Veterans Affairs (VA) to establish a pioneering lab.
+                This new space was to be located within a VA facility in Highland
+                Drive. The partnership brought together the expertise of researchers,
+                engineers, and medical professionals which leveraged their collective
+                knowledge and resources. This collaboration set the stage for
+                innovative advancements in assistive technology that make a profound
+                impact for individuals with disabilities.
+              `,
+            },
           ],
         },
         {
           year: "1995",
           milestones: [
-            `SMARTWHEEL: Revolutionized how wheelchair setups could be customized
-            to optimize the reduction of repetitive stress.`,
-            `REHABILITATION ENGINEERING APPLIED TO MOBILITY: A textbook that set
-            the standard for engineering textbooks in the field of
-            rehabilitation.`,
-            `X-BRACE: Designed to enhance performance, safety, and durability in
-            folding wheelchairs.`,
-            `GAMEWHEELS & GAMECYCLE: The first devices to address and incorporate
-            exergaming for people with disabilities.`,
+            {
+              title: "SMARTWHEEL",
+              description: `
+                Revolutionized how wheelchair setups could be customized
+                to optimize the reduction of repetitive stress.
+              `,
+            },
+            {
+              title: "REHABILITATION ENGINEERING APPLIED TO MOBILITY",
+              description: `
+                A textbook that set
+                the standard for engineering textbooks in the field of
+                rehabilitation.
+              `,
+            },
+            {
+              title: "X-BRACE",
+              description: `
+                Designed to enhance performance, safety, and durability in
+                folding wheelchairs.
+              `,
+            },
+            {
+              title: "GAMEWHEELS & GAMECYCLE",
+              description: `
+                The first devices to address and incorporate
+                exergaming for people with disabilities.
+              `,
+            },
           ],
         },
       ],
@@ -72,28 +96,57 @@
         {
           year: "1996",
           milestones: [
-            `PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW): A joint effort
-            between Yamaha and HERL, it contributed to significant advancements in
-            wheelchair tech.`,
-            `ZERO THROW JOYSTICK: Gave users the ability to operate their power
-            wheelchair with 360° of control.`,
-            `CDC CENTER FOR INJURY RESEARCH AND CONTROL: This award was bestowed on
-            HERL along with the Department of Neurosurgery of Pitt.`,
-            `WHEELCHAIR COMPARISON STUDY: The first in a long series of studies was
-            completed. One study highlighted challenges with wheelchairs’ quality
-            and standards non-compliance.`,
+            {
+              title: "PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW)",
+              description: `
+                A joint effort between Yamaha and HERL, it contributed to significant advancements in
+                wheelchair tech.
+              `,
+            },
+            {
+              title: "ZERO THROW JOYSTICK",
+              description: `
+                Gave users the ability to operate their power
+                wheelchair with 360° of control.
+              `,
+            },
+            {
+              title: "CDC CENTER FOR INJURY RESEARCH AND CONTROL",
+              description: `
+                This award was bestowed on
+                HERL along with the Department of Neurosurgery of Pitt.
+              `,
+            },
+            {
+              title: "WHEELCHAIR COMPARISON STUDY",
+              description: `
+                The first in a long series of studies was
+                completed. One study highlighted challenges with wheelchairs’ quality
+                and standards non-compliance.
+              `,
+            },
           ],
         },
         {
           year: "1998",
           milestones: [
-            `WHEELCHAIR SELECTION AND CONFIGURATION: This published book is the
-            most cited text dedicated to wheelchair design and clinical service
-            guidance, being translated in six different languages.`,
-            `NATIONAL VETERAN WHEELCHAIR GAMES: Pittsburgh hosted the NVWG and
-            was given its first VA R&D Center of Excellence for Wheelchairs and
-            Associated Rehabilitation Engineering (WARE) award. The beginning of
-            a 25+ year legacy..`,
+            {
+              title: "WHEELCHAIR SELECTION AND CONFIGURATION",
+              description: `
+                This published book is the
+                most cited text dedicated to wheelchair design and clinical service
+                guidance, being translated in six different languages.
+              `,
+            },
+            {
+              title: "NATIONAL VETERAN WHEELCHAIR GAMES",
+              description: `
+                Pittsburgh hosted the NVWG and
+                was given its first VA R&D Center of Excellence for Wheelchairs and
+                Associated Rehabilitation Engineering (WARE) award. The beginning of
+                a 25+ year legacy..
+              `,
+            },
           ],
         },
       ],
@@ -103,34 +156,58 @@
         {
           year: "2000",
           milestones: [
-            `WHEELCHAIR ROAD LOADS AND WHOLE-BODY VIBRATION: Successfully
-            addressed and reduced by inventing vibration-damping cushions,
-            backrest fittings, and suspension elements to minimize shock, and
-            vibration-induced injuries to the neck and back.`,
-            `ASSISTIVE TECHNOLOGY CLINIC IN INDIA: Rory and Rosemarie Cooper
-            worked with colleagues at the Indian Spinal Injuries Centre to
-            establish this first-of- its-kind clinic in the region.`,
-            `TELE-REHABILITATION RESEARCH PROGRAM: HERL was the home of the first
-            major iterations of this program, primarily funded by the VA.`,
+            {
+              title: "WHEELCHAIR ROAD LOADS AND WHOLE-BODY VIBRATION",
+              description: `
+                Successfully addressed and reduced by inventing vibration-damping cushions,
+                backrest fittings, and suspension elements to minimize shock, and
+                vibration-induced injuries to the neck and back.
+              `,
+            },
+            {
+              title: "ASSISTIVE TECHNOLOGY CLINIC IN INDIA",
+              description: `
+                Rory and Rosemarie Cooper
+                worked with colleagues at the Indian Spinal Injuries Centre to
+                establish this first-of- its-kind clinic in the region.
+              `,
+            },
+            {
+              title: "TELE-REHABILITATION RESEARCH PROGRAM",
+              description: `
+                HERL was the home of the first
+                major iterations of this program, primarily funded by the VA.
+              `,
+            },
           ],
         },
         {
           year: "2001",
           milestones: [
-            `ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM: The Ergonomic Pushrim (left)
-            developed by HERL’s team, marked a significant leap from traditional
-            wheelchair handrims. Ergonomic hand rims have successfully tackled
-            traditional push rim issues by offering a better hand fit, enhancing
-            mechanical efficiency during wheelchair propulsion.`,
+            {
+              title: "ERGONOMIC DUAL SURFACEWHEELCHAIR PUSHRIM",
+              description: `
+                The Ergonomic Pushrim (left)
+                developed by HERL’s team, marked a significant leap from traditional
+                wheelchair handrims. Ergonomic hand rims have successfully tackled
+                traditional push rim issues by offering a better hand fit, enhancing
+                mechanical efficiency during wheelchair propulsion.
+              `,
+            },
           ],
         },
         {
           year: "2002",
           milestones: [
-            `DATA LOGGER: The new, low-power, self-contained Data Logger developed
-            by researchers at HERL, provides a reliable method for long-term
-            monitoring of manual wheelchair users’ activities in real-world
-            environments.`,
+            {
+              title: "DATA LOGGER",
+              description: `
+                The new, low-power, self-contained Data Logger developed
+                by researchers at HERL, provides a reliable method for long-term
+                monitoring of manual wheelchair users’ activities in real-world
+                environments.
+              `,
+            },
           ],
         },
       ],
@@ -140,43 +217,68 @@
         {
           year: "2003",
           milestones: [
-            `VIRTUAL SEATING COACH: An innovative technology providing personalized
-            wheelchair seating recommendations for enhanced comfort and support,
-            brought to commercial market by PERMOBIL.`,
-            `GLIDE CASTER FORK: Based on oblique angle suspension that maximizes
-            vibration dampening in both horizontal and vertical directions, and
-            minimizes vibration transfer to the body of the rider, was brought to
-            the Market by TiLite, LLC.`,
+            {
+              title: "VIRTUAL SEATING COACH",
+              description: `
+                An innovative technology providing personalized
+                wheelchair seating recommendations for enhanced comfort and support,
+                brought to commercial market by PERMOBIL.
+              `,
+            },
+            {
+              title: "GLIDE CASTER FORK",
+              description: `
+                Based on oblique angle suspension that maximizes
+                vibration dampening in both horizontal and vertical directions, and
+                minimizes vibration transfer to the body of the rider, was brought to
+                the Market by TiLite, LLC.
+              `,
+            },
           ],
         },
         {
           year: "2004",
           milestones: [
-            `STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS: The State-of-the-Science
-            (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
-            a discussion about the needs of rehabilitation healthcare providers,
-            physical medicine and rehabilitation medicine residents to learn and
-            integrate the most current knowledge and practice to provide the
-            highest level of care to wounded, injured, and ill service members in
-            light of the patients coming to Walter Reed Army Medical Center and
-            later Walter Reed National Military Medical Center (WRNMC). The SoS
-            brings experts to WRNMC so that there can be greater participation by
-            WRNMC providers and residents, and exposes experts to WRNMC and
-            Uniformed Services University of Health Sciences.`,
+            {
+              title: "STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS",
+              description: `
+                The State-of-the-Science
+                (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had
+                a discussion about the needs of rehabilitation healthcare providers,
+                physical medicine and rehabilitation medicine residents to learn and
+                integrate the most current knowledge and practice to provide the
+                highest level of care to wounded, injured, and ill service members in
+                light of the patients coming to Walter Reed Army Medical Center and
+                later Walter Reed National Military Medical Center (WRNMC). The SoS
+                brings experts to WRNMC so that there can be greater participation by
+                WRNMC providers and residents, and exposes experts to WRNMC and
+                Uniformed Services University of Health Sciences.
+              `,
+            },
           ],
         },
         {
           year: "2005",
           milestones: [
-            `GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
-            (HERL Medical Director 1998-20) spearheaded a team of experts in
-            organizing one of the most widely used and referenced documents in the
-            field today: a Clinical Practice Guideline (CPG) on Preservation of
-            Upper Limb Function Following Spinal Cord Injury (SCI).`,
-            `OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT: A patent was awarded for
-            this innovative wheelchair design, focusing on effective shock
-            absorption for both horizontal and vertical impacts during travel over
-            uneven terrain.`,
+            {
+              title: `GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED`,
+              description: `
+                Dr. Michael Boninger
+                (HERL Medical Director 1998-20) spearheaded a team of experts in
+                organizing one of the most widely used and referenced documents in the
+                field today: a Clinical Practice Guideline (CPG) on Preservation of
+                Upper Limb Function Following Spinal Cord Injury (SCI).
+              `,
+            },
+            {
+              title: "OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT",
+              description: `
+                A patent was awarded for
+                this innovative wheelchair design, focusing on effective shock
+                absorption for both horizontal and vertical impacts during travel over
+                uneven terrain.
+              `,
+            },
           ],
         },
       ],
@@ -186,33 +288,54 @@
         {
           year: "2006",
           milestones: [
-            `QUALITY OF LIFE ENGINEERING RESEARCH CENTER (ERC): HERL received this
-            award from the National Science Foundation (NSF), along with Carnegie
-            Mellon University and other partners.`,
+            {
+              title: "QUALITY OF LIFE ENGINEERING RESEARCH CENTER (ERC)",
+              description: `
+                HERL received this
+                award from the National Science Foundation (NSF), along with Carnegie
+                Mellon University and other partners.
+              `,
+            },
           ],
         },
         {
           year: "2007",
           milestones: [
-            `SMART POWER ASSISTANCE MODULE FOR MANUAL WHEELCHAIRS PATENT: Dr. Rory
-            Cooper introduced the PHAATE (Policy, Human Activity Assistive
-            Technology Environment) model.`,
-            `TRANSFER ASSESSMENT INSTRUMENT (TAI): A groundbreaking clinical tool
-            designed for the comprehensive evaluation of transfer skills.`,
+            {
+              title:
+                "SMART POWER ASSISTANCE MODULE FOR MANUAL WHEELCHAIRS PATENT",
+              description: `
+                Dr. Rory
+                Cooper introduced the PHAATE (Policy, Human Activity Assistive
+                Technology Environment) model.
+              `,
+            },
+            {
+              title: "TRANSFER ASSESSMENT INSTRUMENT (TAI)",
+              description: `
+                A groundbreaking clinical tool
+                designed for the comprehensive evaluation of transfer skills.
+              `,
+            },
           ],
         },
         {
           year: "2009",
           milestones: [
-            `CARE OF THE COMBAT AMPUTEE TEXTBOOK PUBLISHED: The “Care of the Combat
-            Amputee” textbook, revered as the “gold standard” for military
-            healthcare providers, plays a pivotal role in improving the quality of
-            care for Veterans with traumatic amputations. By providing
-            standardized guidelines, it ensures that medical professionals are
-            equipped with the knowledge and skills necessary to deliver the best
-            possible care. In the long-term care and rehabilitation domain, it
-            emphasizes personalized approaches that consider the unique needs of
-            each individual.`,
+            {
+              title: "CARE OF THE COMBAT AMPUTEE TEXTBOOK PUBLISHED",
+              description: `
+                The “Care of the Combat
+                Amputee” textbook, revered as the “gold standard” for military
+                healthcare providers, plays a pivotal role in improving the quality of
+                care for Veterans with traumatic amputations. By providing
+                standardized guidelines, it ensures that medical professionals are
+                equipped with the knowledge and skills necessary to deliver the best
+                possible care. In the long-term care and rehabilitation domain, it
+                emphasizes personalized approaches that consider the unique needs of
+                each individual.
+              `,
+            },
           ],
         },
       ],
@@ -222,32 +345,58 @@
         {
           year: "2010",
           milestones: [
-            `PERSONAL MOBILITY AND MANIPULATION APPLIANCE PerMMA’s the first fully
-            robotic mobility and manipulation device for people with disabilities.
-            It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility.`,
-            `VIRTUAL SEATING COACH: Initiated a series of connected devices
-            leveraging AI to promote adherence to clinical guidelines.`,
-            `WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK: A valuable
-            resource created to aid and support military personnel during career
-            and life transitions. Over 10,000 copies have been distributed or
-            downloaded.`,
-            `PERSONAL VEHICLE PATENT: A power mobility device designed to improve
-            maneuverability on diverse terrains.`,
+            {
+              title: "PERSONAL MOBILITY AND MANIPULATION APPLIANCE PerMMA’s",
+              description: `
+                the first fully
+                robotic mobility and manipulation device for people with disabilities.
+                It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility.
+              `,
+            },
+            {
+              title: "VIRTUAL SEATING COACH",
+              description: `
+                Initiated a series of connected devices
+                leveraging AI to promote adherence to clinical guidelines.
+              `,
+            },
+            {
+              title:
+                "WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK",
+              description: `
+                A valuable
+                resource created to aid and support military personnel during career
+                and life transitions. Over 10,000 copies have been distributed or
+                downloaded.
+              `,
+            },
+            {
+              title: "PERSONAL VEHICLE PATENT",
+              description: `
+                A power mobility device designed to improve
+                maneuverability on diverse terrains.
+              `,
+            },
           ],
         },
         {
           year: "2011",
           milestones: [
-            `HERL MOVES TO BAKERY SQUARE: In July 2011, HERL relocated from its
-            original research lab at the VA’s Highland Drive facility to the newly
-            renovated Bakery Square. This move represented a pivotal moment for
-            HERL, offering its investigators, staff, and faculty the chance to
-            establish a state-of-the-art facility tailored to their specific
-            requirements. The transition brought about significant improvements,
-            including the addition of a spacious laboratory bay and a dedicated
-            machine shop area. HERL celebrated this milestone with an open house
-            on August 4th, where they welcomed family, friends, and supporters
-            from the VA and Pitt communities.`,
+            {
+              title: "HERL MOVES TO BAKERY SQUARE",
+              description: `
+                In July 2011, HERL relocated from its
+                original research lab at the VA’s Highland Drive facility to the newly
+                renovated Bakery Square. This move represented a pivotal moment for
+                HERL, offering its investigators, staff, and faculty the chance to
+                establish a state-of-the-art facility tailored to their specific
+                requirements. The transition brought about significant improvements,
+                including the addition of a spacious laboratory bay and a dedicated
+                machine shop area. HERL celebrated this milestone with an open house
+                on August 4th, where they welcomed family, friends, and supporters
+                from the VA and Pitt communities.
+              `,
+            },
           ],
         },
       ],
@@ -257,27 +406,53 @@
         {
           year: "2012",
           milestones: [
-            `MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR: A groundbreaking innovation
-            designed for conquering challenging terrains, including curbs, uneven
-            surfaces, and steep slopes.`,
-            `VARIABLE COMPLIANCE JOYSTICK: Equipped with compensation algorithms
-            offers adaptable control and enhanced precision in various power
-            mobility ops.`,
-            `ROBOTIC STRONGARM: A specialized wheelchair attachment engineered to
-            assist electric power wheelchair users in seamless transfers to and
-            from other surfaces.`,
-            `MOBILE CASTER PATENT: Designed to prevent drift and flutter, ensuring
-            enhanced tracking when a mobile device moves across a side-sloped
-            surface.`,
+            {
+              title: "MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR",
+              description: `
+                A groundbreaking innovation
+                designed for conquering challenging terrains, including curbs, uneven
+                surfaces, and steep slopes.
+              `,
+            },
+            {
+              title: "VARIABLE COMPLIANCE JOYSTICK",
+              description: `
+                Equipped with compensation algorithms
+                offers adaptable control and enhanced precision in various power
+                mobility ops.
+              `,
+            },
+            {
+              title: "ROBOTIC STRONGARM",
+              description: `
+                A specialized wheelchair attachment engineered to
+                assist electric power wheelchair users in seamless transfers to and
+                from other surfaces.
+              `,
+            },
+            {
+              title: "MOBILE CASTER PATENT",
+              description: `
+                Designed to prevent drift and flutter, ensuring
+                enhanced tracking when a mobile device moves across a side-sloped
+                surface.
+              `,
+            },
           ],
         },
         {
           year: "2013",
           milestones: [
-            `USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT: A
-            technology to streamline backrest adjustments for users, improving
-            simplicity, aesthetics, and incorporating essential features for
-            commercial viability.`,
+            {
+              title:
+                "USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT",
+              description: `
+                A
+                technology to streamline backrest adjustments for users, improving
+                simplicity, aesthetics, and incorporating essential features for
+                commercial viability.
+              `,
+            },
           ],
         },
       ],
@@ -287,30 +462,55 @@
         {
           year: "2015",
           milestones: [
-            `NATIONAL ACADEMY OF INVENTORS: Dr. Cooper elected Fellow of the NAI,
-            partnered with the International Society of Wheelchair Professionals,
-            whose mission is to serve as a global resource for wheelchair service
-            standards and provision through advocacy, education, standards,
-            evidence-based practice, innovation and a platform for information
-            exchange.`,
-            `VA TECHNOLOGY TRANSFER ASSISTANCE PROGRAM: Start of the project which
-            engages in a wide range of healthcare, research, and support
-            initiatives for veterans, with a core mission of enhancing veterans’
-            quality of life and healthcare outcomes.`,
-            `SAMUEL E. HEYMAN SERVICE TO AMERICA MEDAL: Also known as the “Sammies”,
-            this premier awards program is considered the “Oscar” of public
-            service.`,
-            `DRIVING EVALUATION AND TRAINING PATENT: Covers techniques for assessing
-            and enhancing driving skills through evaluation and training
-            processes.`,
+            {
+              title: "NATIONAL ACADEMY OF INVENTORS",
+              description: `
+                Dr. Cooper elected Fellow of the NAI,
+                partnered with the International Society of Wheelchair Professionals,
+                whose mission is to serve as a global resource for wheelchair service
+                standards and provision through advocacy, education, standards,
+                evidence-based practice, innovation and a platform for information
+                exchange.
+              `,
+            },
+            {
+              title: "VA TECHNOLOGY TRANSFER ASSISTANCE PROGRAM",
+              description: `
+                Start of the project which
+                engages in a wide range of healthcare, research, and support
+                initiatives for veterans, with a core mission of enhancing veterans’
+                quality of life and healthcare outcomes.
+              `,
+            },
+            {
+              title: "SAMUEL E. HEYMAN SERVICE TO AMERICA MEDAL",
+              description: `
+                Also known as the “Sammies”,
+                this premier awards program is considered the “Oscar” of public
+                service.
+              `,
+            },
+            {
+              title: "DRIVING EVALUATION AND TRAINING PATENT",
+              description: `
+                Covers techniques for assessing
+                and enhancing driving skills through evaluation and training
+                processes.
+              `,
+            },
           ],
         },
         {
           year: "2017",
           milestones: [
-            `PNEUCHAIR & PNEUSCOOTER: The PneuMobility project is focused on
-            revolutionizing assistive mobility devices by developing innovative
-            devices that run solely on compressed air technology.`,
+            {
+              title: "PNEUCHAIR & PNEUSCOOTER",
+              description: `
+                The PneuMobility project is focused on
+                revolutionizing assistive mobility devices by developing innovative
+                devices that run solely on compressed air technology.
+              `,
+            },
           ],
         },
       ],
@@ -320,31 +520,52 @@
         {
           year: "2018",
           milestones: [
-            `POWERED PERSONAL TRANSFER SYSTEM (PPTS): A groundbreaking innovation
-            designed to revolutionize the process of transferring between a bed
-            and a wheelchair, particularly for individuals, including many
-            veterans, who depend on wheelchairs for mobility.`,
-            `GUIDELINES FOR THE CARE OF PEOPLE WITH SPINA BIFIDA: One hundred Spina
-            Bifida experts from around the world, led by HERL Medical Director Dr.
-            Brad Dicianno, spent three years developing these Guidelines.`,
+            {
+              title: "POWERED PERSONAL TRANSFER SYSTEM (PPTS)",
+              description: `
+                A groundbreaking innovation
+                designed to revolutionize the process of transferring between a bed
+                and a wheelchair, particularly for individuals, including many
+                veterans, who depend on wheelchairs for mobility.
+              `,
+            },
+            {
+              title: "GUIDELINES FOR THE CARE OF PEOPLE WITH SPINA BIFIDA",
+              description: `
+                One hundred Spina
+                Bifida experts from around the world, led by HERL Medical Director Dr.
+                Brad Dicianno, spent three years developing these Guidelines.
+              `,
+            },
           ],
         },
         {
           year: "2019",
           milestones: [
-            `AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES — INVOLVED
-            RESPONSIVE ENGINEERING (ASPIRE): A HERL center studying how people with
-            disabilities and older adults are affected by access to reliable
-            accessible transportation.`,
-            `MANUAL WHEELCHAIR ULCER RISK MANAGEMENT COACHING SYSTEM AND
-            METHODOLOGY PATENT.`,
+            {
+              title:
+                "AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES — INVOLVED RESPONSIVE ENGINEERING (ASPIRE)",
+              description: `
+                A HERL center studying how people with
+                disabilities and older adults are affected by access to reliable
+                accessible transportation.
+              `,
+            },
+            {
+              title:
+                "MANUAL WHEELCHAIR ULCER RISK MANAGEMENT COACHING SYSTEM AND METHODOLOGY PATENT",
+              description: "",
+            },
           ],
         },
         {
           year: "2020",
           milestones: [
-            `PORTABLE TOILET SEAT WRAP FOR REDUCING PRESSURE INJURIES AND METHODS
-            (“ON THE MOVE PAD”) PATENT.`,
+            {
+              title:
+                "PORTABLE TOILET SEAT WRAP FOR REDUCING PRESSURE INJURIES AND METHODS (“ON THE MOVE PAD”) PATENT",
+              description: "",
+            },
           ],
         },
       ],
@@ -354,25 +575,40 @@
         {
           year: "2021",
           milestones: [
-            `GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED: Dr. Michael Boninger
-            (HERL Medical Director 1998-20) spearheaded a team of experts in
-            organizing one of the most widely used and referenced documents in the
-            field today: a Clinical Practice Guideline (CPG) on Preservation of
-            Upper Limb Function Following Spinal Cord Injury (SCI).`,
-            `OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT: A patent was awarded for
-            this innovative wheelchair design, focusing on effective shock
-            absorption for both horizontal and vertical impacts during travel over
-            uneven terrain.`,
+            {
+              title: `GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED`,
+              description: `
+                Dr. Michael Boninger
+                (HERL Medical Director 1998-20) spearheaded a team of experts in
+                organizing one of the most widely used and referenced documents in the
+                field today: a Clinical Practice Guideline (CPG) on Preservation of
+                Upper Limb Function Following Spinal Cord Injury (SCI).
+              `,
+            },
+            {
+              title: "OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT",
+              description: `
+                A patent was awarded for
+                this innovative wheelchair design, focusing on effective shock
+                absorption for both horizontal and vertical impacts during travel over
+                uneven terrain.
+              `,
+            },
           ],
         },
         {
           year: "2022",
           milestones: [
-            `IEEE BIOMEDICAL ENGINEERING MEDAL: Dr. Cooper was honored with this
-            prestigious award for his outstanding contributions to the field of
-            biomedical engineering. This recognition highlights his achievements
-            and groundbreaking research that have significantly advanced the
-            intersection of engineering and medicine.`,
+            {
+              title: "IEEE BIOMEDICAL ENGINEERING MEDAL",
+              description: `
+                Dr. Cooper was honored with this
+                prestigious award for his outstanding contributions to the field of
+                biomedical engineering. This recognition highlights his achievements
+                and groundbreaking research that have significantly advanced the
+                intersection of engineering and medicine.
+              `,
+            },
           ],
         },
       ],
@@ -382,12 +618,22 @@
         {
           year: "2023",
           milestones: [
-            `NATIONAL INVENTORS HALL OF FAME: Dr. Rory Cooper was inducted to the
-            50th class.`,
-            `NATIONAL MEDAL OF TECHNOLOGY AND INNOVATION: Dr. Cooper was presented
-            this award by President Biden at the White House. This accolade is
-            given to individuals who have made important contributions to the
-            advancement of knowledge.`,
+            {
+              title: "NATIONAL INVENTORS HALL OF FAME",
+              description: `
+                Dr. Rory Cooper was inducted to the
+                50th class.
+              `,
+            },
+            {
+              title: "NATIONAL MEDAL OF TECHNOLOGY AND INNOVATION",
+              description: `
+                Dr. Cooper was presented
+                this award by President Biden at the White House. This accolade is
+                given to individuals who have made important contributions to the
+                advancement of knowledge.
+              `,
+            },
           ],
         },
       ],
@@ -427,7 +673,10 @@
                 <!-- Iterate over the milestones -->
                 {#each section.milestones as milestone}
                   <div class="milestone-item">
-                    <p>{milestone}</p>
+                    {#if milestone.title}
+                      <p><strong>{milestone.title}</strong></p>
+                    {/if}
+                    <p>{milestone.description}</p>
                   </div>
                 {/each}
               </div>
