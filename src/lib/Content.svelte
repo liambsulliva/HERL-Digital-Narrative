@@ -40,6 +40,7 @@
           year: "1994",
           milestones: [
             {
+              title: "BEGINNING OF HERL'S JOURNEY",
               description: `
                 A monumental achievement for veterans and people with disabilities.
                 The Human Engineering Research Laboratories (HERL) teamed up with the
@@ -732,6 +733,11 @@
     border: 1px solid #efefef;
   }
 
+  :global(.dark) .milestone-item {
+    background: #121a28;
+    border-color: #3a4556;
+  }
+
   .year-section {
     margin-bottom: 2rem;
   }
@@ -748,7 +754,6 @@
 
   .description {
     font-size: 1rem;
-    color: #4a5568;
     line-height: 1.5;
   }
 
