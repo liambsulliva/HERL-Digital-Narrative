@@ -2,38 +2,28 @@
   import { onMount } from "svelte";
   export let page = 0;
 
+  $: allowNextPage = page < 13;
+
   function handlePageTurn() {
-    if (page < 13) {
-      // Updated from 5 to 13
+    if (allowNextPage) {
       page++;
     }
-    //console.log(backPage, frontPage);
   }
 
-  function handleKeyDown(event: KeyboardEvent) {
-    if (event.key === "ArrowRight") {
-      handlePageTurn();
-    }
-  }
-
-  function handleClick(event: MouseEvent) {
-    event?.stopPropagation();
-    handlePageTurn();
+  function handleKeyDown(e: KeyboardEvent) {
+    if (e.key === "ArrowRight") handlePageTurn();
   }
 
   onMount(() => {
     window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => window.removeEventListener("keydown", handleKeyDown);
   });
 </script>
 
-{#if page < 13}
-  <!-- Updated from 5 to 13 -->
+{#if allowNextPage}
   <button
-    on:click={handleClick}
-    aria-label="Next Page Button"
+    on:click|stopPropagation={handlePageTurn}
+    aria-label="Next Page"
     class="absolute right-0 z-100"
   >
     <svg

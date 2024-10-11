@@ -2,36 +2,28 @@
   import { onMount } from "svelte";
   export let page = 0;
 
+  $: allowBacktrack = page > 1;
+
   function handlePageTurn() {
-    if (page > 1) {
+    if (allowBacktrack) {
       page--;
     }
-    //console.log(backPage, frontPage);
   }
 
-  function handleKeyDown(event: KeyboardEvent) {
-    if (event.key === "ArrowLeft") {
-      handlePageTurn();
-    }
-  }
-
-  function handleClick(event: MouseEvent) {
-    event?.stopPropagation();
-    handlePageTurn();
+  function handleKeyDown(e: KeyboardEvent) {
+    if (e.key === "ArrowLeft") handlePageTurn();
   }
 
   onMount(() => {
     window.addEventListener("keydown", handleKeyDown);
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => window.removeEventListener("keydown", handleKeyDown);
   });
 </script>
 
-{#if page > 1}
+{#if allowBacktrack}
   <button
-    on:click={handleClick}
-    aria-label="Last Page Button"
+    on:click|stopPropagation={handlePageTurn}
+    aria-label="Last Page"
     class="absolute right-0 z-100"
   >
     <svg

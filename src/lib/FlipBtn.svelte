@@ -1,13 +1,9 @@
 <script lang="ts">
   export let isFlipped = false;
-
-  function handleFlip() {
-    isFlipped = !isFlipped;
-  }
 </script>
 
 <button
-  on:click={handleFlip}
+  on:click={() => (isFlipped = !isFlipped)}
   class="w-8 h-8 flex items-center justify-center p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
   aria-label={isFlipped ? "Show front cover" : "Show back cover"}
 >
