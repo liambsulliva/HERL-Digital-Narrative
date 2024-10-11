@@ -1,9 +1,14 @@
 <script lang="ts">
+  import Picture from "./Picture.svelte";
   export let page = 0;
 
   interface Milestone {
     title?: string;
     description: string;
+    picture?: {
+      src: string;
+      alt?: string;
+    };
   }
 
   interface ContentSection {
@@ -11,6 +16,10 @@
     milestones?: Milestone[];
     title?: string;
     description?: string;
+    picture?: {
+      src: string;
+      alt?: string;
+    };
   }
 
   const contentData: Record<number, { sections: ContentSection[] }> = {
@@ -68,6 +77,10 @@
                 Revolutionized how wheelchair setups could be customized
                 to optimize the reduction of repetitive stress.
               `,
+              picture: {
+                src: "../images/content/2024_Cal_Copy_Page_06_Image_0001.jpg",
+                alt: "Dr. Alicia Koontz with a SMARTWheel.",
+              },
             },
             {
               title: "REHABILITATION ENGINEERING APPLIED TO MOBILITY",
@@ -673,6 +686,12 @@
               >
                 {#each section.milestones as milestone}
                   <div class="milestone-item">
+                    {#if milestone.picture}
+                      <Picture
+                        src={milestone.picture.src}
+                        alt={milestone.picture.alt}
+                      />
+                    {/if}
                     {#if milestone.title}
                       <p><strong>{milestone.title}</strong></p>
                     {/if}
@@ -684,6 +703,9 @@
           </div>
         {:else if section.title && section.description}
           <div class="info-section">
+            {#if section.picture}
+              <Picture src={section.picture.src} alt={section.picture.alt} />
+            {/if}
             <h1 class="title">{section.title}</h1>
             <p class="description">{section.description}</p>
           </div>
