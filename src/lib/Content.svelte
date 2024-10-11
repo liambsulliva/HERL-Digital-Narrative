@@ -1,11 +1,14 @@
 <script lang="ts">
   export let page = 0;
 
+  interface Milestone {
+    title?: string;
+    description: string;
+  }
+
   interface ContentSection {
-    // For Milestones
     year?: string;
-    milestones?: { title?: string; description: string }[];
-    // For Mission + Vision + Parallel Paths
+    milestones?: Milestone[];
     title?: string;
     description?: string;
   }
@@ -650,26 +653,24 @@
       ],
     },
   };
+
+  // Generate data of current page reactively
+  $: currentPageData = contentData[page]?.sections || [];
 </script>
 
 <div class="content-container">
-  <!-- If the page exists -->
-  {#if contentData[page as keyof Record<number, ContentSection>]}
+  {#if currentPageData.length}
     <div class="content-wrapper">
-      <!-- Iterate over the sections of the page -->
-      {#each contentData[page as keyof Record<number, ContentSection>].sections as section}
-        <!-- If the section has a year -->
+      {#each currentPageData as section}
         {#if section.year}
           <div class="year-section">
             <h2 class="sub-title">{section.year}</h2>
-            <!-- If the section has milestones, print them in a dynamic grid -->
             {#if section.milestones}
               <div
                 class="milestones-grid"
                 style="grid-template-columns: repeat({section.milestones
                   .length}, 1fr);"
               >
-                <!-- Iterate over the milestones -->
                 {#each section.milestones as milestone}
                   <div class="milestone-item">
                     {#if milestone.title}
@@ -682,7 +683,6 @@
             {/if}
           </div>
         {:else if section.title && section.description}
-          <!-- If the section has a title and description instead, print it -->
           <div class="info-section">
             <h1 class="title">{section.title}</h1>
             <p class="description">{section.description}</p>
