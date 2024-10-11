@@ -39,22 +39,22 @@
         );
         if (pageElement) {
           if (pageNum <= page) {
-            const angle = -165 + (pageNum - 1) * 1.75;
+            const angle = -165 + (pageNum - 1) * 1.5;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           } else if (pageNum === page + 1) {
-            const angle = -35 + (pageNum - 2) * 1.75;
+            const angle = -35 + (pageNum - 2) * 1.5;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           } else {
-            const angle = -30 + (pageNum - 3) * 1.75;
+            const angle = -30 + (pageNum - 3) * 1.5;
             pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
             pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
           }
         }
       }
     } else {
-      const totalPages = 13;
+      const totalPages = 14;
       for (let i = 1; i <= totalPages; i++) {
         const pageElement: HTMLElement | null = document.querySelector(
           `.page${i}`,
@@ -172,7 +172,7 @@
   </div>
   <div class="spine" style="display: {spineDisplay};"></div>
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
-  {#each Array(13) as _, i}
+  {#each Array(14) as _, i}
     <div class="page{i + 1}">
       {#if i + 1 === page}
         <LastPageBtn bind:page />
@@ -221,7 +221,8 @@
   .page10,
   .page11,
   .page12,
-  .page13 {
+  .page13,
+  .page14 {
     position: absolute;
     top: 0;
     left: 0;
@@ -243,6 +244,7 @@
   .page11,
   .page12,
   .page13,
+  .page14,
   .front,
   .back {
     transform-origin: left center;
@@ -320,7 +322,8 @@
   .page10,
   .page11,
   .page12,
-  .page13 {
+  .page13,
+  .page14 {
     width: 98%;
     height: 98%;
     top: 1%;
@@ -379,6 +382,10 @@
     background: #fdfdfd;
     transform: translateZ(-5px);
   }
+  .page14 {
+    background: #fdfdfd;
+    transform: translateZ(-6px);
+  }
 
   .front,
   .back,
@@ -395,7 +402,8 @@
   .page10,
   .page11,
   .page12,
-  .page13 {
+  .page13,
+  .page14 {
     border-radius: 0 5px 5px 0;
   }
 
