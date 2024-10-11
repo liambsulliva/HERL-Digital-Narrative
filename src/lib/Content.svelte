@@ -700,6 +700,7 @@
           description: " ",
           picture: {
             src: "./src/images/Timeline.png",
+            alt: "Parallel Paths",
           },
         },
       ],
