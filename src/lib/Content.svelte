@@ -79,7 +79,7 @@
                 to optimize the reduction of repetitive stress.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_06_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_06_Image_0001.we",
                 alt: "Dr. Alicia Koontz with a SMARTWheel.",
               },
             },
@@ -121,7 +121,7 @@
                 wheelchair tech.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_08_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_08_Image_0001.we",
                 alt: "An engineer on the PAPAW.",
               },
             },
@@ -216,7 +216,7 @@
                 mechanical efficiency during wheelchair propulsion.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_10_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_10_Image_0001.we",
               },
             },
           ],
@@ -295,7 +295,7 @@
                 Upper Limb Function Following Spinal Cord Injury (SCI).
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_14_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_14_Image_0001.we",
               },
             },
             {
@@ -381,7 +381,7 @@
                 It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0002.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0002.we",
                 alt: "Dr. Cooper and the PerMMA in 2010.",
               },
             },
@@ -402,7 +402,7 @@
                 downloaded.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_16_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_16_Image_0001.we",
               },
             },
             {
@@ -432,7 +432,7 @@
                 from the VA and Pitt communities.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0001.we",
                 alt: "Inaugurating the Bakery Square site, 2011.",
               },
             },
@@ -453,7 +453,7 @@
                 surfaces, and steep slopes.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_20_Image_0002.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_20_Image_0002.we",
                 alt: "Dr. Jorge Candiotti and the MEBot.",
               },
             },
@@ -496,7 +496,7 @@
                 commercial viability.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_22_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_22_Image_0001.we",
                 alt: "The Robotic Strong Arm.",
               },
             },
@@ -558,7 +558,7 @@
                 devices that run solely on compressed air technology.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_24_Image_0002.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_24_Image_0002.we",
                 alt: "Dr. Rory Cooper at Morgan’s Wonderland with the Pneuchair.",
               },
             },
@@ -602,7 +602,7 @@
                 accessible transportation.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_26_Image_0001.webp",
+                src: "./src/images/content/2024_Cal_Copy_Page_26_Image_0001.we",
                 alt: "Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices.",
               },
             },
@@ -696,10 +696,11 @@
     13: {
       sections: [
         {
-          title: "Parallel Paths",
-          description: `
-            No content available for this page.
-          `,
+          title: " ",
+          description: " ",
+          picture: {
+            src: "./src/images/Timeline.png",
+          },
         },
       ],
     },
@@ -716,7 +717,7 @@
         <div class="mission-vision-layout">
           <div class="image-column">
             <Picture
-              src="./src/images/content/2024_Cal_Copy_Page_04_Image_0001.webp"
+              src="./src/images/content/2024_Cal_Copy_Page_04_Image_0001.we"
               alt="Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt) , John
 Bollinger (PVA), Dr. Thomas P. Detre, (Pitt) ,Dr. Rory A. Cooper (VA/Pitt) ,
 Laura Miller (VA), Dr. Charles Robinson (Pitt)."
