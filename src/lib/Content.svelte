@@ -651,8 +651,6 @@
   };
 </script>
 
-<!-- svelte-ignore css_unused_selector -->
-<!-- svelte-ignore css_unused_selector -->
 <div class="content-container">
   <!-- If the page exists -->
   {#if contentData[page as keyof Record<number, ContentSection>]}
