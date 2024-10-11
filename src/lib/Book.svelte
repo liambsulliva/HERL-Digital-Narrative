@@ -22,49 +22,41 @@
   let spineDisplay = "block";
   let paperBlockDisplay = "block";
 
+  const totalPages = 14;
+  let pages: HTMLElement[] = [];
+
   $: {
     if (!isOpen) {
       rotateY = isFlipped ? 180 : 0;
-    } else {
-      if (isFlipped) {
-        isFlipped = false;
-        rotateY = 0;
-      }
+    } else if (isFlipped) {
+      isFlipped = false;
+      rotateY = 0;
     }
+  }
 
+  $: {
     if (isOpen) {
-      const totalPages = 14;
-      for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
-        const pageElement: HTMLElement | null = document.querySelector(
-          `.page${pageNum}`,
-        );
-        if (pageElement) {
-          if (pageNum <= page) {
-            const angle = -165 + (pageNum - 1) * 1.5;
-            pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
-            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          } else if (pageNum === page + 1) {
-            const angle = -35 + (pageNum - 2) * 1.5;
-            pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
-            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          } else {
-            const angle = -30 + (pageNum - 3) * 1.5;
-            pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
-            pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
-          }
+      pages.forEach((pageElement, index) => {
+        const pageNum = index + 1;
+        if (pageNum <= page) {
+          const angle = -165 + (pageNum - 1) * 1.5;
+          pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+          pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        } else if (pageNum === page + 1) {
+          const angle = -35 + (pageNum - 2) * 1.5;
+          pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+          pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+        } else {
+          const angle = -30 + (pageNum - 3) * 1.5;
+          pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+          pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
         }
-      }
+      });
     } else {
-      const totalPages = 14;
-      for (let i = 1; i <= totalPages; i++) {
-        const pageElement: HTMLElement | null = document.querySelector(
-          `.page${i}`,
-        );
-        if (pageElement) {
-          pageElement.style.transform = `rotateY(0) scale(1)`;
-          pageElement.style.boxShadow = `none`;
-        }
-      }
+      pages.forEach((pageElement) => {
+        pageElement.style.transform = `rotateY(0) scale(1)`;
+        pageElement.style.boxShadow = `none`;
+      });
     }
   }
 
@@ -173,8 +165,8 @@
   </div>
   <div class="spine" style="display: {spineDisplay};"></div>
   <div class="paper-block" style="display: {paperBlockDisplay};"></div>
-  {#each Array(14) as _, i}
-    <div class="page{i + 1}">
+  {#each Array(totalPages) as _, i}
+    <div bind:this={pages[i]} class="page" style="z-index: {totalPages - i};">
       {#if i + 1 === page}
         <LastPageBtn bind:page />
       {:else if i + 1 === page + 1}
@@ -215,20 +207,7 @@
   .back,
   .spine,
   .paper-block,
-  .page1,
-  .page2,
-  .page3,
-  .page4,
-  .page5,
-  .page6,
-  .page7,
-  .page8,
-  .page9,
-  .page10,
-  .page11,
-  .page12,
-  .page13,
-  .page14 {
+  .page {
     position: absolute;
     top: 0;
     left: 0;
@@ -237,20 +216,7 @@
       box-shadow 0.35s ease-in-out;
   }
 
-  .page1,
-  .page2,
-  .page3,
-  .page4,
-  .page5,
-  .page6,
-  .page7,
-  .page8,
-  .page9,
-  .page10,
-  .page11,
-  .page12,
-  .page13,
-  .page14,
+  .page,
   .front,
   .back {
     transform-origin: left center;
@@ -316,100 +282,19 @@
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
   }
 
-  .page1,
-  .page2,
-  .page3,
-  .page4,
-  .page5,
-  .page6,
-  .page7,
-  .page8,
-  .page9,
-  .page10,
-  .page11,
-  .page12,
-  .page13,
-  .page14 {
+  .page {
     width: 98%;
     height: 98%;
     top: 1%;
     left: 1%;
-  }
-
-  .page1 {
-    background: #efefef;
-    transform: translateZ(7px);
-  }
-  .page2 {
-    background: #efefef;
-    transform: translateZ(6px);
-  }
-  .page3 {
-    background: #f5f5f5;
-    transform: translateZ(5px);
-  }
-  .page4 {
-    background: #f5f5f5;
-    transform: translateZ(4px);
-  }
-  .page5 {
-    background: #fafafa;
-    transform: translateZ(3px);
-  }
-  .page6 {
     background: #fdfdfd;
-    transform: translateZ(2px);
-  }
-  .page7 {
-    background: #fdfdfd;
-    transform: translateZ(1px);
-  }
-  .page8 {
-    background: #fdfdfd;
-    transform: translateZ(0px);
-  }
-  .page9 {
-    background: #fdfdfd;
-    transform: translateZ(-1px);
-  }
-  .page10 {
-    background: #fdfdfd;
-    transform: translateZ(-2px);
-  }
-  .page11 {
-    background: #fdfdfd;
-    transform: translateZ(-3px);
-  }
-  .page12 {
-    background: #fdfdfd;
-    transform: translateZ(-4px);
-  }
-  .page13 {
-    background: #fdfdfd;
-    transform: translateZ(-5px);
-  }
-  .page14 {
-    background: #fdfdfd;
-    transform: translateZ(-6px);
+    transform: translateZ(0);
   }
 
   .front,
   .back,
   .paper-block,
-  .page1,
-  .page2,
-  .page3,
-  .page4,
-  .page5,
-  .page6,
-  .page7,
-  .page8,
-  .page9,
-  .page10,
-  .page11,
-  .page12,
-  .page13,
-  .page14 {
+  .page {
     border-radius: 0 5px 5px 0;
   }
 
