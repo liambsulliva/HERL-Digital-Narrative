@@ -2,6 +2,7 @@
   import { onMount, onDestroy } from "svelte";
   import FrontCover from "../images/Cover-Front.webp";
   import BackCover from "../images/Cover-Back.webp";
+  import BookTexture from "../images/BookTexture.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
   import LastPageBtn from "./LastPageBtn.svelte";
 
@@ -179,6 +180,11 @@
       {:else if i + 1 === page + 1}
         <NextPageBtn bind:page />
       {/if}
+      <img
+        src={BookTexture}
+        alt="Book Texture"
+        class="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
     </div>
   {/each}
 </div>
