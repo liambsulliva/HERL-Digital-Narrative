@@ -2,6 +2,7 @@
   import Picture from "./Picture.svelte";
   export let page = 0;
 
+  // TODO: Update interface to afford multiple images per milestone
   interface Milestone {
     title?: string;
     description: string;
@@ -78,7 +79,7 @@
                 to optimize the reduction of repetitive stress.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_06_Image_0001.jpg",
+                src: "./src/images/content/2024_Cal_Copy_Page_06_Image_0001.webp",
                 alt: "Dr. Alicia Koontz with a SMARTWheel.",
               },
             },
@@ -119,6 +120,10 @@
                 A joint effort between Yamaha and HERL, it contributed to significant advancements in
                 wheelchair tech.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_08_Image_0001.webp",
+                alt: "An engineer on the PAPAW.",
+              },
             },
             {
               title: "ZERO THROW JOYSTICK",
@@ -210,6 +215,9 @@
                 traditional push rim issues by offering a better hand fit, enhancing
                 mechanical efficiency during wheelchair propulsion.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_10_Image_0001.webp",
+              },
             },
           ],
         },
@@ -286,6 +294,9 @@
                 field today: a Clinical Practice Guideline (CPG) on Preservation of
                 Upper Limb Function Following Spinal Cord Injury (SCI).
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_14_Image_0001.webp",
+              },
             },
             {
               title: "OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT",
@@ -363,12 +374,16 @@
           year: "2010",
           milestones: [
             {
-              title: "PERSONAL MOBILITY AND MANIPULATION APPLIANCE PerMMA’s",
+              title: "PERSONAL MOBILITY AND MANIPULATION APPLIANCE",
               description: `
-                the first fully
+                PerMMA’s the first fully
                 robotic mobility and manipulation device for people with disabilities.
                 It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0002.webp",
+                alt: "Dr. Cooper and the PerMMA in 2010.",
+              },
             },
             {
               title: "VIRTUAL SEATING COACH",
@@ -386,6 +401,9 @@
                 and life transitions. Over 10,000 copies have been distributed or
                 downloaded.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_16_Image_0001.webp",
+              },
             },
             {
               title: "PERSONAL VEHICLE PATENT",
@@ -413,6 +431,10 @@
                 on August 4th, where they welcomed family, friends, and supporters
                 from the VA and Pitt communities.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0001.webp",
+                alt: "Inaugurating the Bakery Square site, 2011.",
+              },
             },
           ],
         },
@@ -430,6 +452,10 @@
                 designed for conquering challenging terrains, including curbs, uneven
                 surfaces, and steep slopes.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_20_Image_0002.webp",
+                alt: "Dr. Jorge Candiotti and the MEBot.",
+              },
             },
             {
               title: "VARIABLE COMPLIANCE JOYSTICK",
@@ -469,6 +495,10 @@
                 simplicity, aesthetics, and incorporating essential features for
                 commercial viability.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_22_Image_0001.webp",
+                alt: "The Robotic Strong Arm.",
+              },
             },
           ],
         },
@@ -527,6 +557,10 @@
                 revolutionizing assistive mobility devices by developing innovative
                 devices that run solely on compressed air technology.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_24_Image_0002.webp",
+                alt: "Dr. Rory Cooper at Morgan’s Wonderland with the Pneuchair.",
+              },
             },
           ],
         },
@@ -567,6 +601,10 @@
                 disabilities and older adults are affected by access to reliable
                 accessible transportation.
               `,
+              picture: {
+                src: "./src/images/content/2024_Cal_Copy_Page_26_Image_0001.webp",
+                alt: "Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices.",
+              },
             },
             {
               title:
@@ -678,7 +716,7 @@
         <div class="mission-vision-layout">
           <div class="image-column">
             <Picture
-              src="./src/images/content/2024_Cal_Copy_Page_04_Image_0001.jpg"
+              src="./src/images/content/2024_Cal_Copy_Page_04_Image_0001.webp"
               alt="Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt) , John
 Bollinger (PVA), Dr. Thomas P. Detre, (Pitt) ,Dr. Rory A. Cooper (VA/Pitt) ,
 Laura Miller (VA), Dr. Charles Robinson (Pitt)."

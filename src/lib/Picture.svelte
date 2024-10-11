@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex flex-col gap-2">
-  <img {src} {alt} />
+  <img {src} {alt} class="w-full" />
   {#if alt}
     <p class="text-sm text-gray-500">{alt}</p>
   {/if}
