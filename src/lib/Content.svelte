@@ -741,10 +741,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
             <div class="year-section">
               <h2 class="sub-title">{section.year}</h2>
               {#if section.milestones}
-                <div
-                  class="milestones-grid"
-                  style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
-                >
+                <div class="milestones-grid">
                   {#each section.milestones as milestone}
                     <div class="milestone-item">
                       {#if milestone.picture}
@@ -787,16 +784,14 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .content-container {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 35%);
     width: 80%;
     max-width: 1200px;
     z-index: 30;
     max-height: 50vh;
-    overflow-x: visible;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
@@ -847,82 +842,6 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     line-height: 1.4;
   }
 
-  @media (max-width: 480px), (max-height: 600px) {
-    .content-container {
-      width: 90%;
-      padding: 0.75rem;
-      top: 55%;
-      transform: translate(-50%, -55%);
-    }
-
-    .title {
-      font-size: 1.25rem;
-    }
-
-    .description {
-      font-size: 0.75rem;
-    }
-  }
-
-  @media (max-width: 768px), (max-height: 800px) {
-    .content-container {
-      width: 85%;
-      padding: 1rem;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .title {
-      font-size: 1.5rem;
-    }
-
-    .description {
-      font-size: 0.85rem;
-    }
-  }
-
-  @media (max-width: 1024px), (max-height: 900px) {
-    .content-container {
-      width: 80%;
-      padding: 1.5rem;
-      top: 45%;
-      transform: translate(-50%, -20%);
-    }
-
-    .title {
-      font-size: 1.6rem;
-    }
-
-    .description {
-      font-size: 0.9rem;
-    }
-  }
-
-  @media (max-height: 600px) {
-    .content-container {
-      top: 55%;
-      transform: translate(-50%, -40%);
-    }
-
-    .title {
-      font-size: 1.125rem;
-    }
-
-    .description {
-      font-size: 0.7rem;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .title {
-      font-size: 1.125rem;
-    }
-
-    .description {
-      font-size: 0.7rem;
-    }
-  }
-
   .mission-vision-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -941,9 +860,45 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     gap: 0.75rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
+    .content-container {
+      width: 80%;
+      padding: 1.5rem;
+      top: 45%;
+      transform: translate(-50%, -20%);
+    }
+
+    .title {
+      font-size: 1.6rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
+
     .mission-vision-layout {
       grid-template-columns: 1fr;
+    }
+  }
+
+  .description {
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 500px) {
+    .content-container {
+      width: 90%;
+      padding: 0.75rem;
+      top: 55%;
+      transform: translate(-50%, -25%);
+    }
+
+    .title {
+      font-size: 1.25rem;
+    }
+
+    .description {
+      font-size: 0.75rem;
     }
   }
 </style>
