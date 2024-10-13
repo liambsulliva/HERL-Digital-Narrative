@@ -792,37 +792,40 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     width: 80%;
     max-width: 1200px;
     z-index: 30;
-    max-height: 100vh;
+    max-height: 50vh;
     overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
   }
 
   .sub-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     text-align: center;
     width: 100%;
   }
 
   .milestones-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
   .milestone-item {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
     background: #fefefe;
-    padding: 1rem;
-    border-radius: 8px;
+    padding: 0.75rem;
+    border-radius: 6px;
     border: 1px solid #efefef;
+    font-size: 0.875rem;
   }
 
   :global(.dark) .milestone-item {
@@ -831,29 +834,29 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   }
 
   .year-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 
   .description {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.875rem;
+    line-height: 1.4;
   }
 
   @media (max-width: 1024px) {
     .milestones-grid {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
   }
 
   @media (max-width: 768px) {
     .milestones-grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
   }
 
@@ -866,9 +869,26 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   @media (max-width: 480px), (max-height: 600px) {
     .content-container {
       width: 90%;
-      padding: 1rem;
+      padding: 0.75rem;
       top: 55%;
       transform: translate(-50%, -55%);
+    }
+
+    .title {
+      font-size: 1.25rem;
+    }
+
+    .description {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: 768px), (max-height: 800px) {
+    .content-container {
+      width: 85%;
+      padding: 1rem;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .title {
@@ -876,41 +896,24 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     }
 
     .description {
-      font-size: 0.875rem;
-    }
-  }
-
-  @media (max-width: 768px), (max-height: 800px) {
-    .content-container {
-      width: 85%;
-      padding: 1.5rem;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .title {
-      font-size: 1.75rem;
-    }
-
-    .description {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
     }
   }
 
   @media (max-width: 1024px), (max-height: 900px) {
     .content-container {
       width: 80%;
-      padding: 2rem;
+      padding: 1.5rem;
       top: 45%;
       transform: translate(-50%, -20%);
     }
 
     .title {
-      font-size: 1.875rem;
+      font-size: 1.6rem;
     }
 
     .description {
-      font-size: 0.975rem;
+      font-size: 0.9rem;
     }
   }
 
@@ -921,28 +924,28 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     }
 
     .title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
 
     .description {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 
   @media (max-width: 500px) {
     .title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
     }
 
     .description {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 
   .mission-vision-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .image-column {
@@ -954,7 +957,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .text-column {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   @media (max-width: 768px) {
