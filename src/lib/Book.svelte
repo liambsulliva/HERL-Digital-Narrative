@@ -38,19 +38,18 @@
     if (isOpen) {
       pages.forEach((pageElement, index) => {
         const pageNum = index + 1;
+        let angle: number;
+
         if (pageNum <= page) {
-          const angle = -165 + (pageNum - 1) * 1.5;
-          pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
-          pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          angle = -165 + (pageNum - 1) * 1.5;
         } else if (pageNum === page + 1) {
-          const angle = -35 + (pageNum - 2) * 1.5;
-          pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
-          pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          angle = -35 + (pageNum - 2) * 1.5;
         } else {
-          const angle = -30 + (pageNum - 3) * 1.5;
-          pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
-          pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
+          angle = -30 + (pageNum - 3) * 1.5;
         }
+
+        pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
+        pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       });
     } else {
       pages.forEach((pageElement) => {
@@ -222,10 +221,6 @@
     transform-origin: left center;
   }
 
-  .book:hover {
-    box-shadow: none;
-  }
-
   .front,
   .back {
     width: 100%;
@@ -239,6 +234,7 @@
     background: #252525;
     transform: rotateY(-90deg) translateX(-40%);
     transform-style: preserve-3d;
+    border-radius: 5px 0 0 5px;
   }
 
   .spine::before,
@@ -248,16 +244,7 @@
     width: 100%;
     height: 100%;
     background: #252525;
-  }
-
-  .spine::before {
-    left: -5px;
-    transform: rotateY(-180deg);
-  }
-
-  .spine::after {
-    right: -5px;
-    transform: rotateY(180deg);
+    display: none;
   }
 
   .front {
@@ -270,6 +257,7 @@
     background: #624a2e;
     transform: translateZ(-55px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0 5px 5px 0;
   }
 
   .paper-block {
@@ -280,6 +268,7 @@
     background: #f5f5f5;
     transform: translateZ(-54px);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 5px 5px 0;
   }
 
   .page {
@@ -289,21 +278,11 @@
     left: 1%;
     background: #fdfdfd;
     transform: translateZ(0);
-  }
-
-  .front,
-  .back,
-  .paper-block,
-  .page {
     border-radius: 0 5px 5px 0;
   }
 
-  .spine {
-    border-radius: 5px 0 0 5px;
-  }
-
-  .book.open:hover {
-    box-shadow: none;
+  .page img {
+    border-radius: 0 5px 5px 0;
   }
 
   .book.open .front {
