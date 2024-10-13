@@ -40,15 +40,15 @@
         const pageNum = index + 1;
         if (pageNum <= page) {
           const angle = -165 + (pageNum - 1) * 1.5;
-          pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+          pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
           pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
         } else if (pageNum === page + 1) {
           const angle = -35 + (pageNum - 2) * 1.5;
-          pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+          pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
           pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
         } else {
           const angle = -30 + (pageNum - 3) * 1.5;
-          pageElement.style.transform = `rotateY(${angle}deg) scale(0.75)`;
+          pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
           pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
         }
       });
@@ -307,12 +307,12 @@
   }
 
   .book.open .front {
-    transform: rotateY(-170deg) scale(0.75);
+    transform: rotateY(-170deg) scale(0.65);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 
   .book.open .back {
-    transform: rotateY(-10deg) scale(0.75);
+    transform: rotateY(-10deg) scale(0.65);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 

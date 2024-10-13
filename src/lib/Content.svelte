@@ -743,8 +743,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
               {#if section.milestones}
                 <div
                   class="milestones-grid"
-                  style="grid-template-columns: repeat({section.milestones
-                    .length}, 1fr);"
+                  style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));"
                 >
                   {#each section.milestones as milestone}
                     <div class="milestone-item">
@@ -793,8 +792,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     max-width: 1200px;
     z-index: 30;
     max-height: 50vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -814,7 +812,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .milestones-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .milestone-item {
@@ -846,24 +844,6 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .description {
     font-size: 0.875rem;
     line-height: 1.4;
-  }
-
-  @media (max-width: 1024px) {
-    .milestones-grid {
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    }
-  }
-
-  @media (max-width: 768px) {
-    .milestones-grid {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
-  }
-
-  @media (max-width: 480px) {
-    .milestones-grid {
-      grid-template-columns: 1fr;
-    }
   }
 
   @media (max-width: 480px), (max-height: 600px) {
@@ -963,6 +943,9 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   @media (max-width: 768px) {
     .mission-vision-layout {
       grid-template-columns: 1fr;
+    }
+    .content-container {
+      overflow-y: auto;
     }
   }
 </style>
