@@ -792,7 +792,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     max-width: 1200px;
     z-index: 30;
     max-height: 50vh;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
