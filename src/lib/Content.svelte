@@ -782,19 +782,25 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
 
 <style>
   .content-container {
-    position: absolute;
+    position: fixed;
     left: 50%;
-    transform: translate(-50%, 35%);
+    bottom: 0;
+    transform: translateX(-50%);
     width: 80%;
     max-width: 1200px;
     z-index: 30;
-    max-height: 60vh;
+    max-height: 80vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+    margin-bottom: 2rem;
+  }
+
+  .content-wrapper {
+    padding-bottom: 4rem;
   }
 
   .sub-title {
@@ -862,10 +868,8 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
 
   @media (max-width: 1024px) {
     .content-container {
-      width: 80%;
+      width: 90%;
       padding: 1.5rem;
-      top: 45%;
-      transform: translate(-50%, -20%);
     }
 
     .title {
@@ -887,10 +891,8 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
 
   @media (max-width: 500px) {
     .content-container {
-      width: 90%;
-      padding: 0.75rem;
-      top: 55%;
-      transform: translate(-50%, -25%);
+      width: 95%;
+      padding: 1rem;
     }
 
     .title {
@@ -899,6 +901,56 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
 
     .description {
       font-size: 0.75rem;
+    }
+  }
+
+  @media (max-height: 900px) {
+    .content-container {
+      max-height: 85vh;
+    }
+  }
+
+  @media (max-height: 800px) {
+    .content-container {
+      max-height: 80vh;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .content-container {
+      max-height: 75vh;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .content-container {
+      max-height: 70vh;
+    }
+  }
+
+  @media (max-height: 500px) {
+    .content-container {
+      max-height: 65vh;
+    }
+  }
+
+  @media (max-height: 400px) {
+    .content-container {
+      max-height: 60vh;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .content-container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .content-container {
+      width: 95%;
+      padding: 1rem;
     }
   }
 </style>
