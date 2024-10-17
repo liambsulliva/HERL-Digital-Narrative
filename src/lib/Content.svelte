@@ -796,11 +796,22 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
-    margin-bottom: 2rem;
   }
 
   .content-wrapper {
-    padding-bottom: 4rem;
+    padding-bottom: 20rem;
+  }
+
+  @media (max-height: 900px) {
+    .content-wrapper {
+      padding-bottom: 15rem;
+    }
+  }
+
+  @media (max-height: 700px) {
+    .content-wrapper {
+      padding-bottom: 10rem;
+    }
   }
 
   .sub-title {
