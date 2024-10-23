@@ -1,10 +1,14 @@
 <script lang="ts">
+  import { Lightbox } from "svelte-lightbox";
+
   export let src: string;
   export let alt: string = "";
 </script>
 
 <div class="flex flex-col gap-2">
-  <img {src} {alt} class="max-h-[17rem] w-auto object-contain" />
+  <Lightbox description={alt}>
+    <img {src} {alt} class="max-h-[17rem] object-contain m-auto" />
+  </Lightbox>
   {#if alt}
     <p class="text-sm text-gray-500">{alt}</p>
   {/if}
