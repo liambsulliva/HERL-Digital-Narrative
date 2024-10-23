@@ -1,5 +1,6 @@
 <script lang="ts">
   import Picture from "./Picture.svelte";
+  import Description from "./Description.svelte";
   export let page = 0;
 
   // TODO: Update interface to afford multiple images per milestone
@@ -729,7 +730,11 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
               <div class="info-section">
                 <div class="info-content">
                   <h1 class="title">{section.title}</h1>
-                  <p class="description">{section.description}</p>
+                  {#if section.description}
+                    <div class="description">
+                      <Description content={section.description} />
+                    </div>
+                  {/if}
                 </div>
               </div>
             {/each}
@@ -754,7 +759,9 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
                         {#if milestone.title}
                           <p><strong>{milestone.title}</strong></p>
                         {/if}
-                        <p>{milestone.description}</p>
+                        <div>
+                          <Description content={milestone.description} />
+                        </div>
                       </div>
                     </div>
                   {/each}
@@ -768,7 +775,9 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
               {/if}
               <div class="info-content">
                 <h1 class="title">{section.title}</h1>
-                <p class="description">{section.description}</p>
+                <div class="description">
+                  <Description content={section.description} />
+                </div>
               </div>
             </div>
           {/if}
