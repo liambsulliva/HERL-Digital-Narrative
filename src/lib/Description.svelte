@@ -19,6 +19,10 @@
   $: isTruncatedStr;
 </script>
 
-<button on:click={isTruncated} aria-label="description">
+<button
+  on:click={isTruncated}
+  style={content.length > length ? "cursor: pointer;" : "cursor: default;"}
+  aria-label="description"
+>
   {truncate(content, length)}
 </button>
