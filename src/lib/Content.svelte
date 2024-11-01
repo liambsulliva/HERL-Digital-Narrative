@@ -80,7 +80,7 @@
                 to optimize the reduction of repetitive stress.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_06_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_06_Image_0001.webp",
                 alt: "Dr. Alicia Koontz with a SMARTWheel.",
               },
             },
@@ -122,7 +122,7 @@
                 wheelchair tech.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_08_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_08_Image_0001.webp",
                 alt: "An engineer on the PAPAW.",
               },
             },
@@ -217,7 +217,7 @@
                 mechanical efficiency during wheelchair propulsion.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_10_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_10_Image_0001.webp",
               },
             },
           ],
@@ -296,7 +296,7 @@
                 Upper Limb Function Following Spinal Cord Injury (SCI).
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_14_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_14_Image_0001.webp",
               },
             },
             {
@@ -382,7 +382,7 @@
                 It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0002.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_18_Image_0002.webp",
                 alt: "Dr. Cooper and the PerMMA in 2010.",
               },
             },
@@ -403,7 +403,7 @@
                 downloaded.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_16_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_16_Image_0001.webp",
               },
             },
             {
@@ -433,7 +433,7 @@
                 from the VA and Pitt communities.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_18_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_18_Image_0001.webp",
                 alt: "Inaugurating the Bakery Square site, 2011.",
               },
             },
@@ -454,7 +454,7 @@
                 surfaces, and steep slopes.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_20_Image_0002.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_20_Image_0002.webp",
                 alt: "Dr. Jorge Candiotti and the MEBot.",
               },
             },
@@ -497,7 +497,7 @@
                 commercial viability.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_22_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_22_Image_0001.webp",
                 alt: "The Robotic Strong Arm.",
               },
             },
@@ -559,7 +559,7 @@
                 devices that run solely on compressed air technology.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_24_Image_0002.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_24_Image_0002.webp",
                 alt: "Dr. Rory Cooper at Morgan’s Wonderland with the Pneuchair.",
               },
             },
@@ -603,7 +603,7 @@
                 accessible transportation.
               `,
               picture: {
-                src: "./src/images/content/2024_Cal_Copy_Page_26_Image_0001.webp",
+                src: "/src/images/content/2024_Cal_Copy_Page_26_Image_0001.webp",
                 alt: "Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices.",
               },
             },
@@ -700,7 +700,7 @@
           title: " ",
           description: " ",
           picture: {
-            src: "./src/images/Timeline.png",
+            src: "/src/images/Timeline.png",
             alt: "Parallel Paths",
           },
         },
@@ -719,7 +719,7 @@
         <div class="mission-vision-layout">
           <div class="image-column">
             <Picture
-              src="./src/images/content/2024_Cal_Copy_Page_04_Image_0001.webp"
+              src="/src/images/content/2024_Cal_Copy_Page_04_Image_0001.webp"
               alt="Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt) , John
 Bollinger (PVA), Dr. Thomas P. Detre, (Pitt) ,Dr. Rory A. Cooper (VA/Pitt) ,
 Laura Miller (VA), Dr. Charles Robinson (Pitt)."
@@ -793,12 +793,12 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .content-container {
     position: fixed;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 1200px;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 1800px;
     z-index: 30;
-    max-height: 80vh;
+    max-height: 70vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -808,19 +808,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   }
 
   .content-wrapper {
-    padding-bottom: 20rem;
-  }
-
-  @media (max-height: 900px) {
-    .content-wrapper {
-      padding-bottom: 15rem;
-    }
-  }
-
-  @media (max-height: 700px) {
-    .content-wrapper {
-      padding-bottom: 10rem;
-    }
+    padding-bottom: 5rem;
   }
 
   .sub-title {
@@ -834,15 +822,15 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .milestones-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .milestone-item {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
     background: #fefefe;
-    padding: 0.75rem;
+    padding: 0.5rem;
     border-radius: 6px;
     border: 1px solid #efefef;
     font-size: 0.875rem;
@@ -858,14 +846,14 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
   }
 
   .description {
-    font-size: 0.875rem;
-    line-height: 1.4;
+    font-size: 0.8rem;
+    line-height: 1.3;
   }
 
   .mission-vision-layout {
@@ -888,89 +876,22 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
 
   @media (max-width: 1024px) {
     .content-container {
-      width: 90%;
-      padding: 1.5rem;
-    }
-
-    .title {
-      font-size: 1.6rem;
-    }
-
-    .description {
-      font-size: 0.9rem;
-    }
-
-    .mission-vision-layout {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .description {
-    font-size: 0.7rem;
-  }
-
-  @media (max-width: 500px) {
-    .content-container {
       width: 95%;
       padding: 1rem;
-    }
-
-    .title {
-      font-size: 1.25rem;
-    }
-
-    .description {
-      font-size: 0.75rem;
-    }
-  }
-
-  @media (max-height: 900px) {
-    .content-container {
-      max-height: 85vh;
     }
   }
 
   @media (max-height: 800px) {
     .content-container {
-      max-height: 80vh;
-    }
-  }
-
-  @media (max-height: 700px) {
-    .content-container {
-      max-height: 75vh;
+      max-height: 65vh;
+      top: 40%;
     }
   }
 
   @media (max-height: 600px) {
     .content-container {
-      max-height: 70vh;
-    }
-  }
-
-  @media (max-height: 500px) {
-    .content-container {
-      max-height: 65vh;
-    }
-  }
-
-  @media (max-height: 400px) {
-    .content-container {
       max-height: 60vh;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .content-container {
-      width: 90%;
-      padding: 1.5rem;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .content-container {
-      width: 95%;
-      padding: 1rem;
+      top: 35%;
     }
   }
 </style>

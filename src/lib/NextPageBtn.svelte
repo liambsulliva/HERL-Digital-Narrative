@@ -24,7 +24,8 @@
   <button
     on:click|stopPropagation={handlePageTurn}
     aria-label="Next Page"
-    class="absolute right-0 z-100"
+    class="absolute right-0"
+    style="z-index: 1000"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -167,9 +167,13 @@
   {#each Array(totalPages) as _, i}
     <div bind:this={pages[i]} class="page" style="z-index: {totalPages - i};">
       {#if i + 1 === page}
-        <LastPageBtn bind:page />
+        <div style="position: relative; z-index: 1000;">
+          <LastPageBtn bind:page />
+        </div>
       {:else if i + 1 === page + 1}
-        <NextPageBtn bind:page />
+        <div style="position: relative; z-index: 1000;">
+          <NextPageBtn bind:page />
+        </div>
       {/if}
       <img
         src={BookTexture}
