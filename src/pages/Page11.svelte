@@ -6,6 +6,37 @@
 
 <!-- Main container for Page 11 content -->
 <div class="timeline-container">
+  <!-- 2019 -->
+  <section class="year-section">
+    <h2 class="year-title">2019</h2>
+    <div class="milestones-grid">
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES — INVOLVED
+          RESPONSIVE ENGINEERING (ASPIRE)
+        </h3>
+        <div class="milestone-description">
+          <Description
+            content="A HERL center studying how people with disabilities and older adults are affected by access to reliable accessible transportation."
+          />
+        </div>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_26_Image_0001.webp"
+          alt="Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices."
+        />
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          MANUAL WHEELCHAIR ULCER RISK MANAGEMENT COACHING SYSTEM AND
+          METHODOLOGY PATENT
+        </h3>
+        <div class="milestone-description">
+          <Description content="" />
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- 2020 -->
   <section class="year-section">
     <h2 class="year-title">2020</h2>
@@ -21,55 +52,11 @@
       </div>
     </div>
   </section>
-
-  <!-- 2021 -->
-  <section class="year-section">
-    <h2 class="year-title">2021</h2>
-    <div class="milestones-grid">
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="Dr. Michael Boninger (HERL Medical Director 1998-20) spearheaded a team of experts in organizing one of the most widely used and referenced documents in the field today: a Clinical Practice Guideline (CPG) on Preservation of Upper Limb Function Following Spinal Cord Injury (SCI)."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="A patent was awarded for this innovative wheelchair design, focusing on effective shock absorption for both horizontal and vertical impacts during travel over uneven terrain."
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2022 -->
-  <section class="year-section">
-    <h2 class="year-title">2022</h2>
-    <div class="milestones-grid">
-      <div class="milestone-item">
-        <h3 class="milestone-title">IEEE BIOMEDICAL ENGINEERING MEDAL</h3>
-        <div class="milestone-description">
-          <Description
-            content="Dr. Cooper was honored with this prestigious award for his outstanding contributions to the field of biomedical engineering. This recognition highlights his achievements and groundbreaking research that have significantly advanced the intersection of engineering and medicine."
-          />
-        </div>
-      </div>
-    </div>
-  </section>
 </div>
 
 <style>
   .timeline-container {
     padding: 1rem;
-    background-color: #f9f9f9;
     border-radius: 8px;
   }
 
@@ -95,7 +82,6 @@
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .milestone-title {

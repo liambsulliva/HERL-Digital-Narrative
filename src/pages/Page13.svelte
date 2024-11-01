@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color: #f9f9f9;
     border-radius: 8px;
   }
 
