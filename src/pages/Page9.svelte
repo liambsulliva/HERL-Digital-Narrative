@@ -10,7 +10,7 @@
   <section class="year-section">
     <h2 class="year-title">2012</h2>
     <div class="milestones-grid">
-      <div class="flex flex-row gap-4">
+      <div class="flex flex-col md:flex-row gap-4">
         <div class="milestone-item">
           <h3 class="milestone-title">
             MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR

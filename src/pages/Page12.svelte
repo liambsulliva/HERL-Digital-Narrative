@@ -7,7 +7,7 @@
 <!-- Main container for Page 12 content -->
 <div class="timeline-container">
   <!-- 2021 -->
-  <div class="flex flex-row gap-4">
+  <div class="flex flex-col md:flex-row gap-4">
     <section class="year-section">
       <h2 class="year-title">2021</h2>
       <div class="milestones-grid">
