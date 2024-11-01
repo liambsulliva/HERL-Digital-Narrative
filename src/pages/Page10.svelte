@@ -6,53 +6,82 @@
 
 <!-- Main container for Page 10 content -->
 <div class="timeline-container">
-  <!-- 2017 -->
   <div class="flex flex-col md:flex-row gap-4">
     <section class="year-section">
-      <h2 class="year-title">2017</h2>
+      <h2 class="year-title">2013</h2>
       <div class="milestones-grid">
         <div class="milestone-item">
-          <h3 class="milestone-title">PNEUCHAIR & PNEUSCOOTER</h3>
+          <h3 class="milestone-title">
+            USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT
+          </h3>
           <div class="milestone-description">
             <Description
-              content="The PneuMobility project is focused on revolutionizing assistive mobility devices by developing innovative devices that run solely on compressed air technology."
+              content="A technology to streamline backrest adjustments for users, improving simplicity, aesthetics, and incorporating essential features for commercial viability."
             />
           </div>
           <Picture
-            src="/images/content/2024_Cal_Copy_Page_24_Image_0002.webp"
-            alt="Dr. Rory Cooper at Morgan’s Wonderland with the Pneuchair."
+            src="/images/content/2024_Cal_Copy_Page_22_Image_0001.webp"
+            alt="The Robotic Strong Arm."
           />
         </div>
       </div>
     </section>
-    <!-- 2018 -->
-    <section class="year-section">
-      <h2 class="year-title">2018</h2>
-      <div class="milestones-grid">
-        <div class="milestone-item">
-          <h3 class="milestone-title">
-            POWERED PERSONAL TRANSFER SYSTEM (PPTS)
-          </h3>
-          <div class="milestone-description">
-            <Description
-              content="A groundbreaking innovation designed to revolutionize the process of transferring between a bed and a wheelchair, particularly for individuals, including many veterans, who depend on wheelchairs for mobility."
-            />
-          </div>
-        </div>
 
-        <div class="milestone-item">
-          <h3 class="milestone-title">
-            GUIDELINES FOR THE CARE OF PEOPLE WITH SPINA BIFIDA
-          </h3>
-          <div class="milestone-description">
-            <Description
-              content="One hundred Spina Bifida experts from around the world, led by HERL Medical Director Dr. Brad Dicianno, spent three years developing these Guidelines."
-            />
+    <!-- 2015 -->
+    <div class="flex flex-row gap-4">
+      <section class="year-section">
+        <h2 class="year-title">2015</h2>
+        <div class="milestones-grid">
+          <div class="milestone-item">
+            <h3 class="milestone-title">NATIONAL ACADEMY OF INVENTORS</h3>
+            <div class="milestone-description">
+              <Description
+                content="Dr. Cooper elected Fellow of the NAI, partnered with the International Society of Wheelchair Professionals, whose mission is to serve as a global resource for wheelchair service standards and provision through advocacy, education, standards, evidence-based practice, innovation and a platform for information exchange."
+              />
+            </div>
+          </div>
+
+          <div class="milestone-item">
+            <h3 class="milestone-title">
+              VA TECHNOLOGY TRANSFER ASSISTANCE PROGRAM
+            </h3>
+            <div class="milestone-description">
+              <Description
+                content="Start of the project which engages in a wide range of healthcare, research, and support initiatives for veterans, with a core mission of enhancing veterans’ quality of life and healthcare outcomes."
+              />
+            </div>
+          </div>
+
+          <div class="milestone-item">
+            <h3 class="milestone-title">
+              SAMUEL E. HEYMAN SERVICE TO AMERICA MEDAL
+            </h3>
+            <div class="milestone-description">
+              <Description
+                content="Also known as the “Sammies”, this premier awards program is considered the “Oscar” of public service."
+              />
+            </div>
+          </div>
+
+          <div class="milestone-item">
+            <h3 class="milestone-title">
+              DRIVING EVALUATION AND TRAINING PATENT
+            </h3>
+            <div class="milestone-description">
+              <Description
+                content="
+                Covers techniques for assessing
+                and enhancing driving skills through evaluation and training
+                processes.
+              "
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
+  
 </div>
 
 <style>

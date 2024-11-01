@@ -22,7 +22,7 @@
   let spineDisplay = "block";
   let paperBlockDisplay = "block";
 
-  const totalPages = 14;
+  const totalPages = 15;
   let pages: HTMLElement[] = [];
 
   $: {

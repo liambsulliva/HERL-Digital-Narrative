@@ -12,6 +12,7 @@
   import Page11 from "../pages/Page11.svelte";
   import Page12 from "../pages/Page12.svelte";
   import Page13 from "../pages/Page13.svelte";
+  import Page14 from "../pages/Page14.svelte";
 
   export let page = 0;
 
@@ -718,6 +719,18 @@
         },
       ],
     },
+    14: {
+      sections: [
+        {
+          title: " ",
+          description: " ",
+          picture: {
+            src: "/images/Timeline.png",
+            alt: "Parallel Paths",
+          },
+        },
+      ],
+    },
   };
 
   // Generate data of current page reactively
@@ -752,6 +765,8 @@
       <Page12 />
     {:else if page === 13}
       <Page13 />
+    {:else if page === 14}
+      <Page14 />
     {:else}
       <p>No content available for this page.</p>
     {/if}
