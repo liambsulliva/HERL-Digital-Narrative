@@ -1,6 +1,18 @@
 <script lang="ts">
-  import Picture from "./Picture.svelte";
-  import Description from "./Description.svelte";
+  import Page1 from "../pages/Page1.svelte";
+  import Page2 from "../pages/Page2.svelte";
+  import Page3 from "../pages/Page3.svelte";
+  import Page4 from "../pages/Page4.svelte";
+  import Page5 from "../pages/Page5.svelte";
+  import Page6 from "../pages/Page6.svelte";
+  import Page7 from "../pages/Page7.svelte";
+  import Page8 from "../pages/Page8.svelte";
+  import Page9 from "../pages/Page9.svelte";
+  import Page10 from "../pages/Page10.svelte";
+  import Page11 from "../pages/Page11.svelte";
+  import Page12 from "../pages/Page12.svelte";
+  import Page13 from "../pages/Page13.svelte";
+
   export let page = 0;
 
   // TODO: Update interface to afford multiple images per milestone
@@ -714,76 +726,35 @@
 
 <div class="content-container">
   {#if currentPageData.length}
-    <div class="content-wrapper">
-      {#if page === 1}
-        <div class="mission-vision-layout">
-          <div class="image-column">
-            <Picture
-              src="/images/content/2024_Cal_Copy_Page_04_Image_0001.webp"
-              alt="Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt) , John
-Bollinger (PVA), Dr. Thomas P. Detre, (Pitt) ,Dr. Rory A. Cooper (VA/Pitt) ,
-Laura Miller (VA), Dr. Charles Robinson (Pitt)."
-            />
-          </div>
-          <div class="text-column">
-            {#each currentPageData as section}
-              <div class="info-section">
-                <div class="info-content">
-                  <h1 class="title">{section.title}</h1>
-                  {#if section.description}
-                    <div class="description">
-                      <Description content={section.description} />
-                    </div>
-                  {/if}
-                </div>
-              </div>
-            {/each}
-          </div>
-        </div>
-      {:else}
-        {#each currentPageData as section}
-          {#if section.year}
-            <div class="year-section">
-              <h2 class="sub-title">{section.year}</h2>
-              {#if section.milestones}
-                <div class="milestones-grid">
-                  {#each section.milestones as milestone}
-                    <div class="milestone-item">
-                      {#if milestone.picture}
-                        <Picture
-                          src={milestone.picture.src}
-                          alt={milestone.picture.alt}
-                        />
-                      {/if}
-                      <div class="milestone-content">
-                        {#if milestone.title}
-                          <p><strong>{milestone.title}</strong></p>
-                        {/if}
-                        <div>
-                          <Description content={milestone.description} />
-                        </div>
-                      </div>
-                    </div>
-                  {/each}
-                </div>
-              {/if}
-            </div>
-          {:else if section.title && section.description}
-            <div class="info-section">
-              {#if section.picture}
-                <Picture src={section.picture.src} alt={section.picture.alt} />
-              {/if}
-              <div class="info-content">
-                <h1 class="title">{section.title}</h1>
-                <div class="description">
-                  <Description content={section.description} />
-                </div>
-              </div>
-            </div>
-          {/if}
-        {/each}
-      {/if}
-    </div>
+    {#if page === 1}
+      <Page1 />
+    {:else if page === 2}
+      <Page2 />
+    {:else if page === 3}
+      <Page3 />
+    {:else if page === 4}
+      <Page4 />
+    {:else if page === 5}
+      <Page5 />
+    {:else if page === 6}
+      <Page6 />
+    {:else if page === 7}
+      <Page7 />
+    {:else if page === 8}
+      <Page8 />
+    {:else if page === 9}
+      <Page9 />
+    {:else if page === 10}
+      <Page10 />
+    {:else if page === 11}
+      <Page11 />
+    {:else if page === 12}
+      <Page12 />
+    {:else if page === 13}
+      <Page13 />
+    {:else}
+      <p>No content available for this page.</p>
+    {/if}
   {:else}
     <p>No content available for this page.</p>
   {/if}
@@ -793,7 +764,7 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
   .content-container {
     position: fixed;
     left: 50%;
-    bottom: 0;
+    top: 5rem;
     transform: translateX(-50%);
     width: 80%;
     max-width: 1200px;
@@ -823,154 +794,5 @@ Laura Miller (VA), Dr. Charles Robinson (Pitt)."
     }
   }
 
-  .sub-title {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 0.25rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  .milestones-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .milestone-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    background: #fefefe;
-    padding: 0.75rem;
-    border-radius: 6px;
-    border: 1px solid #efefef;
-    font-size: 0.875rem;
-  }
-
-  :global(.dark) .milestone-item {
-    background: #121a28;
-    border-color: #3a4556;
-  }
-
-  .year-section {
-    margin-bottom: 1.5rem;
-  }
-
-  .title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-  }
-
-  .description {
-    font-size: 0.875rem;
-    line-height: 1.4;
-  }
-
-  .mission-vision-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .image-column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text-column {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  @media (max-width: 1024px) {
-    .content-container {
-      width: 90%;
-      padding: 1.5rem;
-    }
-
-    .title {
-      font-size: 1.6rem;
-    }
-
-    .description {
-      font-size: 0.9rem;
-    }
-
-    .mission-vision-layout {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .description {
-    font-size: 0.7rem;
-  }
-
-  @media (max-width: 500px) {
-    .content-container {
-      width: 95%;
-      padding: 1rem;
-    }
-
-    .title {
-      font-size: 1.25rem;
-    }
-
-    .description {
-      font-size: 0.75rem;
-    }
-  }
-
-  @media (max-height: 900px) {
-    .content-container {
-      max-height: 85vh;
-    }
-  }
-
-  @media (max-height: 800px) {
-    .content-container {
-      max-height: 80vh;
-    }
-  }
-
-  @media (max-height: 700px) {
-    .content-container {
-      max-height: 75vh;
-    }
-  }
-
-  @media (max-height: 600px) {
-    .content-container {
-      max-height: 70vh;
-    }
-  }
-
-  @media (max-height: 500px) {
-    .content-container {
-      max-height: 65vh;
-    }
-  }
-
-  @media (max-height: 400px) {
-    .content-container {
-      max-height: 60vh;
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .content-container {
-      width: 90%;
-      padding: 1.5rem;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .content-container {
-      width: 95%;
-      padding: 1rem;
-    }
-  }
+  /* Reuse styles from original Content.svelte or define shared styles here */
 </style>
