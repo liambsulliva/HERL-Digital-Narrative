@@ -8,12 +8,53 @@
 <div class="timeline-container">
   <!-- 2009 -->
   <section class="year-section">
-    <h2 class="year-title">2009</h2>
+    <h2 class="year-title">2010</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">CARE OF THE COMBAT AMPUTEE TEXTBOOK PUBLISHED</h3>
+        <h3 class="milestone-title">
+          PERSONAL MOBILITY AND MANIPULATION APPLIANCE
+        </h3>
         <div class="milestone-description">
-          <Description content="The “Care of the Combat Amputee” textbook, revered as the “gold standard” for military healthcare providers, plays a pivotal role in improving the quality of care for Veterans with traumatic amputations. By providing standardized guidelines, it ensures that medical professionals are equipped with the knowledge and skills necessary to deliver the best possible care. In the long-term care and rehabilitation domain, it emphasizes personalized approaches that consider the unique needs of each individual." />
+          <Description
+            content="PerMMA’s the first fully robotic mobility and manipulation device for people with disabilities. It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility."
+          />
+        </div>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
+          alt="Dr. Cooper and the PerMMA in 2010."
+        />
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK
+        </h3>
+        <div class="milestone-description">
+          <Description
+            content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
+          />
+        </div>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
+          alt="Medical Rehabilitation Handbook"
+        />
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
+        <div class="milestone-description">
+          <Description
+            content="Initiated a series of connected devices leveraging AI to promote adherence to clinical guidelines."
+          />
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">PERSONAL VEHICLE PATENT</h3>
+        <div class="milestone-description">
+          <Description
+            content="A power mobility device designed to improve maneuverability on diverse terrains."
+          />
         </div>
       </div>
     </div>
@@ -41,7 +82,7 @@
 
   .milestones-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 

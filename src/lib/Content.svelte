@@ -767,7 +767,7 @@
     top: 5rem;
     transform: translateX(-50%);
     width: 80%;
-    max-width: 1200px;
+    max-width: 1600px;
     z-index: 30;
     max-height: 80vh;
     overflow-y: auto;

@@ -38,6 +38,8 @@
     gap: 2rem;
     padding: 1rem;
     border-radius: 8px;
+    align-items: center;
+    min-height: 50vh;
   }
 
   .info-section {

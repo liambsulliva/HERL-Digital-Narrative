@@ -1,41 +1,75 @@
 <script lang="ts">
   // Import necessary reusable components
-  import Description from "../lib/Description.svelte";
   import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 12 content -->
+<!-- Main container for Page 6 content -->
 <div class="timeline-container">
-  <!-- 2023 -->
+  <!-- 2006 -->
   <section class="year-section">
-    <h2 class="year-title">2023</h2>
+    <h2 class="year-title">2006</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">NATIONAL INVENTORS HALL OF FAME</h3>
+        <h3 class="milestone-title">
+          QUALITY OF LIFE ENGINEERING RESEARCH CENTER (ERC)
+        </h3>
         <div class="milestone-description">
-          <Description content="Dr. Rory Cooper was inducted to the 50th class." />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">NATIONAL MEDAL OF TECHNOLOGY AND INNOVATION</h3>
-        <div class="milestone-description">
-          <Description content="Dr. Cooper was presented this award by President Biden at the White House. This accolade is given to individuals who have made important contributions to the advancement of knowledge." />
+          HERL received this award from the National Science Foundation (NSF),
+          along with Carnegie Mellon University and other partners.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Page 13: Timeline Image -->
-  <section class="image-section">
-    <Picture src="/images/Timeline.png" alt="Parallel Paths" />
+  <!-- 2007 -->
+  <section class="year-section">
+    <h2 class="year-title">2007</h2>
+    <div class="milestones-grid">
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          SMART POWER ASSISTANCE MODULE FOR MANUAL WHEELCHAIRS PATENT
+        </h3>
+        <div class="milestone-description">
+          Dr. Rory Cooper introduced the PHAATE (Policy, Human Activity
+          Assistive Technology Environment) model.
+        </div>
+      </div>
+      <div class="milestone-item">
+        <h3 class="milestone-title">TRANSFER ASSESSMENT INSTRUMENT (TAI)</h3>
+        <div class="milestone-description">
+          A groundbreaking clinical tool designed for the comprehensive
+          evaluation of transfer skills.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2009 -->
+  <section class="year-section">
+    <h2 class="year-title">2009</h2>
+    <div class="milestones-grid">
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          CARE OF THE COMBAT AMPUTEE TEXTBOOK PUBLISHED
+        </h3>
+        <div class="milestone-description">
+          The “Care of the Combat Amputee” textbook, revered as the “gold
+          standard” for military healthcare providers, plays a pivotal role in
+          improving the quality of care for Veterans with traumatic amputations.
+          By providing standardized guidelines, it ensures that medical
+          professionals are equipped with the knowledge and skills necessary to
+          deliver the best possible care. In the long-term care and
+          rehabilitation domain, it emphasizes personalized approaches that
+          consider the unique needs of each individual.
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 
 <style>
   .timeline-container {
     padding: 1rem;
-    background-color: #f9f9f9;
     border-radius: 8px;
   }
 
@@ -61,7 +95,6 @@
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .milestone-title {

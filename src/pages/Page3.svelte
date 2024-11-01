@@ -11,31 +11,49 @@
     <h2 class="year-title">1996</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW)</h3>
+        <h3 class="milestone-title">
+          PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW)
+        </h3>
         <div class="milestone-description">
-          <Description content="A joint effort between Yamaha and HERL, it contributed to significant advancements in wheelchair tech." />
+          <Description
+            content="A joint effort between Yamaha and HERL, it contributed to significant advancements in wheelchair tech."
+          />
         </div>
-        <Picture src="/images/content/2024_Cal_Copy_Page_08_Image_0001.webp" alt="An engineer on the PAPAW." />
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_08_Image_0001.webp"
+          alt="An engineer on the PAPAW."
+        />
       </div>
 
-      <div class="milestone-item">
-        <h3 class="milestone-title">ZERO THROW JOYSTICK</h3>
-        <div class="milestone-description">
-          <Description content="Gave users the ability to operate their power wheelchair with 360° of control." />
+      <div class="flex flex-col">
+        <div class="flex flex-row">
+          <div class="milestone-item">
+            <h3 class="milestone-title">ZERO THROW JOYSTICK</h3>
+            <div class="milestone-description">
+              <Description
+                content="Gave users the ability to operate their power wheelchair with 360° of control."
+              />
+            </div>
+          </div>
+          <div class="milestone-item">
+            <h3 class="milestone-title">
+              CDC CENTER FOR INJURY RESEARCH AND CONTROL
+            </h3>
+            <div class="milestone-description">
+              <Description
+                content="This award was bestowed on HERL along with the Department of Neurosurgery of Pitt."
+              />
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="milestone-item">
-        <h3 class="milestone-title">CDC CENTER FOR INJURY RESEARCH AND CONTROL</h3>
-        <div class="milestone-description">
-          <Description content="This award was bestowed on HERL along with the Department of Neurosurgery of Pitt." />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">WHEELCHAIR COMPARISON STUDY</h3>
-        <div class="milestone-description">
-          <Description content="The first in a long series of studies was completed. One study highlighted challenges with wheelchairs’ quality and standards non-compliance." />
+        <div class="milestone-item">
+          <h3 class="milestone-title">WHEELCHAIR COMPARISON STUDY</h3>
+          <div class="milestone-description">
+            <Description
+              content="The first in a long series of studies was completed. One study highlighted challenges with wheelchairs’ quality and standards non-compliance."
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -48,14 +66,18 @@
       <div class="milestone-item">
         <h3 class="milestone-title">WHEELCHAIR SELECTION AND CONFIGURATION</h3>
         <div class="milestone-description">
-          <Description content="This published book is the most cited text dedicated to wheelchair design and clinical service guidance, being translated in six different languages." />
+          <Description
+            content="This published book is the most cited text dedicated to wheelchair design and clinical service guidance, being translated in six different languages."
+          />
         </div>
       </div>
 
       <div class="milestone-item">
         <h3 class="milestone-title">NATIONAL VETERAN WHEELCHAIR GAMES</h3>
         <div class="milestone-description">
-          <Description content="Pittsburgh hosted the NVWG and was given its first VA R&D Center of Excellence for Wheelchairs and Associated Rehabilitation Engineering (WARE) award. The beginning of a 25+ year legacy." />
+          <Description
+            content="Pittsburgh hosted the NVWG and was given its first VA R&D Center of Excellence for Wheelchairs and Associated Rehabilitation Engineering (WARE) award. The beginning of a 25+ year legacy."
+          />
         </div>
       </div>
     </div>
@@ -65,7 +87,6 @@
 <style>
   .timeline-container {
     padding: 1rem;
-    background-color: #f9f9f9;
     border-radius: 8px;
   }
 
@@ -91,7 +112,6 @@
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .milestone-title {
