@@ -5,6 +5,7 @@
   import VABanner from "./lib/VABanner.svelte";
   import Book from "./lib/Book.svelte";
   import Content from "./lib/Content.svelte";
+  import Modal from "./lib/Modal.svelte";
 
   let bookOpen = false;
   let isFlipped = false;
@@ -35,6 +36,8 @@
     }
   }
 </script>
+
+<Modal />
 
 <header class="flex p-3 w-screen items-center justify-between">
   <div class="flex items-center gap-1">

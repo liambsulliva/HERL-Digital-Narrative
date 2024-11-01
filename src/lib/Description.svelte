@@ -1,28 +1,22 @@
 <script lang="ts">
+  import { modalStore } from "./stores/modalStore";
+
   export let content: string;
   export let length = 300;
-  let isTruncatedStr = true;
 
   const truncate = (description: string, maxLength: number) => {
-    if (description.length <= maxLength || !isTruncatedStr) {
+    if (description.length <= maxLength) {
       return description;
     }
-
     const truncated = description.substring(0, maxLength - 3);
     return truncated + "...";
   };
 
-  const isTruncated = () => {
-    isTruncatedStr = !isTruncatedStr;
+  const openModal = () => {
+    modalStore.set({ isOpen: true, content });
   };
-
-  $: isTruncatedStr;
 </script>
 
-<button
-  on:click={isTruncated}
-  style={content.length > length ? "cursor: pointer;" : "cursor: default;"}
-  aria-label="description"
->
+<button on:click={openModal} style="cursor: pointer;" aria-label="description">
   {truncate(content, length)}
 </button>

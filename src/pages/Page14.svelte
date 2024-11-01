@@ -4,7 +4,7 @@
 </script>
 
 <div class="image-container">
-  <Picture src="/images/Timeline.png" alt="Parallel Paths" />
+  <Picture src="/images/Timeline.png" alt="Parallel Paths" width="w-full" />
 </div>
 
 <style>

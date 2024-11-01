@@ -27,15 +27,15 @@
     <div class="milestones-grid">
       <div class="milestone-item">
         <h3 class="milestone-title">SMARTWHEEL</h3>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_06_Image_0001.webp"
+          alt="Dr. Alicia Koontz with a SMARTWheel."
+        />
         <div class="milestone-description">
           <Description
             content="Revolutionized how wheelchair setups could be customized to optimize the reduction of repetitive stress."
           />
         </div>
-        <Picture
-          src="/images/content/2024_Cal_Copy_Page_06_Image_0001.webp"
-          alt="Dr. Alicia Koontz with a SMARTWheel."
-        />
       </div>
 
       <div class="flex flex-col">

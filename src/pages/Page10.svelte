@@ -14,15 +14,16 @@
           <h3 class="milestone-title">
             USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT
           </h3>
+          <Picture
+            src="/images/content/2024_Cal_Copy_Page_22_Image_0001.webp"
+            alt="The Robotic Strong Arm."
+            width="w-[250px]"
+          />
           <div class="milestone-description">
             <Description
               content="A technology to streamline backrest adjustments for users, improving simplicity, aesthetics, and incorporating essential features for commercial viability."
             />
           </div>
-          <Picture
-            src="/images/content/2024_Cal_Copy_Page_22_Image_0001.webp"
-            alt="The Robotic Strong Arm."
-          />
         </div>
       </div>
     </section>
@@ -81,7 +82,6 @@
       </section>
     </div>
   </div>
-  
 </div>
 
 <style>

@@ -57,15 +57,16 @@
           <h3 class="milestone-title">
             ERGONOMIC DUAL SURFACE WHEELCHAIR PUSHRIM
           </h3>
+          <Picture
+            src="/images/content/2024_Cal_Copy_Page_10_Image_0001.webp"
+            alt="The Robotic Strong Arm."
+          />
           <div class="milestone-description">
             <Description
               content="The Ergonomic Pushrim (left) developed by HERL’s team, marked a significant leap from traditional wheelchair handrims. Ergonomic hand rims have successfully tackled traditional push rim issues by offering a better hand fit, enhancing mechanical efficiency during wheelchair propulsion."
             />
           </div>
-          <Picture
-            src="/images/content/2024_Cal_Copy_Page_10_Image_0001.webp"
-            alt="The Robotic Strong Arm."
-          />
+          
         </div>
       </div>
     </section>

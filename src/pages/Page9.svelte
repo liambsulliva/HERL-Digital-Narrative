@@ -15,15 +15,17 @@
           <h3 class="milestone-title">
             MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR
           </h3>
+          <Picture
+            src="/images/content/2024_Cal_Copy_Page_20_Image_0002.webp"
+            alt="Dr. Jorge Candiotti and the MEBot."
+            width="w-[400px]"
+          />
           <div class="milestone-description">
             <Description
               content="A groundbreaking innovation designed for conquering challenging terrains, including curbs, uneven surfaces, and steep slopes."
             />
           </div>
-          <Picture
-            src="/images/content/2024_Cal_Copy_Page_20_Image_0002.webp"
-            alt="Dr. Jorge Candiotti and the MEBot."
-          />
+          
         </div>
         <div class="flex flex-col gap-4">
           <div class="milestone-item">
