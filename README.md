@@ -1,32 +1,41 @@
 # HERL Throughout the Years Digital Narrative
 
-This is a digital narrative project that I am working on as part of the HERL Throughout the Years program. The goal of this project is to create an interactive digital narrative that explores HERL's 30+ years of history developing cutting-edge technology for disabled veterans. This project is currently in active development and will be completed by the end of 2024.
+Welcome to the HERL Throughout the Years Digital Narrative project. This interactive digital narrative explores over 30 years of HERL's history in developing cutting-edge technology for disabled veterans. The project is designed to be both engaging and informative, utilizing a skeuomorphic design to create a visually immersive experience. The final product is expected to be completed by the end of 2024 and will be available on the [HERL Website](https://herl.pitt.edu).
 
 ## Technologies Used
 
-- Svelte
-- Tailwind CSS
-- TypeScript
-- Vite
+- **Svelte**: Chosen for its performance and ability to compile down to native JavaScript, making it ideal for embedding in iframes.
+- **Tailwind CSS**: For styling and responsive design.
+- **TypeScript**: To enhance JavaScript with type safety.
+- **Vite**: For fast and efficient development and build processes.
+
+## Features
+
+- **Interactive Book Design**: The narrative is presented in a book format, allowing users to flip through pages using buttons or keyboard arrows.
+- **Responsive Design**: The layout adjusts for different screen sizes, as it is intended to be embedded in an iframe.
+- **Dark Mode**: Users can toggle between light and dark themes.
+- **Content Modality**: Descriptions can be expanded in a modal to maintain space efficiency, and images can be viewed in a lightbox for better visibility.
+- **Performance Optimizations**: The project is optimized for smooth transitions and minimal load times, even with dense content.
+
+## Development Notes
+
+- **Skeuomorphic Design**: The project uses a skeuomorphic design to mimic a physical book, enhancing the narrative experience.
+- **3D Animations**: Implemented using CSS `transform-style: preserve-3d` for realistic page flipping effects.
+- **Content Management**: Pages are dynamically loaded and managed to ensure a seamless user experience.
 
 ## Running Locally
 
-If you want to run this project locally in its current state, you will need to have Node.js installed on your computer.
+To run this project locally, ensure you have Node.js installed. Then, follow these steps:
 
-Once you have Node.js installed, you can install the dependencies for this project by running the following command in your terminal:
+1. Install the project dependencies:
 
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
-After the dependencies are installed, you can start the development server by running the following command:
+2. Start the development server:
+   ```
+   npm run dev
+   ```
 
-```
-npm run dev
-```
-
-This will start the development server and open your browser to the project.
-
-# Deployment
-
-This project is currently ongoing. When it is completed, you will be able to find the final product on the [HERL Website](https://herl.pitt.edu).
+This will launch the development server and open the project in your default web browser.
