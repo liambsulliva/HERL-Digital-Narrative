@@ -1,6 +1,6 @@
 <script lang="ts">
-  import lightbanner from "../images/pittbanner-light.png";
-  import darkbanner from "../images/pittbanner-dark.png";
+  import lightbanner from "/images/pittbanner-light.png";
+  import darkbanner from "/images/pittbanner-dark.png";
 </script>
 
 <a

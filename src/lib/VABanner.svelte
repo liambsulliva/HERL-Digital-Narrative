@@ -1,5 +1,5 @@
 <script lang="ts">
-  import vabanner from "../images/2024-VA-Seal.webp";
+  import vabanner from "/images/2024-VA-Seal.webp";
 </script>
 
 <a

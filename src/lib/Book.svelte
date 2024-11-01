@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import FrontCover from "../images/Cover-Front.webp";
-  import BackCover from "../images/Cover-Back.webp";
-  import BookTexture from "../images/BookTexture.webp";
+  import FrontCover from "/images/Cover-Front.webp";
+  import BackCover from "/images/Cover-Back.webp";
+  import BookTexture from "/images/BookTexture.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
   import LastPageBtn from "./LastPageBtn.svelte";
 
