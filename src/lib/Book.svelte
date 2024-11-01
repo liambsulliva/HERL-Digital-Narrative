@@ -234,7 +234,7 @@
   .spine {
     width: 55px;
     height: 100%;
-    left: -5%;
+    left: -1.5rem;
     background: #252525;
     transform: rotateY(-90deg) translateX(-40%);
     transform-style: preserve-3d;
@@ -301,7 +301,7 @@
 
   @media screen and (max-width: 600px) {
     .spine {
-      transform: rotateY(-90deg) translateX(-40%) translateZ(10px);
+      transform: rotateY(-90deg) translateX(-40%);
     }
   }
 </style>
