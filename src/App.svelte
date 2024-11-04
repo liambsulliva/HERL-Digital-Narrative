@@ -1,5 +1,4 @@
 <script lang="ts">
-  import ModeSwitcher from "./lib/ModeSwitcher.svelte";
   import FlipBtn from "./lib/FlipBtn.svelte";
   import PittBanner from "./lib/PittBanner.svelte";
   import VABanner from "./lib/VABanner.svelte";
@@ -48,7 +47,6 @@
     {#if !bookOpen}
       <FlipBtn bind:isFlipped />
     {/if}
-    <ModeSwitcher />
   </div>
 </header>
 <main
