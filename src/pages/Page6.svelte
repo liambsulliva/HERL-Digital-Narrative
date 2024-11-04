@@ -1,6 +1,5 @@
 <script lang="ts">
-  // Import necessary reusable components
-  import Picture from "../lib/Picture.svelte";
+  import Description from "../lib/Description.svelte";
 </script>
 
 <!-- Main container for Page 6 content -->
