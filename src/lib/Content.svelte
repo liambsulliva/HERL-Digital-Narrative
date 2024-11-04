@@ -47,12 +47,12 @@
   .content-container {
     position: fixed;
     left: 50%;
-    top: 5rem;
+    top: 2rem;
     transform: translateX(-50%);
-    width: 80%;
+    width: 100%;
     max-width: 1600px;
     z-index: 30;
-    max-height: 80vh;
+    max-height: 60vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;

@@ -40,8 +40,10 @@
 
 <header class="flex p-3 w-screen items-center justify-between">
   <div class="flex items-center gap-1">
-    <PittBanner />
-    <VABanner />
+    {#if !bookOpen}
+      <PittBanner />
+      <VABanner />
+    {/if}
   </div>
   <div class="flex items-center gap-3 px-3">
     {#if !bookOpen}
