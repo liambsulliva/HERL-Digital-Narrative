@@ -13,10 +13,9 @@
         <h3 class="milestone-title">
           QUALITY OF LIFE ENGINEERING RESEARCH CENTER (ERC)
         </h3>
-        <div class="milestone-description">
-          HERL received this award from the National Science Foundation (NSF),
-          along with Carnegie Mellon University and other partners.
-        </div>
+        <Description
+          content="HERL received this award from the National Science Foundation (NSF), along with Carnegie Mellon University and other partners."
+        />
       </div>
     </div>
   </section>
@@ -29,17 +28,15 @@
         <h3 class="milestone-title">
           SMART POWER ASSISTANCE MODULE FOR MANUAL WHEELCHAIRS PATENT
         </h3>
-        <div class="milestone-description">
-          Dr. Rory Cooper introduced the PHAATE (Policy, Human Activity
-          Assistive Technology Environment) model.
-        </div>
+        <Description
+          content="Dr. Rory Cooper introduced the PHAATE (Policy, Human Activity Assistive Technology Environment) model."
+        />
       </div>
       <div class="milestone-item">
         <h3 class="milestone-title">TRANSFER ASSESSMENT INSTRUMENT (TAI)</h3>
-        <div class="milestone-description">
-          A groundbreaking clinical tool designed for the comprehensive
-          evaluation of transfer skills.
-        </div>
+        <Description
+          content="A groundbreaking clinical tool designed for the comprehensive evaluation of transfer skills."
+        />
       </div>
     </div>
   </section>
@@ -52,16 +49,9 @@
         <h3 class="milestone-title">
           CARE OF THE COMBAT AMPUTEE TEXTBOOK PUBLISHED
         </h3>
-        <div class="milestone-description">
-          The “Care of the Combat Amputee” textbook, revered as the “gold
-          standard” for military healthcare providers, plays a pivotal role in
-          improving the quality of care for Veterans with traumatic amputations.
-          By providing standardized guidelines, it ensures that medical
-          professionals are equipped with the knowledge and skills necessary to
-          deliver the best possible care. In the long-term care and
-          rehabilitation domain, it emphasizes personalized approaches that
-          consider the unique needs of each individual.
-        </div>
+        <Description
+          content="The “Care of the Combat Amputee” textbook, revered as the “gold standard” for military healthcare providers, plays a pivotal role in improving the quality of care for Veterans with traumatic amputations. By providing standardized guidelines, it ensures that medical professionals are equipped with the knowledge and skills necessary to deliver the best possible care. In the long-term care and rehabilitation domain, it emphasizes personalized approaches that consider the unique needs of each individual."
+        />
       </div>
     </div>
   </section>
