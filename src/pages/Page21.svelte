@@ -10,15 +10,15 @@
     <h2 class="year-title">2013</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">
-          USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT
-        </h3>
         <Picture
           src="/images/content/2024_Cal_Copy_Page_22_Image_0001.webp"
           alt="The Robotic Strong Arm."
-          width="max-h-[10rem]"
+          width="max-h-[30rem]"
         />
         <div class="milestone-description">
+          <h3 class="milestone-title">
+            USER-ADJUSTABLE WHEELCHAIR BACKREST MOUNTING HARDWARE PATENT
+          </h3>
           <Description
             content="A technology to streamline backrest adjustments for users, improving simplicity, aesthetics, and incorporating essential features for commercial viability."
           />
@@ -50,9 +50,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   .milestone-item {
+    display: flex;
+    gap: 1rem;
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 6px;
@@ -66,14 +69,13 @@
   }
 
   .milestone-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     font-size: 1rem;
     color: #555555;
     line-height: 1.5;
-  }
-
-  .image-section {
-    text-align: center;
-    margin-top: 2rem;
+    padding: 0 4rem;
   }
 
   /* Responsive Design */
@@ -93,11 +95,6 @@
     .milestone-description {
       font-size: 0.95rem;
     }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-    }
   }
 
   @media (max-width: 480px) {
@@ -111,11 +108,6 @@
 
     .milestone-description {
       font-size: 0.9rem;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
     }
   }
 </style>

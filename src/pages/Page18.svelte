@@ -10,21 +10,22 @@
     <h2 class="year-title">2010</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">
-          PERSONAL MOBILITY AND MANIPULATION APPLIANCE
-        </h3>
-        <Picture
-        width="max-h-[10rem]"
-          src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
-          alt="Dr. Cooper and the PerMMA in 2010."
-        />
-        <div class="milestone-description">
-          <Description
-            content="PerMMA’s the first fully robotic mobility and manipulation device for people with disabilities. It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility."
+        <div class="flex items-center gap-4">
+          <Picture
+            width="max-h-[10rem] pt-8"
+            src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
+            alt="Dr. Cooper and the PerMMA in 2010."
           />
+          <div class="milestone-description">
+            <h3 class="milestone-title">
+              PERSONAL MOBILITY AND MANIPULATION APPLIANCE
+            </h3>
+            <Description
+              content="PerMMA’s the first fully robotic mobility and manipulation device for people with disabilities. It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility."
+            />
+          </div>
         </div>
       </div>
-
       <div class="milestone-item">
         <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
         <div class="milestone-description">
@@ -51,19 +52,20 @@
     font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 1rem;
     text-align: center;
   }
 
   .milestones-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   .milestone-item {
     background-color: #ffffff;
     padding: 1rem;
+    padding-bottom: 0;
     border-radius: 6px;
   }
 
@@ -78,11 +80,6 @@
     font-size: 1rem;
     color: #555555;
     line-height: 1.5;
-  }
-
-  .image-section {
-    text-align: center;
-    margin-top: 2rem;
   }
 
   /* Responsive Design */
@@ -102,11 +99,6 @@
     .milestone-description {
       font-size: 0.95rem;
     }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-    }
   }
 
   @media (max-width: 480px) {
@@ -120,11 +112,6 @@
 
     .milestone-description {
       font-size: 0.9rem;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
     }
   }
 </style>

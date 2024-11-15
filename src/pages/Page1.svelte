@@ -26,6 +26,7 @@
       <div class="section-description">
         <Description
           content="To create a world where all people with disabilities have unencumbered mobility and function so that they can fully participate in and contribute to society. Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt), John Bollinger (PVA), Dr. Thomas P. Detre (Pitt), Dr. Rory A. Cooper (VA/Pitt), Laura Miller (VA), Dr. Charles Robinson (Pitt)."
+          length={238}
         />
       </div>
     </section>
@@ -39,7 +40,7 @@
     gap: 2rem;
     padding: 1rem;
     border-radius: 8px;
-    align-items: center;
+    align-items: start;
     min-height: 50vh;
   }
 

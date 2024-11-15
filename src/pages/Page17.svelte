@@ -4,7 +4,7 @@
   import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 13 content -->
+<!-- Main container for Page 17 content -->
 <div class="timeline-container">
   <section class="year-section">
     <h2 class="year-title">2010</h2>
@@ -13,24 +13,29 @@
         <h3 class="milestone-title">
           WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK
         </h3>
-        <Picture
-          width="max-h-[10rem]"
-          src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
-          alt="Medical Rehabilitation Handbook"
-        />
-        <div class="milestone-description">
-          <Description
-            content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
-          />
+        <div class="flex flex-row items-center gap-6">
+          <div>
+            <Picture
+              src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
+              alt="Medical Rehabilitation Handbook"
+            />
+          </div>
+          <div class="milestone-description">
+            <Description
+              content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
+            />
+          </div>
         </div>
       </div>
 
       <div class="milestone-item">
         <h3 class="milestone-title">PERSONAL VEHICLE PATENT</h3>
-        <div class="milestone-description">
-          <Description
-            content="A power mobility device designed to improve maneuverability on diverse terrains."
-          />
+        <div class="flex flex-row items-center gap-6">
+          <div class="milestone-description">
+            <Description
+              content="A power mobility device designed to improve maneuverability on diverse terrains."
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -59,6 +64,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   .milestone-item {
@@ -80,11 +86,6 @@
     line-height: 1.5;
   }
 
-  .image-section {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -102,11 +103,6 @@
     .milestone-description {
       font-size: 0.95rem;
     }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-    }
   }
 
   @media (max-width: 480px) {
@@ -120,11 +116,6 @@
 
     .milestone-description {
       font-size: 0.9rem;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
     }
   }
 </style>

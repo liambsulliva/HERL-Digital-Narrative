@@ -8,21 +8,17 @@
 <div class="timeline-container">
   <section class="year-section">
     <h2 class="year-title">2001</h2>
-    <div class="milestones-grid">
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          ERGONOMIC DUAL SURFACE WHEELCHAIR PUSHRIM
-        </h3>
+    <div class="flex flex-col items-center px-20 gap-6">
+      <h3 class="milestone-title">ERGONOMIC DUAL SURFACE WHEELCHAIR PUSHRIM</h3>
+      <div class="milestone-description">
         <Picture
-        width="max-h-[10rem]"
+          width="max-h-[50rem]"
           src="/images/content/2024_Cal_Copy_Page_10_Image_0001.webp"
           alt="The Robotic Strong Arm."
         />
-        <div class="milestone-description">
-          <Description
-            content="The Ergonomic Pushrim (left) developed by HERL’s team, marked a significant leap from traditional wheelchair handrims. Ergonomic hand rims have successfully tackled traditional push rim issues by offering a better hand fit, enhancing mechanical efficiency during wheelchair propulsion."
-          />
-        </div>
+        <Description
+          content="The Ergonomic Pushrim (left) developed by HERL’s team, marked a significant leap from traditional wheelchair handrims. Ergonomic hand rims have successfully tackled traditional push rim issues by offering a better hand fit, enhancing mechanical efficiency during wheelchair propulsion."
+        />
       </div>
     </div>
   </section>
@@ -46,18 +42,6 @@
     text-align: center;
   }
 
-  .milestones-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .milestone-item {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 6px;
-  }
-
   .milestone-title {
     font-size: 1.25rem;
     font-weight: 700;
@@ -66,6 +50,8 @@
   }
 
   .milestone-description {
+    display: flex;
+    gap: 2rem;
     font-size: 1rem;
     color: #555555;
     line-height: 1.5;
@@ -73,10 +59,6 @@
 
   /* Responsive Design */
   @media (max-width: 768px) {
-    .milestones-grid {
-      grid-template-columns: 1fr;
-    }
-
     .year-title {
       font-size: 1.25rem;
     }

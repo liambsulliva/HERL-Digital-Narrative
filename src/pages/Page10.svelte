@@ -43,6 +43,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 0 8rem;
   }
 
   .milestone-item {

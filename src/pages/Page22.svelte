@@ -14,6 +14,7 @@
         <div class="milestone-description">
           <Description
             content="Dr. Cooper elected Fellow of the NAI, partnered with the International Society of Wheelchair Professionals, whose mission is to serve as a global resource for wheelchair service standards and provision through advocacy, education, standards, evidence-based practice, innovation and a platform for information exchange."
+            length={221}
           />
         </div>
       </div>
@@ -70,7 +71,6 @@
     font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 1rem;
     text-align: center;
   }
 
@@ -78,6 +78,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   .milestone-item {
@@ -99,11 +100,6 @@
     line-height: 1.5;
   }
 
-  .image-section {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -121,11 +117,6 @@
     .milestone-description {
       font-size: 0.95rem;
     }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-    }
   }
 
   @media (max-width: 480px) {
@@ -139,11 +130,6 @@
 
     .milestone-description {
       font-size: 0.9rem;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
     }
   }
 </style>

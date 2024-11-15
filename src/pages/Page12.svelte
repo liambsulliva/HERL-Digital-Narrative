@@ -46,6 +46,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   .milestone-item {
@@ -67,11 +68,6 @@
     line-height: 1.5;
   }
 
-  .image-section {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -89,11 +85,6 @@
     .milestone-description {
       font-size: 0.95rem;
     }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-    }
   }
 
   @media (max-width: 480px) {
@@ -107,11 +98,6 @@
 
     .milestone-description {
       font-size: 0.9rem;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
     }
   }
 </style>

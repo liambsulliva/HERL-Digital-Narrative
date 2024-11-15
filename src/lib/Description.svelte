@@ -2,7 +2,7 @@
   import { modalStore } from "./stores/modalStore";
 
   export let content: string;
-  export let length = 300;
+  export let length = 999;
 
   const truncate = (description: string, maxLength: number) => {
     if (description.length <= maxLength) {

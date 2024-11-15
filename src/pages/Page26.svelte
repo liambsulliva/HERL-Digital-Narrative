@@ -45,6 +45,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+    padding: 0 4rem;
   }
 
   .milestone-item {
@@ -64,11 +65,6 @@
     font-size: 1rem;
     color: #555555;
     line-height: 1.5;
-  }
-
-  .image-section {
-    text-align: center;
-    margin-top: 2rem;
   }
 
   /* Responsive Design */
