@@ -1,6 +1,5 @@
 <script lang="ts">
   import lightbanner from "/images/pittbanner-light.png";
-  import darkbanner from "/images/pittbanner-dark.png";
 </script>
 
 <a
@@ -14,10 +13,5 @@
     src={lightbanner}
     alt="University of Pittsburgh"
     class="dark:hidden block"
-  />
-  <img
-    src={darkbanner}
-    alt="University of Pittsburgh"
-    class="dark:block hidden"
   />
 </a>

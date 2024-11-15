@@ -11,19 +11,8 @@
       rel="stylesheet"
     />
     <title>HERL - Through the Years</title>
-    <script>
-      const mode = window.localStorage.getItem("themePreference");
-      if (
-        window &&
-        (mode === "dark" ||
-          (mode == null &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches))
-      ) {
-        document.documentElement.classList.add("dark");
-      }
-    </script>
   </head>
-  <body class="text-gray-800 bg-white dark:text-white dark:bg-gray-900">
+  <body class="text-gray-800 bg-white">
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
