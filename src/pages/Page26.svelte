@@ -1,9 +1,3 @@
-<script lang="ts">
-  // Import necessary reusable components
-  import Description from "../lib/Description.svelte";
-  import Picture from "../lib/Picture.svelte";
-</script>
-
 <!-- Main container for Page 13 content -->
 <div class="timeline-container">
   <!-- 2020 -->
@@ -15,9 +9,6 @@
           PORTABLE TOILET SEAT WRAP FOR REDUCING PRESSURE INJURIES AND METHODS
           (“ON THE MOVE PAD”) PATENT
         </h3>
-        <div class="milestone-description">
-          <Description content="" />
-        </div>
       </div>
     </div>
   </section>
