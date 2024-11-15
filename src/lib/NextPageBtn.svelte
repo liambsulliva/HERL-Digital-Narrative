@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   export let page = 0;
 
-  $: allowNextPage = page < 14;
+  $: allowNextPage = page < 29;
 
   function handlePageTurn() {
     if (allowNextPage) {

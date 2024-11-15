@@ -52,7 +52,7 @@
   .section-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #333333;
+    color: #34495e;
     margin-bottom: 0.5rem;
     text-align: center;
   }

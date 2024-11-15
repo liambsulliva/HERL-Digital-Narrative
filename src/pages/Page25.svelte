@@ -1,29 +1,22 @@
 <script lang="ts">
   // Import necessary reusable components
-  import Picture from "../lib/Picture.svelte";
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 11 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
+  <!-- 2020 -->
   <section class="year-section">
-    <h2 class="year-title">2003</h2>
+    <h2 class="year-title">2020</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
+        <h3 class="milestone-title">
+          PORTABLE TOILET SEAT WRAP FOR REDUCING PRESSURE INJURIES AND METHODS
+          (“ON THE MOVE PAD”) PATENT
+        </h3>
         <div class="milestone-description">
-          <Description
-            content="An innovative technology providing personalized wheelchair seating recommendations for enhanced comfort and support, brought to commercial market by PERMOBIL."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">GLIDE CASTER FORK</h3>
-        <div class="milestone-description">
-          <Description
-            content="Based on oblique angle suspension that maximizes vibration dampening in both horizontal and vertical directions, and minimizes vibration transfer to the body of the rider, was brought to the Market by TiLite, LLC."
-          />
+          <Description content="" />
         </div>
       </div>
     </div>
@@ -73,6 +66,11 @@
     line-height: 1.5;
   }
 
+  .image-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -90,6 +88,11 @@
     .milestone-description {
       font-size: 0.95rem;
     }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @media (max-width: 480px) {
@@ -103,6 +106,11 @@
 
     .milestone-description {
       font-size: 0.9rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
     }
   }
 </style>

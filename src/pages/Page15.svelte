@@ -1,30 +1,28 @@
 <script lang="ts">
   // Import necessary reusable components
-  import Picture from "../lib/Picture.svelte";
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 11 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
+  <!-- 2007 -->
   <section class="year-section">
-    <h2 class="year-title">2003</h2>
+    <h2 class="year-title">2007</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
-        <div class="milestone-description">
-          <Description
-            content="An innovative technology providing personalized wheelchair seating recommendations for enhanced comfort and support, brought to commercial market by PERMOBIL."
-          />
-        </div>
+        <h3 class="milestone-title">
+          SMART POWER ASSISTANCE MODULE FOR MANUAL WHEELCHAIRS PATENT
+        </h3>
+        <Description
+          content="Dr. Rory Cooper introduced the PHAATE (Policy, Human Activity Assistive Technology Environment) model."
+        />
       </div>
-
       <div class="milestone-item">
-        <h3 class="milestone-title">GLIDE CASTER FORK</h3>
-        <div class="milestone-description">
-          <Description
-            content="Based on oblique angle suspension that maximizes vibration dampening in both horizontal and vertical directions, and minimizes vibration transfer to the body of the rider, was brought to the Market by TiLite, LLC."
-          />
-        </div>
+        <h3 class="milestone-title">TRANSFER ASSESSMENT INSTRUMENT (TAI)</h3>
+        <Description
+          content="A groundbreaking clinical tool designed for the comprehensive evaluation of transfer skills."
+        />
       </div>
     </div>
   </section>
@@ -73,6 +71,11 @@
     line-height: 1.5;
   }
 
+  .image-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -90,6 +93,11 @@
     .milestone-description {
       font-size: 0.95rem;
     }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @media (max-width: 480px) {
@@ -103,6 +111,11 @@
 
     .milestone-description {
       font-size: 0.9rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
     }
   }
 </style>

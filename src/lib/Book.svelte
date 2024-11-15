@@ -22,7 +22,7 @@
   let spineDisplay = "block";
   let paperBlockDisplay = "block";
 
-  const totalPages = 15;
+  const totalPages = 30;
   let pages: HTMLElement[] = [];
 
   $: {
@@ -41,11 +41,11 @@
         let angle: number;
 
         if (pageNum <= page) {
-          angle = -165 + (pageNum - 1) * 1.5;
+          angle = -165 + (pageNum - 1) * 1.001;
         } else if (pageNum === page + 1) {
-          angle = -35 + (pageNum - 2) * 1.5;
+          angle = -45 + (pageNum - 2) * 1.001;
         } else {
-          angle = -30 + (pageNum - 3) * 1.5;
+          angle = -40 + (pageNum - 3) * 1.001;
         }
 
         pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;

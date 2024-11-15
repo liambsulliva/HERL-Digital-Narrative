@@ -6,89 +6,42 @@
 
 <!-- Main container for Page 4 content -->
 <div class="timeline-container">
-  <!-- 2000 -->
-  <div class="flex lg:flex-row flex-col gap-4">
-    <section class="year-section">
-      <h2 class="year-title">2000</h2>
-      <div class="milestones-grid">
-        <div class="flex flex-col">
-          <div class="flex md:flex-row flex-col">
-            <div class="milestone-item">
-              <h3 class="milestone-title">
-                WHEELCHAIR ROAD LOADS AND WHOLE-BODY VIBRATION
-              </h3>
-              <div class="milestone-description">
-                <Description
-                  content="Successfully addressed and reduced by inventing vibration-damping cushions, backrest fittings, and suspension elements to minimize shock, and vibration-induced injuries to the neck and back."
-                />
-              </div>
-            </div>
-
-            <div class="milestone-item">
-              <h3 class="milestone-title">
-                ASSISTIVE TECHNOLOGY CLINIC IN INDIA
-              </h3>
-              <div class="milestone-description">
-                <Description
-                  content="Rory and Rosemarie Cooper worked with colleagues at the Indian Spinal Injuries Centre to establish this first-of-its-kind clinic in the region."
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="milestone-item">
-            <h3 class="milestone-title">
-              TELE-REHABILITATION RESEARCH PROGRAM
-            </h3>
-            <div class="milestone-description">
-              <Description
-                content="HERL was the home of the first major iterations of this program, primarily funded by the VA."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="year-section">
-      <h2 class="year-title">2001</h2>
-      <div class="milestones-grid">
-        <div class="milestone-item">
+  <!-- 1995 -->
+  <section class="year-section">
+    <h2 class="year-title">1995</h2>
+    <div class="milestones-grid">
+      <div class="flex flex-row gap-4">
+        <div class="milestone-item flex-1">
           <h3 class="milestone-title">
-            ERGONOMIC DUAL SURFACE WHEELCHAIR PUSHRIM
+            REHABILITATION ENGINEERING APPLIED TO MOBILITY
           </h3>
-          <Picture
-            src="/images/content/2024_Cal_Copy_Page_10_Image_0001.webp"
-            alt="The Robotic Strong Arm."
-          />
           <div class="milestone-description">
             <Description
-              content="The Ergonomic Pushrim (left) developed by HERL’s team, marked a significant leap from traditional wheelchair handrims. Ergonomic hand rims have successfully tackled traditional push rim issues by offering a better hand fit, enhancing mechanical efficiency during wheelchair propulsion."
-            />
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="year-section">
-      <h2 class="year-title">2002</h2>
-      <div class="milestones-grid">
-        <div class="milestone-item">
-          <h3 class="milestone-title">DATA LOGGER</h3>
-          <div class="milestone-description">
-            <Description
-              content="The new, low-power, self-contained Data Logger developed by researchers at HERL, provides a reliable method for long-term monitoring of manual wheelchair users’ activities in real-world environments."
+              content="A textbook that set the standard for engineering textbooks in the field of rehabilitation."
             />
           </div>
         </div>
-      </div>
-    </section>
-  </div>
 
-  <div class="flex flex-row gap-4">
-    <!-- 2002 -->
-  </div>
-  <!-- 2001 -->
+        <div class="milestone-item flex-1">
+          <h3 class="milestone-title">X-BRACE</h3>
+          <div class="milestone-description">
+            <Description
+              content="Designed to enhance performance, safety, and durability in folding wheelchairs."
+            />
+          </div>
+        </div>
+
+        <div class="milestone-item flex-1">
+          <h3 class="milestone-title">GAMEWHEELS & GAMECYCLE</h3>
+          <div class="milestone-description">
+            <Description
+              content="The first devices to address and incorporate exergaming for people with disabilities."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <style>
@@ -99,10 +52,11 @@
 
   .year-section {
     margin-bottom: 2rem;
+    padding: 0 2rem;
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;

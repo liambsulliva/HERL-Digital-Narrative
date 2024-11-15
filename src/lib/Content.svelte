@@ -14,6 +14,21 @@
   import Page12 from "../pages/Page12.svelte";
   import Page13 from "../pages/Page13.svelte";
   import Page14 from "../pages/Page14.svelte";
+  import Page15 from "../pages/Page15.svelte";
+  import Page16 from "../pages/Page16.svelte";
+  import Page17 from "../pages/Page17.svelte";
+  import Page18 from "../pages/Page18.svelte";
+  import Page19 from "../pages/Page19.svelte";
+  import Page20 from "../pages/Page20.svelte";
+  import Page21 from "../pages/Page21.svelte";
+  import Page22 from "../pages/Page22.svelte";
+  import Page23 from "../pages/Page23.svelte";
+  import Page24 from "../pages/Page24.svelte";
+  import Page25 from "../pages/Page25.svelte";
+  import Page26 from "../pages/Page26.svelte";
+  import Page27 from "../pages/Page27.svelte";
+  import Page28 from "../pages/Page28.svelte";
+  import Page29 from "../pages/Page29.svelte";
 
   export let page = 0;
 
@@ -32,11 +47,27 @@
     12: Page12,
     13: Page13,
     14: Page14,
+    15: Page15,
+    16: Page16,
+    17: Page17,
+    18: Page18,
+    19: Page19,
+    20: Page20,
+    21: Page21,
+    22: Page22,
+    23: Page23,
+    24: Page24,
+    25: Page25,
+    26: Page26,
+    27: Page27,
+    28: Page28,
+    29: Page29,
   };
 </script>
 
+<!-- TODO: Refactor layout to take up more space horizontally, we want to reduce scrolling on desktops -->
 <div class="content-container">
-  {#if page > 0 && page <= 14}
+  {#if page > 0 && page <= 29}
     <svelte:component this={pageComponents[page]} />
   {:else}
     <p>No content available for this page.</p>
@@ -50,26 +81,14 @@
     top: 2rem;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1600px;
+    max-width: 1000px;
+    height: 400px;
     z-index: 30;
-    max-height: 60vh;
-    overflow-y: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
-  }
-
-  @media (max-height: 900px) {
-    .content-wrapper {
-      padding-bottom: 15rem;
-    }
-  }
-
-  @media (max-height: 700px) {
-    .content-wrapper {
-      padding-bottom: 10rem;
-    }
   }
 </style>

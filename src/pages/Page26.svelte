@@ -1,28 +1,32 @@
 <script lang="ts">
   // Import necessary reusable components
-  import Picture from "../lib/Picture.svelte";
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 11 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
   <section class="year-section">
-    <h2 class="year-title">2003</h2>
+    <h2 class="year-title">2021</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
+        <h3 class="milestone-title">
+          GUIDELINES ON “UPPER LIMB PRESERVATION” RELEASED
+        </h3>
         <div class="milestone-description">
           <Description
-            content="An innovative technology providing personalized wheelchair seating recommendations for enhanced comfort and support, brought to commercial market by PERMOBIL."
+            content="Dr. Michael Boninger (HERL Medical Director 1998-20) spearheaded a team of experts in organizing one of the most widely used and referenced documents in the field today: a Clinical Practice Guideline (CPG) on Preservation of Upper Limb Function Following Spinal Cord Injury (SCI)."
           />
         </div>
       </div>
 
       <div class="milestone-item">
-        <h3 class="milestone-title">GLIDE CASTER FORK</h3>
+        <h3 class="milestone-title">
+          OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT
+        </h3>
         <div class="milestone-description">
           <Description
-            content="Based on oblique angle suspension that maximizes vibration dampening in both horizontal and vertical directions, and minimizes vibration transfer to the body of the rider, was brought to the Market by TiLite, LLC."
+            content="A patent was awarded for this innovative wheelchair design, focusing on effective shock absorption for both horizontal and vertical impacts during travel over uneven terrain."
           />
         </div>
       </div>
@@ -73,6 +77,11 @@
     line-height: 1.5;
   }
 
+  .image-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -90,6 +99,11 @@
     .milestone-description {
       font-size: 0.95rem;
     }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @media (max-width: 480px) {
@@ -103,6 +117,11 @@
 
     .milestone-description {
       font-size: 0.9rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
     }
   }
 </style>

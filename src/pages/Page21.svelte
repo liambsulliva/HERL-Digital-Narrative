@@ -4,19 +4,51 @@
   import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 12 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 2004 -->
   <section class="year-section">
-    <h2 class="year-title">2004</h2>
+    <h2 class="year-title">2015</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
+        <h3 class="milestone-title">NATIONAL ACADEMY OF INVENTORS</h3>
+        <div class="milestone-description">
+          <Description
+            content="Dr. Cooper elected Fellow of the NAI, partnered with the International Society of Wheelchair Professionals, whose mission is to serve as a global resource for wheelchair service standards and provision through advocacy, education, standards, evidence-based practice, innovation and a platform for information exchange."
+          />
+        </div>
+      </div>
+
+      <div class="milestone-item">
         <h3 class="milestone-title">
-          STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS
+          VA TECHNOLOGY TRANSFER ASSISTANCE PROGRAM
         </h3>
         <div class="milestone-description">
           <Description
-            content="The State-of-the-Science (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had a discussion about the needs of rehabilitation healthcare providers, physical medicine and rehabilitation medicine residents to learn and integrate the most current knowledge and practice to provide the highest level of care to wounded, injured, and ill service members in light of the patients coming to Walter Reed Army Medical Center and later Walter Reed National Military Medical Center (WRNMC). The SoS brings experts to WRNMC so that there can be greater participation by WRNMC providers and residents, and exposes experts to WRNMC and Uniformed Services University of Health Sciences."
+            content="Start of the project which engages in a wide range of healthcare, research, and support initiatives for veterans, with a core mission of enhancing veterans’ quality of life and healthcare outcomes."
+          />
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          SAMUEL E. HEYMAN SERVICE TO AMERICA MEDAL
+        </h3>
+        <div class="milestone-description">
+          <Description
+            content="Also known as the “Sammies”, this premier awards program is considered the “Oscar” of public service."
+          />
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">DRIVING EVALUATION AND TRAINING PATENT</h3>
+        <div class="milestone-description">
+          <Description
+            content="
+            Covers techniques for assessing
+            and enhancing driving skills through evaluation and training
+            processes.
+          "
           />
         </div>
       </div>

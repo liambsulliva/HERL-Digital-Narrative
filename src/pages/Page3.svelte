@@ -6,78 +6,25 @@
 
 <!-- Main container for Page 3 content -->
 <div class="timeline-container">
-  <!-- 1996 -->
+  <!-- 1995 -->
   <section class="year-section">
-    <h2 class="year-title">1996</h2>
+    <h2 class="year-title">1995</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">
-          PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW)
-        </h3>
-        <Picture
-          src="/images/content/2024_Cal_Copy_Page_08_Image_0001.webp"
-          alt="An engineer on the PAPAW."
-        />
-        <div class="milestone-description">
-          <Description
-            content="A joint effort between Yamaha and HERL, it contributed to significant advancements in wheelchair tech."
-          />
-        </div>
-      </div>
-
-      <div class="flex flex-col">
-        <div class="flex flex-row">
-          <div class="milestone-item">
-            <h3 class="milestone-title">ZERO THROW JOYSTICK</h3>
-            <div class="milestone-description">
-              <Description
-                content="Gave users the ability to operate their power wheelchair with 360° of control."
-              />
-            </div>
-          </div>
-          <div class="milestone-item">
-            <h3 class="milestone-title">
-              CDC CENTER FOR INJURY RESEARCH AND CONTROL
-            </h3>
-            <div class="milestone-description">
-              <Description
-                content="This award was bestowed on HERL along with the Department of Neurosurgery of Pitt."
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="milestone-item">
-          <h3 class="milestone-title">WHEELCHAIR COMPARISON STUDY</h3>
-          <div class="milestone-description">
-            <Description
-              content="The first in a long series of studies was completed. One study highlighted challenges with wheelchairs’ quality and standards non-compliance."
+        <div class="flex flex-row items-center gap-6">
+          <div>
+            <h3 class="milestone-title">SMARTWHEEL</h3>
+            <Picture
+              width="max-h-[26rem]"
+              src="/images/content/2024_Cal_Copy_Page_06_Image_0001.webp"
+              alt="Dr. Alicia Koontz with a SMARTWheel."
             />
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 1998 -->
-  <section class="year-section">
-    <h2 class="year-title">1998</h2>
-    <div class="milestones-grid">
-      <div class="milestone-item">
-        <h3 class="milestone-title">WHEELCHAIR SELECTION AND CONFIGURATION</h3>
-        <div class="milestone-description">
-          <Description
-            content="This published book is the most cited text dedicated to wheelchair design and clinical service guidance, being translated in six different languages."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">NATIONAL VETERAN WHEELCHAIR GAMES</h3>
-        <div class="milestone-description">
-          <Description
-            content="Pittsburgh hosted the NVWG and was given its first VA R&D Center of Excellence for Wheelchairs and Associated Rehabilitation Engineering (WARE) award. The beginning of a 25+ year legacy."
-          />
+          <div class="milestone-description">
+            <Description
+              content="Revolutionized how wheelchair setups could be customized to optimize the reduction of repetitive stress."
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -90,12 +37,8 @@
     border-radius: 8px;
   }
 
-  .year-section {
-    margin-bottom: 2rem;
-  }
-
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;
@@ -110,12 +53,11 @@
 
   .milestone-item {
     background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 6px;
+    padding: 0 6rem;
   }
 
   .milestone-title {
-    font-size: 1.25rem;
+    font-size: 1.33rem;
     font-weight: 700;
     color: #34495e;
     margin-bottom: 0.5rem;

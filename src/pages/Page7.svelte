@@ -6,54 +6,24 @@
 
 <!-- Main container for Page 7 content -->
 <div class="timeline-container">
-  <!-- 2009 -->
+  <!-- 1998 -->
   <section class="year-section">
-    <h2 class="year-title">2010</h2>
+    <h2 class="year-title">1998</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">
-          PERSONAL MOBILITY AND MANIPULATION APPLIANCE
-        </h3>
-        <Picture
-          src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
-          alt="Dr. Cooper and the PerMMA in 2010."
-        />
+        <h3 class="milestone-title">WHEELCHAIR SELECTION AND CONFIGURATION</h3>
         <div class="milestone-description">
           <Description
-            content="PerMMA’s the first fully robotic mobility and manipulation device for people with disabilities. It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility."
+            content="This published book is the most cited text dedicated to wheelchair design and clinical service guidance, being translated in six different languages."
           />
         </div>
       </div>
 
       <div class="milestone-item">
-        <h3 class="milestone-title">
-          WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK
-        </h3>
-        <Picture
-          src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
-          alt="Medical Rehabilitation Handbook"
-        />
+        <h3 class="milestone-title">NATIONAL VETERAN WHEELCHAIR GAMES</h3>
         <div class="milestone-description">
           <Description
-            content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
-        <div class="milestone-description">
-          <Description
-            content="Initiated a series of connected devices leveraging AI to promote adherence to clinical guidelines."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">PERSONAL VEHICLE PATENT</h3>
-        <div class="milestone-description">
-          <Description
-            content="A power mobility device designed to improve maneuverability on diverse terrains."
+            content="Pittsburgh hosted the NVWG and was given its first VA R&D Center of Excellence for Wheelchairs and Associated Rehabilitation Engineering (WARE) award. The beginning of a 25+ year legacy."
           />
         </div>
       </div>

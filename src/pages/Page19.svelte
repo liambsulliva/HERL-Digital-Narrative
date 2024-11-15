@@ -1,41 +1,57 @@
 <script lang="ts">
+  // Import necessary reusable components
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 6 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 1996 -->
+  <!-- 2012 -->
   <section class="year-section">
-    <h2 class="year-title">1996</h2>
+    <h2 class="year-title">2012</h2>
     <div class="milestones-grid">
-      <div class="flex flex-col">
-        <div class="flex flex-row">
-          <div class="milestone-item">
-            <h3 class="milestone-title">ZERO THROW JOYSTICK</h3>
-            <div class="milestone-description">
-              <Description
-                content="Gave users the ability to operate their power wheelchair with 360° of control."
-              />
-            </div>
-          </div>
-          <div class="milestone-item">
-            <h3 class="milestone-title">
-              CDC CENTER FOR INJURY RESEARCH AND CONTROL
-            </h3>
-            <div class="milestone-description">
-              <Description
-                content="This award was bestowed on HERL along with the Department of Neurosurgery of Pitt."
-              />
-            </div>
-          </div>
-        </div>
-
+      <div class="flex flex-col md:flex-row gap-4">
         <div class="milestone-item">
-          <h3 class="milestone-title">WHEELCHAIR COMPARISON STUDY</h3>
+          <h3 class="milestone-title">
+            MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR
+          </h3>
+          <Picture
+            src="/images/content/2024_Cal_Copy_Page_20_Image_0002.webp"
+            alt="Dr. Jorge Candiotti and the MEBot."
+            width="w-[400px]"
+          />
           <div class="milestone-description">
             <Description
-              content="The first in a long series of studies was completed. One study highlighted challenges with wheelchairs' quality and standards non-compliance."
+              content="A groundbreaking innovation designed for conquering challenging terrains, including curbs, uneven surfaces, and steep slopes."
             />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="milestone-item">
+            <h3 class="milestone-title">VARIABLE COMPLIANCE JOYSTICK</h3>
+            <div class="milestone-description">
+              <Description
+                content="Equipped with compensation algorithms offers adaptable control and enhanced precision in various power mobility ops."
+              />
+            </div>
+          </div>
+
+          <div class="milestone-item">
+            <h3 class="milestone-title">ROBOTIC STRONGARM</h3>
+            <div class="milestone-description">
+              <Description
+                content="A specialized wheelchair attachment engineered to assist electric power wheelchair users in seamless transfers to and from other surfaces."
+              />
+            </div>
+          </div>
+
+          <div class="milestone-item">
+            <h3 class="milestone-title">MOBILE CASTER PATENT</h3>
+            <div class="milestone-description">
+              <Description
+                content="Designed to prevent drift and flutter, ensuring enhanced tracking when a mobile device moves across a side-sloped surface."
+              />
+            </div>
           </div>
         </div>
       </div>

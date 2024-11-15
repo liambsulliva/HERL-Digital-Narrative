@@ -6,60 +6,25 @@
 
 <!-- Main container for Page 9 content -->
 <div class="timeline-container">
-  <!-- 2012 -->
   <section class="year-section">
-    <h2 class="year-title">2012</h2>
+    <h2 class="year-title">2001</h2>
     <div class="milestones-grid">
-      <div class="flex flex-col md:flex-row gap-4">
-        <div class="milestone-item">
-          <h3 class="milestone-title">
-            MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR
-          </h3>
-          <Picture
-            src="/images/content/2024_Cal_Copy_Page_20_Image_0002.webp"
-            alt="Dr. Jorge Candiotti and the MEBot."
-            width="w-[400px]"
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          ERGONOMIC DUAL SURFACE WHEELCHAIR PUSHRIM
+        </h3>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_10_Image_0001.webp"
+          alt="The Robotic Strong Arm."
+        />
+        <div class="milestone-description">
+          <Description
+            content="The Ergonomic Pushrim (left) developed by HERL’s team, marked a significant leap from traditional wheelchair handrims. Ergonomic hand rims have successfully tackled traditional push rim issues by offering a better hand fit, enhancing mechanical efficiency during wheelchair propulsion."
           />
-          <div class="milestone-description">
-            <Description
-              content="A groundbreaking innovation designed for conquering challenging terrains, including curbs, uneven surfaces, and steep slopes."
-            />
-          </div>
-          
-        </div>
-        <div class="flex flex-col gap-4">
-          <div class="milestone-item">
-            <h3 class="milestone-title">VARIABLE COMPLIANCE JOYSTICK</h3>
-            <div class="milestone-description">
-              <Description
-                content="Equipped with compensation algorithms offers adaptable control and enhanced precision in various power mobility ops."
-              />
-            </div>
-          </div>
-
-          <div class="milestone-item">
-            <h3 class="milestone-title">ROBOTIC STRONGARM</h3>
-            <div class="milestone-description">
-              <Description
-                content="A specialized wheelchair attachment engineered to assist electric power wheelchair users in seamless transfers to and from other surfaces."
-              />
-            </div>
-          </div>
-
-          <div class="milestone-item">
-            <h3 class="milestone-title">MOBILE CASTER PATENT</h3>
-            <div class="milestone-description">
-              <Description
-                content="Designed to prevent drift and flutter, ensuring enhanced tracking when a mobile device moves across a side-sloped surface."
-              />
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- 2013 -->
-  
 </div>
 
 <style>

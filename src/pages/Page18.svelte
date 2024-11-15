@@ -1,28 +1,25 @@
 <script lang="ts">
   // Import necessary reusable components
-  import Picture from "../lib/Picture.svelte";
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
 </script>
 
-<!-- Main container for Page 11 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
+  <!-- 2011 -->
   <section class="year-section">
-    <h2 class="year-title">2003</h2>
+    <h2 class="year-title">2011</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
+        <h3 class="milestone-title">HERL MOVES TO BAKERY SQUARE</h3>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_18_Image_0001.webp"
+          alt="Inaugurating the Bakery Square site, 2011."
+          width="w-[600px]"
+        />
         <div class="milestone-description">
           <Description
-            content="An innovative technology providing personalized wheelchair seating recommendations for enhanced comfort and support, brought to commercial market by PERMOBIL."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">GLIDE CASTER FORK</h3>
-        <div class="milestone-description">
-          <Description
-            content="Based on oblique angle suspension that maximizes vibration dampening in both horizontal and vertical directions, and minimizes vibration transfer to the body of the rider, was brought to the Market by TiLite, LLC."
+            content="In July 2011, HERL relocated from its original research lab at the VA’s Highland Drive facility to the newly renovated Bakery Square. This move represented a pivotal moment for HERL, offering its investigators, staff, and faculty the chance to establish a state-of-the-art facility tailored to their specific requirements. The transition brought about significant improvements, including the addition of a spacious laboratory bay and a dedicated machine shop area. HERL celebrated this milestone with an open house on August 4th, where they welcomed family, friends, and supporters from the VA and Pitt communities."
           />
         </div>
       </div>
@@ -73,6 +70,11 @@
     line-height: 1.5;
   }
 
+  .image-section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .milestones-grid {
@@ -90,6 +92,11 @@
     .milestone-description {
       font-size: 0.95rem;
     }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @media (max-width: 480px) {
@@ -103,6 +110,11 @@
 
     .milestone-description {
       font-size: 0.9rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
     }
   }
 </style>
