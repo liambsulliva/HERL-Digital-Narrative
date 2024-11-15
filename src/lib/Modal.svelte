@@ -10,7 +10,7 @@
   <div class="modal-backdrop" on:click={closeModal}>
     <div class="modal-content" on:click|stopPropagation role="dialog" aria-modal="true">
       <button class="close-button" on:click={closeModal}>×</button>
-      <p>{$modalStore.content}</p>
+      <div class="modal-text">{$modalStore.content}</div>
     </div>
   </div>
 {/if}
@@ -31,23 +31,29 @@
 
   .modal-content {
     background-color: white;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 4px;
-    width: 90%;
-    max-width: 800px;
-    margin: 2rem;
-    max-height: 80vh;
+    width: 95%;
+    max-width: 1200px;
+    margin: 1rem;
+    max-height: 90vh;
     overflow-y: auto;
     position: relative;
   }
 
+  .modal-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
   .close-button {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: 1rem;
+    right: 1rem;
     border: none;
     background: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    padding: 0.5rem;
   }
 </style> 

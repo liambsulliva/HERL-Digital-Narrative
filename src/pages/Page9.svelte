@@ -14,6 +14,7 @@
           ERGONOMIC DUAL SURFACE WHEELCHAIR PUSHRIM
         </h3>
         <Picture
+        width="max-h-[10rem]"
           src="/images/content/2024_Cal_Copy_Page_10_Image_0001.webp"
           alt="The Robotic Strong Arm."
         />
@@ -38,7 +39,7 @@
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;

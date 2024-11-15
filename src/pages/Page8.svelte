@@ -59,7 +59,7 @@
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;

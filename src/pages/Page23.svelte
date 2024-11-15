@@ -6,28 +6,20 @@
 
 <!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 2018 -->
   <section class="year-section">
-    <h2 class="year-title">2018</h2>
+    <h2 class="year-title">2017</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">POWERED PERSONAL TRANSFER SYSTEM (PPTS)</h3>
+        <h3 class="milestone-title">PNEUCHAIR & PNEUSCOOTER</h3>
         <div class="milestone-description">
           <Description
-            content="A groundbreaking innovation designed to revolutionize the process of transferring between a bed and a wheelchair, particularly for individuals, including many veterans, who depend on wheelchairs for mobility."
+            content="The PneuMobility project is focused on revolutionizing assistive mobility devices by developing innovative devices that run solely on compressed air technology."
           />
         </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          GUIDELINES FOR THE CARE OF PEOPLE WITH SPINA BIFIDA
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="One hundred Spina Bifida experts from around the world, led by HERL Medical Director Dr. Brad Dicianno, spent three years developing these Guidelines."
-          />
-        </div>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_24_Image_0002.webp"
+          alt="Dr. Rory Cooper at Morgan’s Wonderland with the Pneuchair."
+        />
       </div>
     </div>
   </section>
@@ -44,7 +36,7 @@
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;

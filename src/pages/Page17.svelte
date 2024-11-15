@@ -11,39 +11,16 @@
     <div class="milestones-grid">
       <div class="milestone-item">
         <h3 class="milestone-title">
-          PERSONAL MOBILITY AND MANIPULATION APPLIANCE
-        </h3>
-        <Picture
-          src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
-          alt="Dr. Cooper and the PerMMA in 2010."
-        />
-        <div class="milestone-description">
-          <Description
-            content="PerMMA’s the first fully robotic mobility and manipulation device for people with disabilities. It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">
           WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK
         </h3>
         <Picture
+          width="max-h-[10rem]"
           src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
           alt="Medical Rehabilitation Handbook"
         />
         <div class="milestone-description">
           <Description
             content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">VIRTUAL SEATING COACH</h3>
-        <div class="milestone-description">
-          <Description
-            content="Initiated a series of connected devices leveraging AI to promote adherence to clinical guidelines."
           />
         </div>
       </div>
@@ -71,7 +48,7 @@
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;

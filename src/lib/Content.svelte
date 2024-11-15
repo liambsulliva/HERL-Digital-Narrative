@@ -17,18 +17,18 @@
   import Page15 from "../pages/Page15.svelte";
   import Page16 from "../pages/Page16.svelte";
   import Page17 from "../pages/Page17.svelte";
-  import Page18 from "../pages/Page18.svelte";
-  import Page19 from "../pages/Page19.svelte";
-  import Page20 from "../pages/Page20.svelte";
-  import Page21 from "../pages/Page21.svelte";
-  import Page22 from "../pages/Page22.svelte";
-  import Page23 from "../pages/Page23.svelte";
-  import Page24 from "../pages/Page24.svelte";
-  import Page25 from "../pages/Page25.svelte";
-  import Page26 from "../pages/Page26.svelte";
-  import Page27 from "../pages/Page27.svelte";
-  import Page28 from "../pages/Page28.svelte";
-  import Page29 from "../pages/Page29.svelte";
+  import Page18 from "../pages/Page19.svelte";
+  import Page19 from "../pages/Page20.svelte";
+  import Page20 from "../pages/Page21.svelte";
+  import Page21 from "../pages/Page22.svelte";
+  import Page22 from "../pages/Page23.svelte";
+  import Page23 from "../pages/Page24.svelte";
+  import Page24 from "../pages/Page25.svelte";
+  import Page25 from "../pages/Page26.svelte";
+  import Page26 from "../pages/Page27.svelte";
+  import Page27 from "../pages/Page28.svelte";
+  import Page28 from "../pages/Page29.svelte";
+  import Page29 from "../pages/Page30.svelte";
 
   export let page = 0;
 

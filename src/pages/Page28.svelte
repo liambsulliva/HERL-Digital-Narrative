@@ -6,26 +6,15 @@
 
 <!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 2023 -->
+  <!-- 2022 -->
   <section class="year-section">
-    <h2 class="year-title">2023</h2>
+    <h2 class="year-title">2022</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">NATIONAL INVENTORS HALL OF FAME</h3>
+        <h3 class="milestone-title">IEEE BIOMEDICAL ENGINEERING MEDAL</h3>
         <div class="milestone-description">
           <Description
-            content="Dr. Rory Cooper was inducted to the 50th class."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          NATIONAL MEDAL OF TECHNOLOGY AND INNOVATION
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="Dr. Cooper was presented this award by President Biden at the White House. This accolade is given to individuals who have made important contributions to the advancement of knowledge."
+            content="Dr. Cooper was honored with this prestigious award for his outstanding contributions to the field of biomedical engineering. This recognition highlights his achievements and groundbreaking research that have significantly advanced the intersection of engineering and medicine."
           />
         </div>
       </div>
@@ -44,7 +33,7 @@
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;

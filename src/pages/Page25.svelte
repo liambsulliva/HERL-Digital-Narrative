@@ -6,14 +6,30 @@
 
 <!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 2020 -->
+  <!-- 2019 -->
   <section class="year-section">
-    <h2 class="year-title">2020</h2>
+    <h2 class="year-title">2019</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
         <h3 class="milestone-title">
-          PORTABLE TOILET SEAT WRAP FOR REDUCING PRESSURE INJURIES AND METHODS
-          (“ON THE MOVE PAD”) PATENT
+          AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES — INVOLVED
+          RESPONSIVE ENGINEERING (ASPIRE)
+        </h3>
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_26_Image_0001.webp"
+          alt="Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices."
+        />
+        <div class="milestone-description">
+          <Description
+            content="A HERL center studying how people with disabilities and older adults are affected by access to reliable accessible transportation."
+          />
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          MANUAL WHEELCHAIR ULCER RISK MANAGEMENT COACHING SYSTEM AND
+          METHODOLOGY PATENT
         </h3>
         <div class="milestone-description">
           <Description content="" />
@@ -34,7 +50,7 @@
   }
 
   .year-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 1rem;
