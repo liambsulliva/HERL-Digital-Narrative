@@ -1,5 +1,9 @@
 <script lang="ts">
   import type { Component } from "svelte";
+  import { fade } from "svelte/transition";
+  import { imageLoader } from "./stores/imageStore";
+
+  // TODO: Refactor this to use procedural imports via callback
   import Page1 from "../pages/Page1.svelte";
   import Page2 from "../pages/Page2.svelte";
   import Page3 from "../pages/Page3.svelte";
@@ -30,16 +34,43 @@
   import Page28 from "../pages/Page28.svelte";
   import Page29 from "../pages/Page29.svelte";
   import Page30 from "../pages/Page30.svelte";
-  import { fade } from 'svelte/transition';
+
   export let page = 0;
   let displayedPage = 0;
   let debounceTimer: number;
   let visible = true;
 
+  // Function to extract image sources from Content.svelte
+  async function getComponentImages(component: any): Promise<string[]> {
+    const match = component?.render?.toString().match(/src="([^"]+)"/g);
+    return match
+      ? match
+          .map((src: string) => {
+            const matches = src.match(/src="([^"]+)"/);
+            return matches ? matches[1] : "";
+          })
+          .filter(Boolean)
+      : [];
+  }
+
+  // Preload images for a given page
+  async function preloadPageImages(pageNum: number) {
+    if (pageComponents[pageNum]) {
+      const images = await getComponentImages(pageComponents[pageNum]);
+      await Promise.all(images.map((src) => imageLoader.preloadImage(src)));
+    }
+  }
+
   // Watch page changes and handle transitions
   $: {
     clearTimeout(debounceTimer);
     visible = false;
+
+    // Preload current and next page images
+    Promise.all([preloadPageImages(page), preloadPageImages(page + 1)]).catch(
+      console.error,
+    );
+
     debounceTimer = setTimeout(() => {
       displayedPage = page;
       visible = true;

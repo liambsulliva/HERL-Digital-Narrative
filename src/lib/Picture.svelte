@@ -1,26 +1,36 @@
 <script lang="ts">
   import { Lightbox } from "svelte-lightbox";
+  import { imageLoader } from "./stores/imageStore";
+  import { onMount } from "svelte";
+
   export let src: string;
   export let alt: string = "";
   export let width: string = "max-h-[17rem]";
-  let imageLoaded: boolean = false;
   export let class_name: string = "";
 
-  function handleLoad() {
-    imageLoaded = true;
-  }
+  let imageLoaded = false;
+
+  onMount(() => {
+    imageLoader
+      .preloadImage(src)
+      .then(() => {
+        imageLoaded = true;
+      })
+      .catch((error) => {
+        console.error("Failed to load image:", error);
+      });
+  });
 </script>
 
 <div class="flex flex-col gap-2 {class_name}">
-  <Lightbox>
-    <img
-      {src}
-      {alt}
-      on:load={handleLoad}
-      class="{width} object-contain m-auto"
-    />
-  </Lightbox>
-  {#if alt && imageLoaded}
-    <p class="text-sm text-gray-500">{alt}</p>
+  {#if imageLoaded}
+    <Lightbox>
+      <img {src} {alt} class="{width} object-contain m-auto" />
+    </Lightbox>
+    {#if alt}
+      <p class="text-sm text-gray-500">{alt}</p>
+    {/if}
+  {:else}
+    <div class="animate-pulse bg-gray-200 {width} aspect-video"></div>
   {/if}
 </div>
