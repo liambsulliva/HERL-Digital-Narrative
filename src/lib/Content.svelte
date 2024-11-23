@@ -30,7 +30,21 @@
   import Page28 from "../pages/Page28.svelte";
   import Page29 from "../pages/Page29.svelte";
   import Page30 from "../pages/Page30.svelte";
+  import { fade } from 'svelte/transition';
   export let page = 0;
+  let displayedPage = 0;
+  let debounceTimer: number;
+  let visible = true;
+
+  // Watch page changes and handle transitions
+  $: {
+    clearTimeout(debounceTimer);
+    visible = false;
+    debounceTimer = setTimeout(() => {
+      displayedPage = page;
+      visible = true;
+    }, 300);
+  }
 
   const pageComponents: Record<number, Component> = {
     1: Page1,
@@ -68,10 +82,14 @@
 
 <!-- TODO: Refactor layout to take up more space horizontally, we want to reduce scrolling on desktops -->
 <div class="content-container">
-  {#if page > 0 && page <= 30}
-    <svelte:component this={pageComponents[page]} />
-  {:else}
-    <p>No content available for this page.</p>
+  {#if visible && displayedPage > 0 && displayedPage <= 30}
+    <div transition:fade={{ duration: 200 }}>
+      <svelte:component this={pageComponents[displayedPage]} />
+    </div>
+  {:else if visible}
+    <div transition:fade={{ duration: 200 }}>
+      <p>No content available for this page.</p>
+    </div>
   {/if}
 </div>
 
