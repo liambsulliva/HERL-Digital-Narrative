@@ -217,6 +217,10 @@
     transition:
       transform 0.5s ease,
       box-shadow 0.35s ease-in-out;
+    /* Fix GPU Rendering Bug on bookOpen (Chromium) */
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    /* -------------------------------- */
   }
 
   .page,
@@ -276,12 +280,16 @@
   }
 
   .page {
+    position: absolute;
     width: 98%;
     height: 98%;
     top: 1%;
     left: 1%;
     background: #fdfdfd;
     transform: translateZ(0);
+    /* Browser Performance Optimization for Chromium, partial support in Firefox */
+    will-change: transform;
+    /* -------------------------------- */
     border-radius: 0 5px 5px 0;
   }
 
