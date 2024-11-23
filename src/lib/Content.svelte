@@ -66,10 +66,16 @@
     clearTimeout(debounceTimer);
     visible = false;
 
-    // Preload current and next page images
-    Promise.all([preloadPageImages(page), preloadPageImages(page + 1)]).catch(
-      console.error,
-    );
+    // Target images ranging from 5 pages before to 5 pages after current page
+    const pagesToPreload = [];
+    for (let i = Math.max(1, page - 5); i <= Math.min(30, page + 5); i++) {
+      pagesToPreload.push(i);
+    }
+
+    // Preload images for given range thru background promises
+    Promise.all(
+      pagesToPreload.map((pageNum) => preloadPageImages(pageNum)),
+    ).catch(console.error);
 
     debounceTimer = setTimeout(() => {
       displayedPage = page;
