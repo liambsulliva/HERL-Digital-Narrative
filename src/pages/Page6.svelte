@@ -29,14 +29,14 @@
               />
             </div>
           </div>
-        </div>
-
-        <div class="milestone-item">
-          <h3 class="milestone-title">WHEELCHAIR COMPARISON STUDY</h3>
-          <div class="milestone-description">
-            <Description
-              content="The first in a long series of studies was completed. One study highlighted challenges with wheelchairs' quality and standards non-compliance."
-            />
+          <div class="milestone-item">
+            <h3 class="milestone-title">WHEELCHAIR COMPARISON STUDY</h3>
+            <div class="milestone-description">
+              <Description
+                content="The first in a long series of studies was completed. One study highlighted challenges with wheelchairs' quality and standards non-compliance."
+                length={77}
+              />
+            </div>
           </div>
         </div>
       </div>

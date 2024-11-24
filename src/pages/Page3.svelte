@@ -15,7 +15,7 @@
           <div>
             <h3 class="milestone-title">SMARTWHEEL</h3>
             <Picture
-              width="max-h-[26rem]"
+              width="max-h-[22rem]"
               src="/images/content/2024_Cal_Copy_Page_06_Image_0001.webp"
               alt="Dr. Alicia Koontz with a SMARTWheel."
             />

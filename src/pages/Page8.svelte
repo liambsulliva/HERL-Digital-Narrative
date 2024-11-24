@@ -13,6 +13,17 @@
         <div class="flex md:flex-row flex-col">
           <div class="milestone-item">
             <h3 class="milestone-title">
+              ASSISTIVE TECHNOLOGY CLINIC IN INDIA
+            </h3>
+            <div class="milestone-description">
+              <Description
+                content="Rory and Rosemarie Cooper worked with colleagues at the Indian Spinal Injuries Centre to establish this first-of-its-kind clinic in the region."
+                length={72}
+              />
+            </div>
+          </div>
+          <div class="milestone-item">
+            <h3 class="milestone-title">
               WHEELCHAIR ROAD LOADS AND WHOLE-BODY VIBRATION
             </h3>
             <div class="milestone-description">
@@ -24,22 +35,14 @@
 
           <div class="milestone-item">
             <h3 class="milestone-title">
-              ASSISTIVE TECHNOLOGY CLINIC IN INDIA
+              TELE-REHABILITATION RESEARCH PROGRAM
             </h3>
             <div class="milestone-description">
               <Description
-                content="Rory and Rosemarie Cooper worked with colleagues at the Indian Spinal Injuries Centre to establish this first-of-its-kind clinic in the region."
+                content="HERL was the home of the first major iterations of this program, primarily funded by the VA."
+                length={77}
               />
             </div>
-          </div>
-        </div>
-
-        <div class="milestone-item">
-          <h3 class="milestone-title">TELE-REHABILITATION RESEARCH PROGRAM</h3>
-          <div class="milestone-description">
-            <Description
-              content="HERL was the home of the first major iterations of this program, primarily funded by the VA."
-            />
           </div>
         </div>
       </div>

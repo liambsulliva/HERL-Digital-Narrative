@@ -48,7 +48,7 @@
           angle = -40 + (pageNum - 3) * 1.001;
         }
 
-        pageElement.style.transform = `rotateY(${angle}deg) scale(0.65)`;
+        pageElement.style.transform = `rotateY(${angle}deg) scale(0.60)`;
         pageElement.style.boxShadow = `0 1em 3em 0 rgba(0, 0, 0, 0.2)`;
       });
     } else {
@@ -298,12 +298,12 @@
   }
 
   .book.open .front {
-    transform: rotateY(-170deg) scale(0.65);
+    transform: rotateY(-170deg) scale(0.60);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 
   .book.open .back {
-    transform: rotateY(-10deg) scale(0.65);
+    transform: rotateY(-10deg) scale(0.60);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 

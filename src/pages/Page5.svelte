@@ -17,7 +17,6 @@
               PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW)
             </h3>
             <Picture
-              width="max-h-[26rem]"
               src="/images/content/2024_Cal_Copy_Page_08_Image_0001.webp"
               alt="An engineer on the PAPAW."
             />
