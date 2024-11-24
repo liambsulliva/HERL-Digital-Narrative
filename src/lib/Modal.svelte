@@ -1,5 +1,6 @@
 <script lang="ts">
   import { modalStore } from "./stores/modalStore";
+  import { fade } from "svelte/transition";
 
   function closeModal() {
     modalStore.set({ isOpen: false, content: null });
@@ -7,7 +8,11 @@
 </script>
 
 {#if $modalStore.isOpen}
-  <div class="modal-backdrop" on:click={closeModal}>
+  <div
+    class="modal-backdrop"
+    on:click={closeModal}
+    transition:fade={{ duration: 200 }}
+  >
     <div
       class="modal-content"
       on:click|stopPropagation
