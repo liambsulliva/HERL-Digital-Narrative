@@ -38,9 +38,13 @@
   }
 
   .year-title {
-    font-size: 2rem;
+    border-top: 2px solid #003594;
+    border-bottom: 2px solid #003594;
+    width: 5rem;
+    margin: 0 auto;
+    font-size: 1.25rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #003594;
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -61,15 +65,15 @@
   }
 
   .milestone-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #34495e;
+    color: #06060b;
     margin-bottom: 0.5rem;
   }
 
   .milestone-description {
     font-size: 1rem;
-    color: #555555;
+    color: #06060b;
     line-height: 1.5;
   }
 

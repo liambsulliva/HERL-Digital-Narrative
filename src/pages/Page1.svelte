@@ -13,7 +13,7 @@
   />
   <div>
     <section class="info-section">
-      <h2 class="section-title">Our Mission</h2>
+      <h2 class="section-title">OUR MISSION</h2>
       <div class="section-description">
         <Description
           content="To continuously improve the mobility and function of people with disabilities through advanced engineering in clinical research and medical rehabilitation."
@@ -22,7 +22,7 @@
     </section>
 
     <section class="info-section">
-      <h2 class="section-title">Our Vision</h2>
+      <h2 class="section-title">OUR VISION</h2>
       <div class="section-description">
         <Description
           content="To create a world where all people with disabilities have unencumbered mobility and function so that they can fully participate in and contribute to society. Left to right: Edward DesLauriers (KPVA), Dr. Wes Rohr (Pitt), John Bollinger (PVA), Dr. Thomas P. Detre (Pitt), Dr. Rory A. Cooper (VA/Pitt), Laura Miller (VA), Dr. Charles Robinson (Pitt)."
@@ -53,7 +53,7 @@
   .section-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #34495e;
+    color: #06060b;
     margin-bottom: 0.5rem;
     text-align: center;
   }
@@ -61,8 +61,16 @@
   .section-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555555;
+    color: #06060b;
     text-align: justify;
+  }
+
+  .milestone-title {
+    color: #06060b;
+  }
+
+  .milestone-description {
+    color: #06060b;
   }
 
   /* Responsive Design */
