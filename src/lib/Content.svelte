@@ -34,6 +34,10 @@
   import Page28 from "../pages/Page28.svelte";
   import Page29 from "../pages/Page29.svelte";
   import Page30 from "../pages/Page30.svelte";
+  import Page31 from "../pages/Page31.svelte";
+  import Page32 from "../pages/Page32.svelte";
+  import Page33 from "../pages/Page33.svelte";
+  import Page34 from "../pages/Page34.svelte";
 
   export let page = 0;
   let displayedPage = 0;
@@ -114,12 +118,16 @@
     28: Page28,
     29: Page29,
     30: Page30,
+    31: Page31,
+    32: Page32,
+    33: Page33,
+    34: Page34,
   };
 </script>
 
 <!-- TODO: Refactor layout to take up more space horizontally, we want to reduce scrolling on desktops -->
 <div class="content-container">
-  {#if visible && displayedPage > 0 && displayedPage <= 30}
+  {#if visible && displayedPage > 0 && displayedPage <= 34}
     <div transition:fade={{ duration: 200 }}>
       <svelte:component this={pageComponents[displayedPage]} />
     </div>

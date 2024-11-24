@@ -13,9 +13,12 @@
         <h3 class="milestone-title">
           STATE OF THE SCIENCE SYMPOSIUM SERIES STARTS
         </h3>
-        <div class="milestone-description">
+        <div class="milestone-description flex flex-col gap-2">
           <Description
-            content="The State-of-the-Science (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had a discussion about the needs of rehabilitation healthcare providers, physical medicine and rehabilitation medicine residents to learn and integrate the most current knowledge and practice to provide the highest level of care to wounded, injured, and ill service members in light of the patients coming to Walter Reed Army Medical Center and later Walter Reed National Military Medical Center (WRNMC). The SoS brings experts to WRNMC so that there can be greater participation by WRNMC providers and residents, and exposes experts to WRNMC and Uniformed Services University of Health Sciences."
+            content="The State-of-the-Science (SoS) symposia started after Dr. Paul Pasquina and Dr. Rory Cooper had a discussion about the needs of rehabilitation healthcare providers, physical medicine and rehabilitation medicine residents to learn and integrate the most current knowledge and practice to provide the highest level of care to wounded, injured, and ill service members in light of the patients coming to Walter Reed Army Medical Center and later Walter Reed National Military Medical Center (WRNMC)."
+          />
+          <Description
+            content="The SoS brings experts to WRNMC so that there can be greater participation by WRNMC providers and residents, and exposes experts to WRNMC and Uniformed Services University of Health Sciences."
           />
         </div>
       </div>

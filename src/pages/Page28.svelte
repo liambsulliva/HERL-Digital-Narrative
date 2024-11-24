@@ -3,17 +3,28 @@
   import "../styles/pageStyles.css";
 </script>
 
-<!-- Main container for Page 13 content -->
+<!-- Main container for Page 24 content -->
 <div class="timeline-container">
-  <!-- 2022 -->
+  <!-- 2018 -->
   <section class="year-section">
-    <h2 class="year-title">2022</h2>
+    <h2 class="year-title">2018</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">IEEE BIOMEDICAL ENGINEERING MEDAL</h3>
+        <h3 class="milestone-title">POWERED PERSONAL TRANSFER SYSTEM (PPTS)</h3>
         <div class="milestone-description">
           <Description
-            content="Dr. Cooper was honored with this prestigious award for his outstanding contributions to the field of biomedical engineering. This recognition highlights his achievements and groundbreaking research that have significantly advanced the intersection of engineering and medicine."
+            content="A groundbreaking innovation designed to revolutionize the process of transferring between a bed and a wheelchair, particularly for individuals, including many veterans, who depend on wheelchairs for mobility."
+          />
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <h3 class="milestone-title">
+          GUIDELINES FOR THE CARE OF PEOPLE WITH SPINA BIFIDA
+        </h3>
+        <div class="milestone-description">
+          <Description
+            content="One hundred Spina Bifida experts from around the world, led by HERL Medical Director Dr. Brad Dicianno, spent three years developing these Guidelines."
           />
         </div>
       </div>

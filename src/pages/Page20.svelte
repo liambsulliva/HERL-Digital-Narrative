@@ -6,53 +6,23 @@
 
 <!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 2012 -->
   <section class="year-section">
-    <h2 class="year-title">2012</h2>
+    <h2 class="year-title">2010</h2>
     <div class="milestones-grid">
-      <div class="flex flex-col md:flex-row gap-4">
-        <div class="milestone-item">
-          <h3 class="milestone-title">
-            MOBILITY ENHANCEMENT ROBOTIC WHEELCHAIR
-          </h3>
-
+      <div class="milestone-item">
+        <div class="flex items-center gap-12">
+          <Picture
+            width="max-h-[35rem] pt-8"
+            src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
+            alt="Dr. Cooper and the PerMMA in 2010."
+          />
           <div class="milestone-description">
-            <Picture
-              src="/images/content/2024_Cal_Copy_Page_20_Image_0002.webp"
-              alt="Dr. Jorge Candiotti and the MEBot."
-              width="max-h-[30rem] pt-4"
-            />
+            <h3 class="milestone-title">
+              PERSONAL MOBILITY AND MANIPULATION APPLIANCE
+            </h3>
             <Description
-              content="A groundbreaking innovation designed for conquering challenging terrains, including curbs, uneven surfaces, and steep slopes."
+              content="PerMMA’s the first fully robotic mobility and manipulation device for people with disabilities. It provides bi-manual (two-arm) coordinated manipulation as well as fluid mobility."
             />
-          </div>
-        </div>
-        <div class="flex flex-col gap-4">
-          <div class="milestone-item">
-            <h3 class="milestone-title">VARIABLE COMPLIANCE JOYSTICK</h3>
-            <div class="milestone-description">
-              <Description
-                content="Equipped with compensation algorithms offers adaptable control and enhanced precision in various power mobility ops."
-              />
-            </div>
-          </div>
-
-          <div class="milestone-item">
-            <h3 class="milestone-title">ROBOTIC STRONGARM</h3>
-            <div class="milestone-description">
-              <Description
-                content="A specialized wheelchair attachment engineered to assist electric power wheelchair users in seamless transfers to and from other surfaces."
-              />
-            </div>
-          </div>
-
-          <div class="milestone-item">
-            <h3 class="milestone-title">MOBILE CASTER PATENT</h3>
-            <div class="milestone-description">
-              <Description
-                content="Designed to prevent drift and flutter, ensuring enhanced tracking when a mobile device moves across a side-sloped surface."
-              />
-            </div>
           </div>
         </div>
       </div>

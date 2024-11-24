@@ -1,33 +1,28 @@
 <script lang="ts">
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
   import "../styles/pageStyles.css";
 </script>
 
-<!-- Main container for Page 29 content -->
+<!-- Main container for Page 25 content -->
 <div class="timeline-container">
-  <!-- 2023 -->
+  <!-- 2019 -->
   <section class="year-section">
-    <h2 class="year-title">2023</h2>
+    <h2 class="year-title">2019</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
-        <h3 class="milestone-title">NATIONAL INVENTORS HALL OF FAME</h3>
-        <div class="milestone-description">
-          <Description
-            content="Dr. Rory Cooper was inducted to the 50th class."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
         <h3 class="milestone-title">
-          NATIONAL MEDAL OF TECHNOLOGY AND INNOVATION
+          AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES — INVOLVED
+          RESPONSIVE ENGINEERING (ASPIRE)
         </h3>
-        <div class="milestone-description">
-          <Description
-            content="Dr. Cooper was presented this award by President Biden at the White House. This accolade is given to individuals who have made important contributions to the advancement of knowledge."
-          />
-        </div>
+        <Description
+          content="A HERL center studying how people with disabilities and older adults are affected by access to reliable accessible transportation."
+        />
       </div>
+      <Picture
+        src="/images/content/2024_Cal_Copy_Page_26_Image_0001.webp"
+        alt="Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices."
+      />
     </div>
   </section>
 </div>

@@ -22,7 +22,7 @@
   let spineDisplay = "block";
   let paperBlockDisplay = "block";
 
-  const totalPages = 31;
+  const totalPages = 35;
   let pages: HTMLElement[] = [];
 
   $: {
@@ -43,9 +43,9 @@
         if (pageNum <= page) {
           angle = -165 + (pageNum - 1) * 1.001;
         } else if (pageNum === page + 1) {
-          angle = -45 + (pageNum - 2) * 1.001;
+          angle = -50 + (pageNum - 2) * 1.001;
         } else {
-          angle = -40 + (pageNum - 3) * 1.001;
+          angle = -45 + (pageNum - 3) * 1.001;
         }
 
         pageElement.style.transform = `rotateY(${angle}deg) scale(0.60)`;
@@ -298,12 +298,12 @@
   }
 
   .book.open .front {
-    transform: rotateY(-170deg) scale(0.60);
+    transform: rotateY(-170deg) scale(0.6);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 
   .book.open .back {
-    transform: rotateY(-10deg) scale(0.60);
+    transform: rotateY(-10deg) scale(0.6);
     box-shadow: 0 1em 3em 0 rgba(0, 0, 0, 0.2);
   }
 

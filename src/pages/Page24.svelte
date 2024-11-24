@@ -1,31 +1,43 @@
 <script lang="ts">
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
   import "../styles/pageStyles.css";
 </script>
 
-<!-- Main container for Page 24 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
-  <!-- 2018 -->
+  <!-- 2012 -->
   <section class="year-section">
-    <h2 class="year-title">2018</h2>
+    <h2 class="year-title">2012</h2>
     <div class="milestones-grid">
-      <div class="milestone-item">
-        <h3 class="milestone-title">POWERED PERSONAL TRANSFER SYSTEM (PPTS)</h3>
-        <div class="milestone-description">
-          <Description
-            content="A groundbreaking innovation designed to revolutionize the process of transferring between a bed and a wheelchair, particularly for individuals, including many veterans, who depend on wheelchairs for mobility."
-          />
-        </div>
-      </div>
+      <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex flex-col gap-4">
+          <div class="milestone-item">
+            <h3 class="milestone-title">VARIABLE COMPLIANCE JOYSTICK</h3>
+            <div class="milestone-description">
+              <Description
+                content="Equipped with compensation algorithms offers adaptable control and enhanced precision in various power mobility ops."
+              />
+            </div>
+          </div>
 
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          GUIDELINES FOR THE CARE OF PEOPLE WITH SPINA BIFIDA
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="One hundred Spina Bifida experts from around the world, led by HERL Medical Director Dr. Brad Dicianno, spent three years developing these Guidelines."
-          />
+          <div class="milestone-item">
+            <h3 class="milestone-title">ROBOTIC STRONGARM</h3>
+            <div class="milestone-description">
+              <Description
+                content="A specialized wheelchair attachment engineered to assist electric power wheelchair users in seamless transfers to and from other surfaces."
+              />
+            </div>
+          </div>
+
+          <div class="milestone-item">
+            <h3 class="milestone-title">MOBILE CASTER PATENT</h3>
+            <div class="milestone-description">
+              <Description
+                content="Designed to prevent drift and flutter, ensuring enhanced tracking when a mobile device moves across a side-sloped surface."
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,54 +1,26 @@
 <script lang="ts">
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
   import "../styles/pageStyles.css";
 </script>
 
 <!-- Main container for Page 13 content -->
 <div class="timeline-container">
+  <!-- 2011 -->
   <section class="year-section">
-    <h2 class="year-title">2015</h2>
+    <h2 class="year-title">2011</h2>
     <div class="milestones-grid">
-      <div class="milestone-item">
-        <h3 class="milestone-title">NATIONAL ACADEMY OF INVENTORS</h3>
+      <div class="flex items-center gap-12 mt-4">
+        <Picture
+          src="/images/content/2024_Cal_Copy_Page_18_Image_0001.webp"
+          alt="Inaugurating the Bakery Square site, 2011."
+          width="h-[10rem]"
+        />
         <div class="milestone-description">
+          <h3 class="milestone-title">HERL MOVES TO BAKERY SQUARE</h3>
           <Description
-            content="Dr. Cooper elected Fellow of the NAI, partnered with the International Society of Wheelchair Professionals, whose mission is to serve as a global resource for wheelchair service standards and provision through advocacy, education, standards, evidence-based practice, innovation and a platform for information exchange."
-            length={221}
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          VA TECHNOLOGY TRANSFER ASSISTANCE PROGRAM
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="Start of the project which engages in a wide range of healthcare, research, and support initiatives for veterans, with a core mission of enhancing veterans’ quality of life and healthcare outcomes."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">
-          SAMUEL E. HEYMAN SERVICE TO AMERICA MEDAL
-        </h3>
-        <div class="milestone-description">
-          <Description
-            content="Also known as the “Sammies”, this premier awards program is considered the “Oscar” of public service."
-          />
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">DRIVING EVALUATION AND TRAINING PATENT</h3>
-        <div class="milestone-description">
-          <Description
-            content="
-            Covers techniques for assessing
-            and enhancing driving skills through evaluation and training
-            processes.
-          "
+            content="In July 2011, HERL relocated from its original research lab at the VA’s Highland Drive facility to the newly renovated Bakery Square. This move represented a pivotal moment for HERL, offering its investigators, staff, and faculty the chance to establish a state-of-the-art facility tailored to their specific requirements. The transition brought about significant improvements, including the addition of a spacious laboratory bay and a dedicated machine shop area. HERL celebrated this milestone with an open house on August 4th, where they welcomed family, friends, and supporters from the VA and Pitt communities."
+            length={300}
           />
         </div>
       </div>

@@ -1,41 +1,25 @@
 <script lang="ts">
   import Description from "../lib/Description.svelte";
-  import Picture from "../lib/Picture.svelte";
   import "../styles/pageStyles.css";
 </script>
 
-<!-- Main container for Page 17 content -->
+<!-- Main container for Page 13 content -->
 <div class="timeline-container">
+  <!-- 2009 -->
   <section class="year-section">
-    <h2 class="year-title">2010</h2>
+    <h2 class="year-title">2009</h2>
     <div class="milestones-grid">
       <div class="milestone-item">
         <h3 class="milestone-title">
-          WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK
+          CARE OF THE COMBAT AMPUTEE TEXTBOOK PUBLISHED
         </h3>
-        <div class="flex flex-row items-center gap-6">
-          <div>
-            <Picture
-              src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
-              alt="Medical Rehabilitation Handbook"
-            />
-          </div>
-          <div class="milestone-description">
-            <Description
-              content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="milestone-item">
-        <h3 class="milestone-title">PERSONAL VEHICLE PATENT</h3>
-        <div class="flex flex-row items-center gap-6">
-          <div class="milestone-description">
-            <Description
-              content="A power mobility device designed to improve maneuverability on diverse terrains."
-            />
-          </div>
+        <div class="milestone-description flex flex-col gap-2">
+          <Description
+            content="The “Care of the Combat Amputee” textbook, revered as the “gold standard” for military healthcare providers, plays a pivotal role in improving the quality of care for Veterans with traumatic amputations. By providing standardized guidelines, it ensures that medical professionals are equipped with the knowledge and skills necessary to deliver the best possible care."
+          />
+          <Description
+            content="In the long-term care and rehabilitation domain, it emphasizes personalized approaches that consider the unique needs of each individual."
+          />
         </div>
       </div>
     </div>
