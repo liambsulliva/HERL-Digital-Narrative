@@ -1,7 +1,7 @@
 <script lang="ts">
-  // Import the necessary reusable component
   import Description from "../lib/Description.svelte";
   import Picture from "../lib/Picture.svelte";
+  import "../styles/pageStyles.css";
 </script>
 
 <!-- Main container for Page 1 content -->
@@ -32,69 +32,3 @@
     </section>
   </div>
 </div>
-
-<style>
-  .mission-vision-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 1rem;
-    border-radius: 8px;
-    align-items: start;
-    min-height: 50vh;
-  }
-
-  .info-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .section-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #06060b;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-
-  .section-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #06060b;
-    text-align: justify;
-  }
-
-  .milestone-title {
-    color: #06060b;
-  }
-
-  .milestone-description {
-    color: #06060b;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .mission-vision-container {
-      flex-direction: column;
-    }
-
-    .section-title {
-      font-size: 1.5rem;
-    }
-
-    .section-description {
-      font-size: 0.95rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .section-title {
-      font-size: 1.25rem;
-    }
-
-    .section-description {
-      font-size: 0.9rem;
-    }
-  }
-</style>

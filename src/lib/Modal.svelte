@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { modalStore } from './stores/modalStore';
-  
+  import { modalStore } from "./stores/modalStore";
+
   function closeModal() {
     modalStore.set({ isOpen: false, content: null });
   }
@@ -8,7 +8,12 @@
 
 {#if $modalStore.isOpen}
   <div class="modal-backdrop" on:click={closeModal}>
-    <div class="modal-content" on:click|stopPropagation role="dialog" aria-modal="true">
+    <div
+      class="modal-content"
+      on:click|stopPropagation
+      role="dialog"
+      aria-modal="true"
+    >
       <button class="close-button" on:click={closeModal}>×</button>
       <div class="modal-text">{$modalStore.content}</div>
     </div>
@@ -56,4 +61,4 @@
     cursor: pointer;
     padding: 0.5rem;
   }
-</style> 
+</style>
