@@ -1,5 +1,6 @@
 <script lang="ts">
   import lightbanner from "/images/pittbanner-light.png";
+  import { fade } from "svelte/transition";
 </script>
 
 <a
@@ -8,6 +9,7 @@
   aria-label="University of Pittsburgh"
   rel="noopener noreferrer"
   target="_blank"
+  transition:fade={{ duration: 200 }}
 >
   <img
     src={lightbanner}

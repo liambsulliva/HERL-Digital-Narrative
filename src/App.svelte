@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { fade } from "svelte/transition";
   import FlipBtn from "./lib/FlipBtn.svelte";
   import PittBanner from "./lib/PittBanner.svelte";
   import VABanner from "./lib/VABanner.svelte";
@@ -9,31 +10,6 @@
   let bookOpen = false;
   let isFlipped = false;
   let page = 0;
-
-  $: if (bookOpen) {
-    const header = document.querySelector("h1");
-    const subheading = document.querySelector("p");
-    if (header && subheading) {
-      header.style.opacity = "0";
-      subheading.style.opacity = "0";
-
-      setTimeout(() => {
-        header.classList.add("cursor-default");
-        subheading.classList.add("cursor-default");
-      }, 500);
-    }
-  } else {
-    const header = document.querySelector("h1");
-    const subheading = document.querySelector("p");
-    if (header && subheading) {
-      header.classList.remove("cursor-default");
-      subheading.classList.remove("cursor-default");
-      setTimeout(() => {
-        header.style.opacity = "1";
-        subheading.style.opacity = "1";
-      }, 10);
-    }
-  }
 </script>
 
 <Modal />
@@ -54,12 +30,21 @@
 <main
   class="flex flex-col items-center justify-center font-rubik p-2 mx-auto text-center relative"
 >
-  <h1 class="uppercase text-4xl leading-normal font-semibold">
-    Human Engineering Research Labs
-  </h1>
-  <p class="mt-1 mb-4 text-sm text-gray-600 dark:text-gray-300">
-    A journey through 30 years of innovation.
-  </p>
+  {#if !bookOpen}
+    <h1
+      transition:fade={{ duration: 200 }}
+      class="uppercase text-4xl leading-normal font-semibold"
+    >
+      Human Engineering Research Labs
+    </h1>
+    <p
+      transition:fade={{ duration: 200 }}
+      class="mt-1 mb-4 text-sm text-gray-600 dark:text-gray-300"
+    >
+      A journey through 30 years of innovation.
+    </p>
+  {/if}
+
   <Book bind:isOpen={bookOpen} bind:page bind:isFlipped on:flip />
 
   {#if bookOpen}
@@ -72,10 +57,6 @@
     font-family: "Rubik", Helvetica, sans-serif, system-ui;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  h1,
-  p {
-    transition: opacity 0.5s ease-in-out;
   }
 
   main {

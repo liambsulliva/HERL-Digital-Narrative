@@ -1,11 +1,13 @@
 <script lang="ts">
   export let isFlipped = false;
+  import { fade } from "svelte/transition";
 </script>
 
 <button
   on:click={() => (isFlipped = !isFlipped)}
   class="w-8 h-8 flex items-center justify-center p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
   aria-label={isFlipped ? "Show front cover" : "Show back cover"}
+  transition:fade={{ duration: 200 }}
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
