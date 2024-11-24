@@ -49,6 +49,7 @@
   .modal-text {
     font-size: 1.25rem;
     line-height: 1.6;
+    color: #383844;
   }
 
   .close-button {
