@@ -13,7 +13,7 @@
         <Picture
           src="/images/content/2024_Cal_Copy_Page_22_Image_0001.webp"
           alt="The Robotic Strong Arm."
-          width="max-h-[30rem]"
+          width="max-h-[7rem]"
         />
         <div class="milestone-description">
           <h3 class="milestone-title">
