@@ -5,6 +5,7 @@
   import BookTexture from "/images/BookTexture.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
   import LastPageBtn from "./LastPageBtn.svelte";
+  import Bookmark from "./Bookmark.svelte";
 
   export let class_ = "";
   let book: HTMLElement;
@@ -173,6 +174,11 @@
       {:else if i + 1 === page + 1}
         <div style="position: relative; z-index: 1000;">
           <NextPageBtn bind:page />
+        </div>
+      {/if}
+      {#if i + 1 === 5 || i + 1 === 10 || i + 1 === 15 || i + 1 === 20 || i + 1 === 25 || i + 1 === 31}
+        <div style="position: relative; z-index: 1000;">
+          <Bookmark targetPage={i + 1} bind:page />
         </div>
       {/if}
       <img
