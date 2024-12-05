@@ -127,18 +127,37 @@
     }, 550);
   }
 
+  function handleOpenToPage(event: CustomEvent) {
+    if (!isOpen) {
+      isOpen = true;
+      page = event.detail.targetPage;
+      tiltX = 0;
+      tiltY = 0;
+      translateX = 50;
+      spineDisplay = "none";
+      paperBlockDisplay = "none";
+
+      setTimeout(() => {
+        translateY = 80;
+        tiltX = 50;
+      }, 500);
+    }
+  }
+
   onMount(() => {
     book.addEventListener("mousemove", handleMouseMove);
     book.addEventListener("mouseenter", handleMouseEnter);
     book.addEventListener("mouseleave", handleMouseLeave);
     book.addEventListener("click", handleOpen);
     window.addEventListener("keydown", handleArrowKey);
+    document.addEventListener('openToPage', handleOpenToPage as EventListener);
     return () => {
       book.removeEventListener("mousemove", handleMouseMove);
       book.removeEventListener("mouseenter", handleMouseEnter);
       book.removeEventListener("mouseleave", handleMouseLeave);
       book.removeEventListener("click", handleOpen);
       window.removeEventListener("keydown", handleArrowKey);
+      document.removeEventListener('openToPage', handleOpenToPage as EventListener);
     };
   });
 </script>
@@ -178,7 +197,7 @@
       {/if}
       {#if i + 1 === 5 || i + 1 === 10 || i + 1 === 15 || i + 1 === 20 || i + 1 === 25 || i + 1 === 31}
         <div style="position: relative; z-index: 1000;">
-          <Bookmark targetPage={i + 1} bind:page />
+          <Bookmark targetPage={i + 1} bind:page {isOpen} />
         </div>
       {/if}
       <img

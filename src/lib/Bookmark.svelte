@@ -1,9 +1,10 @@
 <script lang="ts">
   export let targetPage: number;
   export let page: number;
+  export let isOpen = false;
 
-  // Hardcoded titles for bookmarks every 5 pages
   const bookmarkTitles: Record<number, string> = {
+    // Pg: Year
     5: "1996",
     10: "2002",
     15: "2006",
@@ -13,7 +14,16 @@
   };
 
   function handleClick() {
-    page = targetPage;
+    if (!isOpen) {
+      // Dispatch custom event to open book from Bookmark component
+      const event = new CustomEvent("openToPage", {
+        detail: { targetPage },
+        bubbles: true,
+      });
+      document.dispatchEvent(event);
+    } else {
+      page = targetPage;
+    }
   }
 
   // Calculate position based on index rather than page number
@@ -40,9 +50,9 @@
 <style>
   .bookmark {
     position: absolute;
-    right: -3rem;
-    width: 3rem;
-    height: 5.5rem;
+    right: -2.5rem;
+    width: 2.5rem;
+    height: 5rem;
     background: #252525;
     border: none;
     cursor: pointer;
@@ -72,7 +82,6 @@
 
   .bookmark-label {
     color: white;
-    font-size: 1.25rem;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
