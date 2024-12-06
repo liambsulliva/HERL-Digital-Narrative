@@ -11,6 +11,7 @@ Current Deployment: https://herl-digital-narrative.vercel.app
 - Each bookmark displays its corresponding year and is clickable for quick navigation
 - Bookmarks work in both closed and open states of the book
 - Visual feedback shows the active bookmark for the current page
+- Smooth transitions between bookmark states (width, height, position)
 
 ### Implementation Details
 
@@ -27,6 +28,11 @@ The bookmarks are styled to match the book's aesthetic, featuring:
 - Vertical text orientation for better space utilization
 - Hover effects for better interactivity feedback
 - Active state styling to indicate the current section
+- Smooth state transitions:
+  - Bookmarks grow larger when book is opened (width: 2.5rem → 3.5rem)
+  - Height increases for better visibility (4.5rem → 6rem)
+  - Font size scales up for improved readability
+  - Position adjusts smoothly when book is flipped
 
 ### Performance Considerations
 
