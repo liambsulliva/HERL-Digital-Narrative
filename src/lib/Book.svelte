@@ -150,14 +150,17 @@
     book.addEventListener("mouseleave", handleMouseLeave);
     book.addEventListener("click", handleOpen);
     window.addEventListener("keydown", handleArrowKey);
-    document.addEventListener('openToPage', handleOpenToPage as EventListener);
+    document.addEventListener("openToPage", handleOpenToPage as EventListener);
     return () => {
       book.removeEventListener("mousemove", handleMouseMove);
       book.removeEventListener("mouseenter", handleMouseEnter);
       book.removeEventListener("mouseleave", handleMouseLeave);
       book.removeEventListener("click", handleOpen);
       window.removeEventListener("keydown", handleArrowKey);
-      document.removeEventListener('openToPage', handleOpenToPage as EventListener);
+      document.removeEventListener(
+        "openToPage",
+        handleOpenToPage as EventListener,
+      );
     };
   });
 </script>

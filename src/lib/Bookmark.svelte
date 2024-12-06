@@ -56,11 +56,6 @@
     border: none;
     cursor: pointer;
     transform-origin: left center;
-    transition:
-      width 0.35s ease-in-out,
-      height 0.35s ease-in-out,
-      right 0.35s ease-in-out,
-      font-size 0.35s ease-in-out;
     border-radius: 0 0.25rem 0.25rem 0;
     z-index: 1000;
   }
@@ -70,6 +65,11 @@
     height: 6rem;
     right: -3.5rem;
     font-size: 1.5rem;
+    transition:
+      width 0.35s ease-in-out,
+      height 0.35s ease-in-out,
+      right 0.35s ease-in-out,
+      font-size 0.35s ease-in-out;
   }
 
   .bookmark.flipped {
