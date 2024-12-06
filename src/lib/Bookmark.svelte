@@ -2,9 +2,9 @@
   export let targetPage: number;
   export let page: number;
   export let isOpen = false;
+  export let isFlipped = false;
 
   const bookmarkTitles: Record<number, string> = {
-    // Pg: Year
     5: "1996",
     10: "2002",
     15: "2006",
@@ -13,9 +13,14 @@
     31: "2021",
   };
 
+  const bookmarkPages = Object.keys(bookmarkTitles);
+  const totalBookmarks = bookmarkPages.length;
+  const index = bookmarkPages.indexOf(targetPage.toString());
+  const top = `${(index * 45) / totalBookmarks}vmin`;
+  const label = bookmarkTitles[targetPage] || `Page ${targetPage}`;
+
   function handleClick() {
     if (!isOpen) {
-      // Dispatch custom event to open book from Bookmark component
       const event = new CustomEvent("openToPage", {
         detail: { targetPage },
         bubbles: true,
@@ -25,19 +30,13 @@
       page = targetPage;
     }
   }
-
-  // Calculate position based on index rather than page number
-  // This ensures bookmarks are evenly spaced from the top
-  $: index = Object.keys(bookmarkTitles).indexOf(targetPage.toString());
-  $: top = `${index * 3.75}rem`;
-
-  // Get bookmark label based on page number
-  $: label = bookmarkTitles[targetPage] || `Page ${targetPage}`;
 </script>
 
 <button
   class="bookmark"
   class:active={page === targetPage}
+  class:flipped={isFlipped}
+  class:opened={isOpen}
   on:click|stopPropagation={handleClick}
   style="top: {top}"
   aria-label="Jump to {label}"
@@ -52,23 +51,42 @@
     position: absolute;
     right: -2.5rem;
     width: 2.5rem;
-    height: 5rem;
+    height: 4.5rem;
     background: #252525;
     border: none;
     cursor: pointer;
     transform-origin: left center;
-    transition: transform 0.2s ease;
+    transition:
+      width 0.35s ease-in-out,
+      height 0.35s ease-in-out,
+      right 0.35s ease-in-out,
+      font-size 0.35s ease-in-out;
     border-radius: 0 0.25rem 0.25rem 0;
     z-index: 1000;
   }
 
+  .bookmark.opened {
+    width: 3.5rem;
+    height: 6rem;
+    right: -3.5rem;
+    font-size: 1.5rem;
+  }
+
+  .bookmark.flipped {
+    right: 3rem;
+    transition:
+      width 0.35s ease-in-out,
+      height 0.35s ease-in-out,
+      right 0.35s ease-in-out 0.45s,
+      font-size 0.35s ease-in-out;
+  }
+
   .bookmark:hover {
-    transform: scale(1.1);
     background: #383838;
   }
 
-  .bookmark.active {
-    background: #4a4a4a;
+  .bookmark.opened:hover {
+    background: #383838;
   }
 
   .bookmark-tab {

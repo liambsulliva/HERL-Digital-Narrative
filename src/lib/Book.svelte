@@ -197,7 +197,7 @@
       {/if}
       {#if i + 1 === 5 || i + 1 === 10 || i + 1 === 15 || i + 1 === 20 || i + 1 === 25 || i + 1 === 31}
         <div style="position: relative; z-index: 1000;">
-          <Bookmark targetPage={i + 1} bind:page {isOpen} />
+          <Bookmark targetPage={i + 1} bind:page {isOpen} {isFlipped} />
         </div>
       {/if}
       <img
