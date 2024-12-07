@@ -12,8 +12,7 @@
     <div class="milestones-grid">
       <div class="milestone-item">
         <h3 class="milestone-title">
-          AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES — INVOLVED
-          RESPONSIVE ENGINEERING (ASPIRE)
+          AUTOMATED VEHICLE SERVICES FOR PEOPLE WITH DISABILITIES
         </h3>
         <Description
           content="A HERL center studying how people with disabilities and older adults are affected by access to reliable accessible transportation."
