@@ -19,6 +19,12 @@ Current Deployment: https://herl-digital-narrative.vercel.app
 - The prompt is positioned relative to the book by getting the bounding box of the Book with some clever TypeScript.
   - This is necessary because attaching the prompt to the book itself will make it inherit the dynamic positioning of the book, when it is intended to be flush with the rest of the page.
 
+**Device Rotation Prompt**
+
+- Added a rotation prompt that appears when screen width is less than 900px so layouts aren't ruined by low screen width.
+- Uses the material design rotate icon with a rotating animation and clear messaging to guide the user
+- Implemented with smooth fade transitions for better UX
+
 ### Implementation Details
 
 The bookmark system was implemented through two main components: `Bookmark.svelte` and modifications to `Book.svelte`. The bookmarks are positioned absolutely along the right edge of the book, spaced evenly using a calculated top position based on their index.
