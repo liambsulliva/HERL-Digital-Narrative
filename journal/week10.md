@@ -13,6 +13,12 @@ Current Deployment: https://herl-digital-narrative.vercel.app
 - Visual feedback shows the active bookmark for the current page
 - Smooth transitions between bookmark states (width, height, position)
 
+**Tutorial Prompt**
+
+- A "Skip Ahead!" prompt was added to guide users as to how the bookmarking system works in a cutesy way.
+- The prompt is positioned relative to the book by getting the bounding box of the Book with some clever TypeScript.
+  - This is necessary because attaching the prompt to the book itself will make it inherit the dynamic positioning of the book, when it is intended to be flush with the rest of the page.
+
 ### Implementation Details
 
 The bookmark system was implemented through two main components: `Bookmark.svelte` and modifications to `Book.svelte`. The bookmarks are positioned absolutely along the right edge of the book, spaced evenly using a calculated top position based on their index.
@@ -33,6 +39,12 @@ The bookmarks are styled to match the book's aesthetic, featuring:
   - Height increases for better visibility (4.5rem → 6rem)
   - Font size scales up for improved readability
   - Position adjusts smoothly when book is flipped
+
+The tutorial prompt was simpler in comparison. It worked through a `SkipAheadPrompt.svelte` component that used a combination of TypeScript DOM manipulation and CSS positioning. The prompt's positioning is calculated relative to the book's position on the page, but exists outside the book's transform context. This is crucial because:
+
+1. The book undergoes complex 3D transformations during page turns and opening/closing animations
+2. Elements within the book's DOM hierarchy inherit these transformations
+3. The prompt needs to maintain consistent positioning relative to the viewport
 
 ### Performance Considerations
 
