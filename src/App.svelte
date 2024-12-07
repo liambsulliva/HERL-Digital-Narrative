@@ -6,13 +6,28 @@
   import Book from "./lib/Book.svelte";
   import Content from "./lib/Content.svelte";
   import Modal from "./lib/Modal.svelte";
+  import SkipAheadPrompt from "./lib/SkipAheadPrompt.svelte";
 
   let bookOpen = false;
   let isFlipped = false;
   let page = 0;
+  let showSkipPrompt = true;
+
+  // Watch bookOpen and hide prompt whenever book is opened
+  $: if (bookOpen && showSkipPrompt) {
+    showSkipPrompt = false;
+  }
+
+  function handleBookOpen() {
+    if (!bookOpen) {
+      showSkipPrompt = false;
+    }
+  }
 </script>
 
 <Modal />
+
+<SkipAheadPrompt visible={showSkipPrompt && !bookOpen} />
 
 <header class="flex p-3 w-screen items-center justify-between">
   <div class="flex items-center gap-1">
@@ -45,7 +60,13 @@
     </p>
   {/if}
 
-  <Book bind:isOpen={bookOpen} bind:page bind:isFlipped on:flip />
+  <Book
+    bind:isOpen={bookOpen}
+    bind:page
+    bind:isFlipped
+    on:flip
+    on:click={handleBookOpen}
+  />
 
   {#if bookOpen}
     <Content bind:page />
