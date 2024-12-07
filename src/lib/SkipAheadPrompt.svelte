@@ -38,7 +38,7 @@
     <p class="text-sm font-medium text-[#06060b]">
       <span class="text-[#013594]">↙</span> SKIP AHEAD!
     </p>
-    <p class="text-xs text-[#383844]">Click a bookmark to skip to that year</p>
+    <p class="text-xs text-[#6B7280]">Click a bookmark to skip to that year</p>
   </div>
 {/if}
 

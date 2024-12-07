@@ -54,7 +54,7 @@
     </h1>
     <p
       transition:fade={{ duration: 200 }}
-      class="mt-1 mb-4 text-sm text-[#383844]"
+      class="mt-1 mb-4 text-sm text-[#6B7280]"
     >
       A journey through 30 years of innovation.
     </p>
