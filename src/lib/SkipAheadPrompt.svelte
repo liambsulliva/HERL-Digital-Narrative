@@ -35,15 +35,18 @@
     style="right: {promptPosition.right}; top: {promptPosition.top};"
     transition:fade={{ duration: 200 }}
   >
-    <p class="text-sm font-medium text-gray-700">
-      <span class="text-blue-600">↙</span> Skip Ahead!
+    <p class="text-sm font-medium text-[#06060b]">
+      <span class="text-[#013594]">↙</span> SKIP AHEAD!
     </p>
-    <p class="text-xs text-gray-500">Click a bookmark to skip to that year</p>
+    <p class="text-xs text-[#383844]">Click a bookmark to skip to that year</p>
   </div>
 {/if}
 
 <style>
   div {
+    font-family: "Rubik", Helvetica, sans-serif, system-ui;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     backdrop-filter: blur(4px);
     animation: bounce 2s infinite;
     transform-origin: center;
