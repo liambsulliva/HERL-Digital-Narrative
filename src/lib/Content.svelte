@@ -137,7 +137,7 @@
 
 <!-- TODO: Refactor layout to take up more space horizontally, we want to reduce scrolling on desktops -->
 <div class="content-container">
-  {#if screenWidth < 900}
+  {#if screenWidth < 800}
     <div class="rotation-prompt" transition:fade={{ duration: 200 }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"

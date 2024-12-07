@@ -21,7 +21,7 @@ Current Deployment: https://herl-digital-narrative.vercel.app
 
 **Device Rotation Prompt**
 
-- Added a rotation prompt that appears when screen width is less than 900px so layouts aren't ruined by low screen width.
+- Added a rotation prompt that appears when screen width is less than 800px so layouts aren't ruined by low screen width.
 - Uses the material design rotate icon with a rotating animation and clear messaging to guide the user
 - Implemented with smooth fade transitions for better UX
 
