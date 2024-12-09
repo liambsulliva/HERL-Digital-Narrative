@@ -1,4 +1,5 @@
 .timeline-container {
+  cursor: default;
   padding: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
@@ -51,6 +52,7 @@
 }
 
 .mission-vision-container {
+  cursor: default;
   display: flex;
   flex-direction: row;
   gap: 2rem;

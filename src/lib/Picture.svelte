@@ -28,7 +28,7 @@
       <img {src} {alt} class="{width} object-contain m-auto" />
     </Lightbox>
     {#if alt}
-      <p class="text-sm text-gray-500">{alt}</p>
+      <p class="text-sm text-gray-500 cursor-default">{alt}</p>
     {/if}
   {:else}
     <div class="animate-pulse bg-gray-200 {width} aspect-video"></div>
