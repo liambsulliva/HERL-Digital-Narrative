@@ -7,7 +7,7 @@
   import Content from "./lib/Content.svelte";
   import Modal from "./lib/Modal.svelte";
   import SkipAheadPrompt from "./lib/SkipAheadPrompt.svelte";
-
+  import PageNumbers from "./lib/PageNumbers.svelte";
   let bookOpen = false;
   let isFlipped = false;
   let page = 0;
@@ -72,6 +72,7 @@
     <Content bind:page />
   {/if}
 </main>
+<PageNumbers bind:page bind:bookOpen />
 
 <style lang="postcss">
   .font-rubik {

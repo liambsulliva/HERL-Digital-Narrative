@@ -5,12 +5,12 @@
   export let isFlipped = false;
 
   const bookmarkTitles: Record<number, string> = {
+    3: "1995",
     5: "1996",
-    10: "2002",
-    15: "2006",
-    20: "2010",
-    25: "2013",
-    31: "2021",
+    9: "2001",
+    12: "2004",
+    22: "2011",
+    33: "2023",
   };
 
   const bookmarkPages = Object.keys(bookmarkTitles);

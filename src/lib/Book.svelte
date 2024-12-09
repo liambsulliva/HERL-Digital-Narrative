@@ -198,7 +198,7 @@
           <NextPageBtn bind:page />
         </div>
       {/if}
-      {#if i + 1 === 5 || i + 1 === 10 || i + 1 === 15 || i + 1 === 20 || i + 1 === 25 || i + 1 === 31}
+      {#if i + 1 === 3 || i + 1 === 5 || i + 1 === 9 || i + 1 === 12 || i + 1 === 22 || i + 1 === 33}
         <div style="position: relative; z-index: 1000;">
           <Bookmark targetPage={i + 1} bind:page {isOpen} {isFlipped} />
         </div>
