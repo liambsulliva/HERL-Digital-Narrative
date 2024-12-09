@@ -19,11 +19,6 @@
               content="A valuable resource created to aid and support military personnel during career and life transitions. Over 10,000 copies have been distributed or downloaded."
             />
           </div>
-          <Picture
-            src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
-            alt="Medical Rehabilitation Handbook"
-            width="w-[22rem]"
-          />
         </div>
       </div>
     </div>
