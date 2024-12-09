@@ -85,7 +85,7 @@
 
   function handleArrowKey(event: KeyboardEvent) {
     if (
-      (event.key === "ArrowRight" && !isOpen && !isFlipped) ||
+      (event.key === "ArrowRight" && !isOpen) ||
       (event.key === "ArrowLeft" && page <= 1 && isOpen)
     ) {
       handleOpen();
@@ -145,20 +145,20 @@
   }
 
   function handleCloseAndFlip(event: CustomEvent) {
+    window.removeEventListener("keydown", handleArrowKey);
     if (isOpen) {
+      isFlipped = true;
       isOpen = false;
       page = 0;
       translateX = 0;
       translateY = 0;
-
-      // Set a timeout to flip the book after it's closed
       setTimeout(() => {
-        isFlipped = true;
         rotateY = 180;
         tiltX = 9;
         tiltY = 9;
         spineDisplay = "block";
         paperBlockDisplay = "block";
+        window.addEventListener("keydown", handleArrowKey);
       }, 550);
     }
   }
