@@ -85,7 +85,7 @@
 
   function handleArrowKey(event: KeyboardEvent) {
     if (
-      (event.key === "ArrowRight" && !isOpen) ||
+      (event.key === "ArrowRight" && !isOpen && !isFlipped) ||
       (event.key === "ArrowLeft" && page <= 1 && isOpen)
     ) {
       handleOpen();
