@@ -7,7 +7,9 @@
 
 <div class="page-numbers">
   {#if bookOpen}
-    <span transition:fade={{ duration: 200 }} class="page-number">{page}</span>
+    <span transition:fade={{ duration: 200 }} class="page-number cursor-default"
+      >{page}</span
+    >
   {/if}
 </div>
 

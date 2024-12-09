@@ -31,7 +31,7 @@
 
 {#if visible}
   <div
-    class="flex gap-1.5 fixed z-30 bg-white/90 px-4 py-2"
+    class="absolute flex gap-1.5 px-4 py-2"
     style="right: {promptPosition.right}; top: {promptPosition.top};"
     transition:fade={{ duration: 200 }}
   >
@@ -71,8 +71,10 @@
       </g>
     </svg>
     <div>
-      <p class="text-sm font-medium text-[#6B7280]">SKIP AHEAD!</p>
-      <p class="text-xs text-[#6B7280]">
+      <p class="text-sm font-medium text-[#6B7280] cursor-default">
+        SKIP AHEAD!
+      </p>
+      <p class="text-xs text-[#6B7280] cursor-default">
         Click a bookmark to skip to that year
       </p>
     </div>

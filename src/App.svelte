@@ -48,13 +48,13 @@
   {#if !bookOpen}
     <h1
       transition:fade={{ duration: 200 }}
-      class="uppercase text-4xl text-[#06060b] leading-normal font-semibold"
+      class="uppercase text-4xl text-[#06060b] leading-normal font-semibold cursor-default"
     >
       Human Engineering Research Labs
     </h1>
     <p
       transition:fade={{ duration: 200 }}
-      class="mt-1 mb-4 text-sm text-[#6B7280]"
+      class="mt-1 mb-4 text-sm text-[#6B7280] cursor-default"
     >
       A journey through 30 years of innovation.
     </p>
