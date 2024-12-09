@@ -11,12 +11,15 @@
     <div class="milestones-grid">
       <div class="milestone-item">
         <h3 class="milestone-title">PERSONAL VEHICLE PATENT</h3>
-        <div class="flex flex-row items-center gap-6">
-          <div class="milestone-description">
-            <Description
-              content="A power mobility device designed to improve maneuverability on diverse terrains."
-            />
-          </div>
+        <Picture
+          width="w-[20rem]"
+          src="/images/patentdiagram.webp"
+          alt="The Personal Vehicle Patent Diagram."
+        />
+        <div class="milestone-description">
+          <Description
+            content="A power mobility device designed to improve maneuverability on diverse terrains."
+          />
         </div>
       </div>
     </div>

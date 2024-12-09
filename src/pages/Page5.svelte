@@ -12,16 +12,15 @@
     <div class="milestones-grid">
       <div class="milestone-item">
         <div class="flex flex-row items-center gap-6">
-          <div>
+          <Picture
+            src="/images/content/2024_Cal_Copy_Page_08_Image_0001.webp"
+            alt="An engineer on the PAPAW."
+            width="w-[35rem]"
+          />
+          <div class="milestone-description">
             <h3 class="milestone-title">
               PUSHRIM-ACTIVATED POWER-ASSIST WHEELCHAIR (PAPAW)
             </h3>
-            <Picture
-              src="/images/content/2024_Cal_Copy_Page_08_Image_0001.webp"
-              alt="An engineer on the PAPAW."
-            />
-          </div>
-          <div class="milestone-description">
             <Description
               content="A joint effort between Yamaha and HERL, it contributed to significant advancements in wheelchair tech."
             />

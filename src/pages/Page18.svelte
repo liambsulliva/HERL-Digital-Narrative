@@ -11,6 +11,11 @@
     <div class="milestones-grid">
       <div class="milestone-item">
         <div class="flex flex-row items-center gap-8">
+          <Picture
+            width="w-[15rem]"
+            src="/images/warrior-transition-handbook.webp"
+            alt="Medical Rehabilitation Handbook"
+          />
           <div>
             <h3 class="milestone-title">
               WARRIOR TRANSITION LEADER- MEDICAL REHABILITATION HANDBOOK

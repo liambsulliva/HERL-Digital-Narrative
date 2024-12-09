@@ -1,5 +1,6 @@
 <script lang="ts">
   import Description from "../lib/Description.svelte";
+  import Picture from "../lib/Picture.svelte";
   import "../styles/pageStyles.css";
 </script>
 
@@ -13,6 +14,11 @@
         <h3 class="milestone-title">
           QUALITY OF LIFE ENGINEERING RESEARCH CENTER (ERC)
         </h3>
+        <Picture
+          width="w-[25rem]"
+          src="/images/evolution-of-wheelchair.webp"
+          alt="The evolution of wheelchair technology, right to left"
+        />
         <Description
           content="HERL received this award from the National Science Foundation (NSF), along with Carnegie Mellon University and other partners."
         />

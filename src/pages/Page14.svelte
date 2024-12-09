@@ -13,6 +13,11 @@
       <h3 class="milestone-title">
         OASCF (OBLIQUE SUSPENSION CASTER FORK) PATENT
       </h3>
+      <Picture
+        width="w-[25rem]"
+        src="/images/oascfdiagram.webp"
+        alt="The OASCF Patent Diagram."
+      />
       <div class="milestone-description">
         <Description
           content="A patent was awarded for this innovative wheelchair design, focusing on effective shock absorption for both horizontal and vertical impacts during travel over uneven terrain."

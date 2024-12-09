@@ -25,7 +25,8 @@
           </div>
           <Picture
             src="/images/content/2024_Cal_Copy_Page_16_Image_0001.webp"
-            alt="Medical Rehabilitation Handbook"
+            alt="Care of the Combat Amputee Textbook."
+            width="w-[50rem]"
           />
         </div>
       </div>
