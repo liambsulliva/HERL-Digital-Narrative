@@ -36,7 +36,7 @@
     transition:fade={{ duration: 200 }}
   >
     <p class="text-sm font-medium text-[#06060b]">
-      <span class="text-[#013594]">↙</span> SKIP AHEAD!
+      <span class="text-[#013594] text-lg font-bold">⟲</span> SKIP AHEAD!
     </p>
     <p class="text-xs text-[#6B7280]">Click a bookmark to skip to that year</p>
   </div>
