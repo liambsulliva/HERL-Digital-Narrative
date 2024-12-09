@@ -4,6 +4,6 @@ Final Deployment: https://herl-digital-narrative.vercel.app
 
 ### New Features!
 
-Lorem ipsum dolor sit amet...
+- Book flips to backside when clicking past the last page
 
 LS
