@@ -144,6 +144,25 @@
     }
   }
 
+  function handleCloseAndFlip(event: CustomEvent) {
+    if (isOpen) {
+      isOpen = false;
+      page = 0;
+      translateX = 0;
+      translateY = 0;
+
+      // Set a timeout to flip the book after it's closed
+      setTimeout(() => {
+        isFlipped = true;
+        rotateY = 180;
+        tiltX = 9;
+        tiltY = 9;
+        spineDisplay = "block";
+        paperBlockDisplay = "block";
+      }, 550);
+    }
+  }
+
   onMount(() => {
     book.addEventListener("mousemove", handleMouseMove);
     book.addEventListener("mouseenter", handleMouseEnter);
@@ -151,6 +170,11 @@
     book.addEventListener("click", handleOpen);
     window.addEventListener("keydown", handleArrowKey);
     document.addEventListener("openToPage", handleOpenToPage as EventListener);
+    document.addEventListener(
+      "closeAndFlip",
+      handleCloseAndFlip as EventListener,
+    );
+
     return () => {
       book.removeEventListener("mousemove", handleMouseMove);
       book.removeEventListener("mouseenter", handleMouseEnter);
@@ -160,6 +184,10 @@
       document.removeEventListener(
         "openToPage",
         handleOpenToPage as EventListener,
+      );
+      document.removeEventListener(
+        "closeAndFlip",
+        handleCloseAndFlip as EventListener,
       );
     };
   });
@@ -195,7 +223,7 @@
         </div>
       {:else if i + 1 === page + 1}
         <div style="position: relative; z-index: 1000;">
-          <NextPageBtn bind:page />
+          <NextPageBtn bind:page {isOpen} {isFlipped} />
         </div>
       {/if}
       {#if i + 1 === 3 || i + 1 === 5 || i + 1 === 9 || i + 1 === 12 || i + 1 === 22 || i + 1 === 33}

@@ -1,13 +1,20 @@
 <script lang="ts">
   import { onMount } from "svelte";
   export let page = 0;
+  export let isOpen = false;
+  export let isFlipped = false;
 
   $: allowNextPage = page < 34;
 
   function handlePageTurn() {
     if (allowNextPage) {
       page++;
-      //console.log(page);
+    } else if (page === 34) {
+      // Create and dispatch custom event for book closing
+      const event = new CustomEvent("closeAndFlip", {
+        bubbles: true,
+      });
+      document.dispatchEvent(event);
     }
   }
 
