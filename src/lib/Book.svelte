@@ -174,6 +174,7 @@
       "closeAndFlip",
       handleCloseAndFlip as EventListener,
     );
+    document.addEventListener("closeBook", handleOpen as EventListener);
 
     return () => {
       book.removeEventListener("mousemove", handleMouseMove);
@@ -189,6 +190,7 @@
         "closeAndFlip",
         handleCloseAndFlip as EventListener,
       );
+      document.removeEventListener("closeBook", handleOpen as EventListener);
     };
   });
 </script>
