@@ -44,7 +44,7 @@ Since the layout was a little sparse on some pages, I decided to include some su
 
 The existing prompt was misleading, since rotating the device wouldn't make the layout function anyways. The new one is more transparent and guides users in the right direction, even if it's more work on their end.
 
-| New Prompt                                        | Old Prompt                                              |
+| Old Prompt                                        | New Prompt                                              |
 | ------------------------------------------------- | ------------------------------------------------------- |
 | ![Old Rotation Prompt](images/rotationprompt.png) | ![New Device Switching Prompt](images/deviceswitch.png) |
 
