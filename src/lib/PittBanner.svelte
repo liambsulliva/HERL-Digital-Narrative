@@ -1,5 +1,5 @@
 <script lang="ts">
-  import lightbanner from "/images/pittbanner-light.png";
+  import banner from "/images/pittbanner.webp";
   import { fade } from "svelte/transition";
 </script>
 
@@ -11,9 +11,5 @@
   target="_blank"
   transition:fade={{ duration: 200 }}
 >
-  <img
-    src={lightbanner}
-    alt="University of Pittsburgh"
-    class="dark:hidden block"
-  />
+  <img src={banner} alt="University of Pittsburgh" class="dark:hidden block" />
 </a>

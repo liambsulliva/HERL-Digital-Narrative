@@ -4,5 +4,5 @@
 </script>
 
 <div class="image-container">
-  <Picture src="/images/Timeline.png" alt="Parallel Paths" width="w-full" />
+  <Picture src="/images/Timeline.webp" alt="Parallel Paths" width="w-full" />
 </div>
