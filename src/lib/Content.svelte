@@ -154,7 +154,7 @@
         <p class="primary-text">Please switch to a desktop device</p>
         <p class="secondary-text">
           For an optimal viewing experience, please use a device with a screen
-          resolution of at least 1440 x 900.
+          resolution of at least 1280 x 800.
         </p>
       </div>
     </div>

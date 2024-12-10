@@ -18,7 +18,7 @@ Welcome to the HERL Throughout the Years Digital Narrative project. This interac
   - Content loading is delayed to prevent browser overwhelm
   - Images preload 5 pages ahead for seamless transitions
   - Smooth fading transitions for content, modals, and icons
-- **Device Compatibility**: Optimized for desktop viewing with a minimum resolution of 1440 x 900, with a device switch prompt for smaller screens.
+- **Device Compatibility**: Optimized for desktop viewing with a minimum resolution of 1280 x 800, with a device switch prompt for smaller screens.
 - **Page Numbers**: Clear page numbering system to help users track their progress through the narrative.
 
 ## Development Notes
