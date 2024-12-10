@@ -8,6 +8,8 @@
   import Modal from "./lib/Modal.svelte";
   import SkipAheadPrompt from "./lib/SkipAheadPrompt.svelte";
   import PageNumbers from "./lib/PageNumbers.svelte";
+  import Credit from "./lib/Credit.svelte";
+
   let bookOpen = false;
   let isFlipped = false;
   let page = 0;
@@ -73,6 +75,7 @@
   {/if}
 </main>
 <PageNumbers bind:page bind:bookOpen />
+<Credit {bookOpen} />
 
 <style lang="postcss">
   .font-rubik {
