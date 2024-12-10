@@ -13,7 +13,7 @@
         <div class="flex items-center gap-12">
           <Picture
             width="max-h-[35rem] pt-8"
-            src="/images/content/2024_Cal_Copy_Page_18_Image_0002.webp"
+            src="/images/2024_Cal_Copy_Page_18_Image_0002.webp"
             alt="Dr. Cooper and the PerMMA in 2010."
           />
           <div class="milestone-description">

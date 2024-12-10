@@ -21,7 +21,7 @@
             />
           </div>
           <Picture
-            src="/images/content/2024_Cal_Copy_Page_20_Image_0002.webp"
+            src="/images/2024_Cal_Copy_Page_20_Image_0002.webp"
             alt="Dr. Jorge Candiotti and the MEBot."
             width="max-h-[30rem] pt-4"
           />

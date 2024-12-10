@@ -12,7 +12,7 @@
     <div class="milestones-grid">
       <div class="flex items-center gap-12 mt-4">
         <Picture
-          src="/images/content/2024_Cal_Copy_Page_18_Image_0001.webp"
+          src="/images/2024_Cal_Copy_Page_18_Image_0001.webp"
           alt="Inaugurating the Bakery Square site, 2011."
           width="h-[10rem]"
         />

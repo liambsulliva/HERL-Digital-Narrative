@@ -16,7 +16,7 @@
         />
       </div>
       <Picture
-        src="/images/content/2024_Cal_Copy_Page_24_Image_0002.webp"
+        src="/images/2024_Cal_Copy_Page_24_Image_0002.webp"
         alt="Dr. Rory Cooper at Morgan’s Wonderland with the Pneuchair."
       />
     </div>

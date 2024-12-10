@@ -12,7 +12,7 @@
       <div class="milestone-item">
         <div class="flex gap-8">
           <Picture
-            src="/images/content/2024_Cal_Copy_Page_22_Image_0001.webp"
+            src="/images/2024_Cal_Copy_Page_22_Image_0001.webp"
             alt="The Robotic Strong Arm."
             width="max-h-[25rem]"
           />

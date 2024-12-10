@@ -19,7 +19,7 @@
         />
       </div>
       <Picture
-        src="/images/content/2024_Cal_Copy_Page_26_Image_0001.webp"
+        src="/images/2024_Cal_Copy_Page_26_Image_0001.webp"
         alt="Nikitha Deepak handling an electric wheelchair outside of the Bakery Square offices."
       />
     </div>
