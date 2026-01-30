@@ -1,6 +1,6 @@
 <script lang="ts">
-  import vabanner from "/images/2024-VA-Seal.webp";
   import { fade } from "svelte/transition";
+  const vabanner = import.meta.env.BASE_URL + "images/2024-VA-Seal.webp";
 </script>
 
 <a

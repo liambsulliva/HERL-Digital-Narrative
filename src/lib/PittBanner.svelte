@@ -1,6 +1,6 @@
 <script lang="ts">
-  import banner from "/images/pittbanner.webp";
   import { fade } from "svelte/transition";
+  const banner = import.meta.env.BASE_URL + "images/pittbanner.webp";
 </script>
 
 <a

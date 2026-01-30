@@ -1,11 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import FrontCover from "/images/Cover-Front.webp";
-  import BackCover from "/images/Cover-Back.webp";
-  import BookTexture from "/images/BookTexture.webp";
   import NextPageBtn from "./NextPageBtn.svelte";
   import LastPageBtn from "./LastPageBtn.svelte";
   import Bookmark from "./Bookmark.svelte";
+  const FrontCover = import.meta.env.BASE_URL + "images/Cover-Front.webp";
+  const BackCover = import.meta.env.BASE_URL + "images/Cover-Back.webp";
+  const BookTexture = import.meta.env.BASE_URL + "images/BookTexture.webp";
 
   export let class_ = "";
   let book: HTMLElement;

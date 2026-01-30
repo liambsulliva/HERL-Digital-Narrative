@@ -10,9 +10,14 @@
 
   let imageLoaded = false;
 
+  // Prepend base URL
+  const fullSrc = src.startsWith("/")
+    ? import.meta.env.BASE_URL + src.slice(1)
+    : src;
+
   onMount(() => {
     imageLoader
-      .preloadImage(src)
+      .preloadImage(fullSrc)
       .then(() => {
         imageLoaded = true;
       })
@@ -25,7 +30,7 @@
 <div class="flex flex-col gap-2 {class_name}">
   {#if imageLoaded}
     <Lightbox>
-      <img {src} {alt} class="{width} object-contain m-auto" />
+      <img src={fullSrc} {alt} class="{width} object-contain m-auto" />
     </Lightbox>
     {#if alt}
       <p class="text-sm text-gray-500 cursor-default">{alt}</p>
